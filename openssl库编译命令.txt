@@ -1,0 +1,6 @@
+1.openssl编译教程：
+  https://www.cnblogs.com/bclshuai/p/12996835.html
+  https://blog.csdn.net/ljttianqin/article/details/72978612
+  
+2.openssl编译命令：
+  perl Configure VC-WIN64A no-asm no-tests --debug --prefix=E:\Github\OpenSSL\openssl-1.1.1h\x64\Debug  --openssldir=E:\Github\OpenSSL\openssl-1.1.1h\x64\Debug\ssl
