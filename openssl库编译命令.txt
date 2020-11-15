@@ -1,6 +1,15 @@
 1.openssl编译教程：
   https://www.cnblogs.com/bclshuai/p/12996835.html
   https://blog.csdn.net/ljttianqin/article/details/72978612
-  
-2.openssl编译命令：
-  perl Configure VC-WIN64A no-asm no-tests --debug --prefix=E:\Github\OpenSSL\openssl-1.1.1h\x64\Debug  --openssldir=E:\Github\OpenSSL\openssl-1.1.1h\x64\Debug\ssl
+
+2.openssl编译配置命令（用于生产编译的Makefile文件）：
+  perl Configure VC-WIN64A no-asm no-tests no-shared --debug --prefix=E:\Github\OpenSSL\openssl-1.1.1h\x64\Debug  --openssldir=E:\Github\OpenSSL\openssl-1.1.1h\x64\Debug\ssl
+	
+3.openssl编译命令：
+  nmake
+
+4.openssl库编译后安装命令：
+  nmake install
+
+5.openssl库编译清除命令：
+  nmake clean

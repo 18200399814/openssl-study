@@ -16,25 +16,25 @@ MINOR=1.1
 
 SHLIB_VERSION_NUMBER=1.1
 
-LIBS=apps\libapps.lib libcrypto.lib libcrypto_static.lib libssl.lib libssl_static.lib
-SHLIBS=libcrypto-1_1-x64.dll libssl-1_1-x64.dll
-SHLIBPDBS=libcrypto-1_1-x64.pdb libssl-1_1-x64.pdb
-ENGINES=engines\capi.dll engines\dasync.dll engines\ossltest.dll engines\padlock.dll
-ENGINEPDBS=engines\capi.pdb engines\dasync.pdb engines\ossltest.pdb engines\padlock.pdb
+LIBS=apps\libapps.lib libcrypto.lib libssl.lib
+SHLIBS=
+SHLIBPDBS=
+ENGINES=
+ENGINEPDBS=
 PROGRAMS=apps\openssl.exe test\buildtest_c_aes.exe test\buildtest_c_asn1.exe test\buildtest_c_asn1t.exe test\buildtest_c_async.exe test\buildtest_c_bio.exe test\buildtest_c_blowfish.exe test\buildtest_c_bn.exe test\buildtest_c_buffer.exe test\buildtest_c_camellia.exe test\buildtest_c_cast.exe test\buildtest_c_cmac.exe test\buildtest_c_cms.exe test\buildtest_c_comp.exe test\buildtest_c_conf.exe test\buildtest_c_conf_api.exe test\buildtest_c_crypto.exe test\buildtest_c_ct.exe test\buildtest_c_des.exe test\buildtest_c_dh.exe test\buildtest_c_dsa.exe test\buildtest_c_dtls1.exe test\buildtest_c_e_os2.exe test\buildtest_c_ebcdic.exe test\buildtest_c_ec.exe test\buildtest_c_ecdh.exe test\buildtest_c_ecdsa.exe test\buildtest_c_engine.exe test\buildtest_c_evp.exe test\buildtest_c_hmac.exe test\buildtest_c_idea.exe test\buildtest_c_kdf.exe test\buildtest_c_lhash.exe test\buildtest_c_md4.exe test\buildtest_c_md5.exe test\buildtest_c_mdc2.exe test\buildtest_c_modes.exe test\buildtest_c_obj_mac.exe test\buildtest_c_objects.exe test\buildtest_c_ocsp.exe test\buildtest_c_opensslv.exe test\buildtest_c_ossl_typ.exe test\buildtest_c_pem.exe test\buildtest_c_pem2.exe test\buildtest_c_pkcs12.exe test\buildtest_c_pkcs7.exe test\buildtest_c_rand.exe test\buildtest_c_rand_drbg.exe test\buildtest_c_rc2.exe test\buildtest_c_rc4.exe test\buildtest_c_ripemd.exe test\buildtest_c_rsa.exe test\buildtest_c_safestack.exe test\buildtest_c_seed.exe test\buildtest_c_sha.exe test\buildtest_c_srp.exe test\buildtest_c_srtp.exe test\buildtest_c_ssl.exe test\buildtest_c_ssl2.exe test\buildtest_c_stack.exe test\buildtest_c_store.exe test\buildtest_c_symhacks.exe test\buildtest_c_tls1.exe test\buildtest_c_ts.exe test\buildtest_c_txt_db.exe test\buildtest_c_ui.exe test\buildtest_c_whrlpool.exe test\buildtest_c_x509.exe test\buildtest_c_x509_vfy.exe test\buildtest_c_x509v3.exe
 PROGRAMPDBS=apps\openssl.pdb test\buildtest_c_aes.pdb test\buildtest_c_asn1.pdb test\buildtest_c_asn1t.pdb test\buildtest_c_async.pdb test\buildtest_c_bio.pdb test\buildtest_c_blowfish.pdb test\buildtest_c_bn.pdb test\buildtest_c_buffer.pdb test\buildtest_c_camellia.pdb test\buildtest_c_cast.pdb test\buildtest_c_cmac.pdb test\buildtest_c_cms.pdb test\buildtest_c_comp.pdb test\buildtest_c_conf.pdb test\buildtest_c_conf_api.pdb test\buildtest_c_crypto.pdb test\buildtest_c_ct.pdb test\buildtest_c_des.pdb test\buildtest_c_dh.pdb test\buildtest_c_dsa.pdb test\buildtest_c_dtls1.pdb test\buildtest_c_e_os2.pdb test\buildtest_c_ebcdic.pdb test\buildtest_c_ec.pdb test\buildtest_c_ecdh.pdb test\buildtest_c_ecdsa.pdb test\buildtest_c_engine.pdb test\buildtest_c_evp.pdb test\buildtest_c_hmac.pdb test\buildtest_c_idea.pdb test\buildtest_c_kdf.pdb test\buildtest_c_lhash.pdb test\buildtest_c_md4.pdb test\buildtest_c_md5.pdb test\buildtest_c_mdc2.pdb test\buildtest_c_modes.pdb test\buildtest_c_obj_mac.pdb test\buildtest_c_objects.pdb test\buildtest_c_ocsp.pdb test\buildtest_c_opensslv.pdb test\buildtest_c_ossl_typ.pdb test\buildtest_c_pem.pdb test\buildtest_c_pem2.pdb test\buildtest_c_pkcs12.pdb test\buildtest_c_pkcs7.pdb test\buildtest_c_rand.pdb test\buildtest_c_rand_drbg.pdb test\buildtest_c_rc2.pdb test\buildtest_c_rc4.pdb test\buildtest_c_ripemd.pdb test\buildtest_c_rsa.pdb test\buildtest_c_safestack.pdb test\buildtest_c_seed.pdb test\buildtest_c_sha.pdb test\buildtest_c_srp.pdb test\buildtest_c_srtp.pdb test\buildtest_c_ssl.pdb test\buildtest_c_ssl2.pdb test\buildtest_c_stack.pdb test\buildtest_c_store.pdb test\buildtest_c_symhacks.pdb test\buildtest_c_tls1.pdb test\buildtest_c_ts.pdb test\buildtest_c_txt_db.pdb test\buildtest_c_ui.pdb test\buildtest_c_whrlpool.pdb test\buildtest_c_x509.pdb test\buildtest_c_x509_vfy.pdb test\buildtest_c_x509v3.pdb
 SCRIPTS=apps\CA.pl apps\tsget.pl tools\c_rehash.pl
 
-DEPS=crypto\evp\e_camellia.d crypto\dh\dh_kdf.d crypto\bio\b_addr.d crypto\x509\x509_ext.d apps\ecparam.d engines\e_ossltest.d crypto\ec\ec2_smpl.d crypto\asn1\d2i_pr.d crypto\evp\p_sign.d crypto\asn1\i2d_pu.d crypto\evp\e_aes_cbc_hmac_sha1.d crypto\pkcs7\pk7_asn1.d crypto\mem_sec.d test\buildtest_rand.d crypto\engine\eng_lib.d crypto\objects\obj_lib.d crypto\ocsp\ocsp_ext.d test\buildtest_bio.d crypto\cmac\cm_ameth.d crypto\ui\ui_openssl.d apps\rehash.d crypto\rc2\rc2_ecb.d crypto\camellia\cmll_misc.d crypto\bio\bss_sock.d ssl\ssl_cert.d crypto\rsa\rsa_ossl.d crypto\pem\pem_err.d crypto\cversion.d crypto\aes\aes_cfb.d crypto\ebcdic.d crypto\lhash\lh_stats.d ssl\ssl_stat.d crypto\rc2\rc2cfb64.d crypto\x509\x_exten.d test\buildtest_dh.d apps\s_server.d crypto\des\fcrypt.d crypto\pkcs12\p12_p8e.d crypto\x509\x509cset.d crypto\conf\conf_lib.d crypto\x509\t_req.d crypto\asn1\tasn_utl.d crypto\objects\obj_dat.d crypto\ec\ec_oct.d crypto\x509\x_name.d crypto\ec\curve448\f_generic.d crypto\ec\ec_err.d crypto\x509\by_file.d crypto\rsa\rsa_saos.d crypto\asn1\t_spki.d crypto\dso\dso_vms.d test\buildtest_crypto.d crypto\asn1\p5_pbev2.d crypto\bn\bn_rand.d crypto\x509\x_all.d test\buildtest_cms.d crypto\cms\cms_pwri.d crypto\dh\dh_rfc7919.d crypto\dh\dh_ameth.d crypto\x509v3\v3_asid.d test\buildtest_e_os2.d crypto\ocsp\ocsp_prn.d crypto\async\async.d crypto\pkcs12\p12_kiss.d ssl\ssl_conf.d crypto\x509v3\v3_utl.d crypto\x509v3\pcy_data.d test\buildtest_safestack.d crypto\asn1\a_bitstr.d crypto\async\arch\async_null.d crypto\pkcs12\p12_mutl.d crypto\txt_db\txt_db.d crypto\x509\x509_v3.d test\buildtest_md5.d crypto\cast\c_enc.d crypto\asn1\n_pkey.d crypto\pem\pem_x509.d crypto\blake2\blake2s.d crypto\cms\cms_enc.d crypto\dsa\dsa_ossl.d crypto\ec\ecp_smpl.d test\buildtest_asn1.d ssl\statem\statem.d crypto\aes\aes_ige.d crypto\modes\wrap128.d crypto\ec\ec_pmeth.d ssl\record\rec_layer_d1.d crypto\bio\b_sock2.d crypto\cms\cms_ess.d crypto\modes\ofb128.d crypto\cmac\cm_pmeth.d crypto\x509v3\v3_bitst.d crypto\asn1\x_bignum.d crypto\sm4\sm4.d crypto\ec\curve448\scalar.d crypto\err\err.d crypto\rsa\rsa_none.d test\buildtest_opensslv.d crypto\conf\conf_api.d crypto\evp\m_wp.d apps\version.d ssl\ssl_asn1.d crypto\asn1\x_algor.d crypto\asn1\asn_mime.d crypto\comp\comp_lib.d crypto\mem.d crypto\asn1\t_bitst.d crypto\bn\bn_err.d apps\storeutl.d crypto\bn\bn_mpi.d crypto\pkcs12\p12_sbag.d engines\e_padlock.d crypto\pem\pvkfmt.d crypto\bio\bss_acpt.d crypto\ec\ecp_nist.d crypto\camellia\cmll_cfb.d crypto\evp\evp_err.d crypto\asn1\asn1_gen.d crypto\cms\cms_lib.d crypto\x509\t_x509.d crypto\conf\conf_mod.d apps\s_socket.d crypto\dh\dh_err.d crypto\rsa\rsa_meth.d crypto\bn\bn_gcd.d ssl\methods.d crypto\aes\aes_cbc.d crypto\pkcs12\p12_utl.d test\buildtest_rc2.d crypto\asn1\f_int.d crypto\x509v3\v3_pku.d crypto\engine\eng_ctrl.d crypto\md5\md5_one.d crypto\store\store_err.d crypto\des\cfb64enc.d apps\sess_id.d crypto\rsa\rsa_pss.d crypto\des\cbc_enc.d crypto\bn\bn_intern.d crypto\pkcs12\pk12err.d crypto\ui\ui_lib.d crypto\seed\seed_cfb.d crypto\asn1\a_sign.d test\buildtest_x509v3.d crypto\pem\pem_info.d crypto\bio\bss_mem.d crypto\x509v3\pcy_cache.d crypto\des\ofb_enc.d crypto\conf\conf_err.d crypto\evp\names.d crypto\cms\cms_cd.d crypto\mdc2\mdc2_one.d crypto\dsa\dsa_sign.d crypto\x509v3\v3_info.d apps\enc.d crypto\mdc2\mdc2dgst.d crypto\bn\bn_sqr.d engines\e_dasync.d test\buildtest_pkcs12.d crypto\ec\ecdh_ossl.d test\buildtest_pem2.d crypto\engine\tb_rand.d crypto\bn\bn_exp2.d crypto\ct\ct_policy.d crypto\engine\eng_table.d apps\rand.d test\buildtest_cmac.d crypto\x509v3\v3_purp.d ssl\statem\statem_clnt.d crypto\bio\bio_err.d crypto\ec\ec_kmeth.d crypto\dso\dso_dl.d crypto\x509\x509_lu.d crypto\dsa\dsa_meth.d test\buildtest_symhacks.d crypto\dh\dh_pmeth.d crypto\x509\x_attrib.d crypto\evp\e_cast.d crypto\camellia\camellia.d crypto\ec\ecdsa_ossl.d crypto\bf\bf_ofb64.d crypto\pem\pem_xaux.d crypto\camellia\cmll_cbc.d apps\s_time.d apps\pkeyparam.d crypto\x509v3\pcy_node.d crypto\pkcs12\p12_crt.d crypto\sm2\sm2_sign.d crypto\evp\bio_b64.d crypto\aes\aes_ofb.d crypto\cms\cms_env.d test\buildtest_ui.d crypto\whrlpool\wp_dgst.d crypto\cast\c_cfb64.d crypto\asn1\asn_mstbl.d crypto\cms\cms_dd.d crypto\evp\e_aria.d crypto\idea\i_skey.d crypto\evp\e_old.d crypto\bn\bn_add.d crypto\x509\x509_meth.d crypto\cast\c_skey.d ssl\bio_ssl.d apps\openssl.d crypto\rsa\rsa_sign.d apps\pkcs8.d crypto\idea\i_cfb64.d crypto\comp\comp_err.d crypto\asn1\asn1_item_list.d crypto\asn1\a_object.d crypto\ec\ec_ameth.d crypto\ts\ts_rsp_utils.d crypto\ec\curve25519.d crypto\x509v3\v3_admis.d crypto\x509v3\v3_addr.d crypto\asn1\a_digest.d ms\uplink.d crypto\rc4\rc4_skey.d test\buildtest_rc4.d crypto\bn\bn_asm.d crypto\ec\ec_cvt.d test\buildtest_ecdsa.d crypto\dsa\dsa_prn.d crypto\rand\rand_win.d crypto\asn1\a_utctm.d crypto\evp\e_sm4.d crypto\dsa\dsa_pmeth.d crypto\des\ofb64enc.d ssl\tls13_enc.d crypto\srp\srp_vfy.d crypto\evp\c_alld.d crypto\asn1\a_print.d ssl\ssl_rsa.d crypto\evp\e_aes.d crypto\bn\bn_exp.d crypto\ocsp\ocsp_srv.d crypto\pem\pem_oth.d test\buildtest_des.d crypto\modes\cbc128.d crypto\err\err_prn.d crypto\store\store_strings.d crypto\async\async_err.d apps\s_client.d crypto\asn1\asn_pack.d apps\engine.d crypto\des\ecb3_enc.d crypto\seed\seed.d crypto\asn1\ameth_lib.d crypto\pkcs7\pk7_smime.d crypto\des\cfb_enc.d apps\bf_prefix.d crypto\store\loader_file.d crypto\evp\bio_md.d crypto\bn\bn_print.d crypto\sm2\sm2_err.d crypto\rsa\rsa_ameth.d crypto\bn\bn_mul.d apps\verify.d crypto\evp\m_null.d crypto\camellia\cmll_ctr.d crypto\evp\evp_pbe.d crypto\engine\eng_err.d crypto\rsa\rsa_err.d crypto\bio\bss_log.d crypto\ct\ct_prn.d crypto\evp\m_md4.d crypto\evp\m_sha3.d crypto\x509v3\v3_pmaps.d crypto\evp\m_md2.d crypto\engine\eng_list.d crypto\o_fopen.d crypto\pkcs12\p12_crpt.d ssl\record\dtls1_bitmap.d crypto\sm2\sm2_pmeth.d crypto\x509v3\v3_tlsf.d crypto\bio\bf_null.d crypto\aes\aes_ecb.d crypto\ec\ecp_nistp256.d crypto\evp\m_sha1.d test\buildtest_store.d crypto\dh\dh_asn1.d crypto\engine\tb_eckey.d crypto\rsa\rsa_prn.d crypto\srp\srp_lib.d crypto\x509\x_crl.d crypto\bn\bn_gf2m.d ssl\t1_trce.d crypto\rsa\rsa_pmeth.d crypto\x509\x509_att.d crypto\mem_dbg.d crypto\asn1\f_string.d test\buildtest_ssl2.d crypto\ts\ts_conf.d crypto\buffer\buffer.d crypto\siphash\siphash_ameth.d ssl\t1_lib.d crypto\ctype.d crypto\comp\c_zlib.d crypto\bio\b_sock.d crypto\conf\conf_def.d apps\pkeyutl.d crypto\evp\e_chacha20_poly1305.d crypto\dsa\dsa_ameth.d ssl\statem\statem_srvr.d test\ssl_ctx_test.d test\buildtest_ebcdic.d test\buildtest_lhash.d crypto\des\qud_cksm.d crypto\rc2\rc2_skey.d crypto\evp\p5_crpt2.d crypto\dsa\dsa_err.d crypto\poly1305\poly1305_ameth.d crypto\x509\x509_d2.d crypto\ui\ui_util.d crypto\bio\bio_meth.d crypto\ct\ct_x509v3.d crypto\evp\e_rc4.d crypto\hmac\hm_ameth.d crypto\evp\e_rc2.d crypto\threads_pthread.d crypto\ec\ecp_nistp224.d apps\errstr.d crypto\blake2\blake2b.d crypto\rsa\rsa_depr.d crypto\bio\bss_conn.d ssl\ssl_err.d apps\prime.d ssl\ssl_sess.d crypto\des\des_enc.d crypto\engine\tb_digest.d test\buildtest_tls1.d crypto\asn1\tasn_scn.d crypto\des\set_key.d crypto\ec\ec_print.d crypto\async\async_wait.d crypto\rsa\rsa_ssl.d crypto\ts\ts_lib.d crypto\ct\ct_log.d crypto\evp\p_lib.d crypto\rsa\rsa_pk1.d crypto\x509v3\v3_extku.d crypto\x509\by_dir.d crypto\asn1\a_int.d crypto\x509\x509_set.d ssl\s3_enc.d crypto\x509v3\v3_alt.d crypto\asn1\x_info.d crypto\blake2\m_blake2b.d crypto\dh\dh_rfc5114.d crypto\x509v3\v3_akeya.d crypto\engine\eng_dyn.d crypto\pkcs7\pkcs7err.d ssl\statem\extensions_clnt.d crypto\sha\sha1dgst.d crypto\x509v3\v3_lib.d crypto\x509v3\v3_crld.d crypto\pkcs12\p12_p8d.d crypto\sm3\sm3.d crypto\o_time.d crypto\asn1\a_i2d_fp.d apps\pkey.d crypto\ec\ecdh_kdf.d crypto\ts\ts_rsp_verify.d crypto\x509\x509_txt.d crypto\bio\bio_cb.d crypto\lhash\lhash.d crypto\asn1\a_strex.d crypto\evp\e_null.d crypto\dllmain.d crypto\asn1\p8_pkey.d crypto\dsa\dsa_depr.d crypto\rc2\rc2_cbc.d apps\ec.d test\buildtest_cast.d crypto\pem\pem_sign.d crypto\blake2\m_blake2s.d test\buildtest_txt_db.d crypto\cms\cms_smime.d crypto\asn1\x_pkey.d test\buildtest_seed.d crypto\rc4\rc4_enc.d crypto\rsa\rsa_oaep.d ssl\ssl_utst.d test\buildtest_dsa.d crypto\dh\dh_depr.d ssl\tls_srp.d crypto\dso\dso_err.d crypto\rsa\rsa_mp.d crypto\ts\ts_req_print.d test\buildtest_ecdh.d crypto\cms\cms_asn1.d crypto\x509\x509rset.d crypto\dsa\dsa_vrf.d apps\rsautl.d crypto\evp\p_seal.d crypto\evp\bio_ok.d crypto\asn1\a_verify.d crypto\bn\bn_depr.d crypto\evp\m_ripemd.d crypto\ec\ec_asn1.d crypto\md4\md4_one.d crypto\hmac\hm_pmeth.d crypto\ct\ct_sct_ctx.d crypto\evp\e_xcbc_d.d crypto\poly1305\poly1305.d apps\pkcs12.d apps\ciphers.d test\buildtest_whrlpool.d crypto\des\rand_key.d crypto\asn1\tasn_enc.d ssl\statem\statem_dtls.d crypto\evp\m_mdc2.d crypto\x509v3\v3_ia5.d apps\ca.d crypto\evp\e_idea.d crypto\o_str.d crypto\bio\bss_null.d crypto\x509v3\v3_bcons.d crypto\engine\eng_openssl.d crypto\rsa\rsa_lib.d crypto\asn1\bio_ndef.d test\buildtest_camellia.d crypto\evp\p_open.d crypto\engine\eng_fat.d crypto\pkcs12\p12_attr.d crypto\aria\aria.d ssl\ssl_lib.d crypto\async\arch\async_posix.d crypto\asn1\a_gentm.d test\buildtest_ripemd.d crypto\md4\md4_dgst.d crypto\cms\cms_att.d crypto\x509\x509spki.d crypto\bn\bn_mod.d test\buildtest_kdf.d crypto\evp\bio_enc.d ssl\packet.d test\buildtest_asn1t.d test\buildtest_ts.d test\buildtest_blowfish.d test\buildtest_ec.d crypto\ts\ts_rsp_print.d crypto\ocsp\ocsp_err.d crypto\x509\x509_cmp.d crypto\ec\ec_mult.d crypto\engine\eng_pkey.d crypto\err\err_all.d crypto\bio\bf_buff.d crypto\ocsp\ocsp_vfy.d test\buildtest_rand_drbg.d ssl\s3_cbc.d crypto\objects\obj_err.d apps\genrsa.d crypto\x509\x509_err.d crypto\dh\dh_gen.d crypto\bf\bf_cfb64.d crypto\des\ofb64ede.d crypto\bn\bn_dh.d crypto\dh\dh_key.d crypto\ex_data.d crypto\buffer\buf_err.d crypto\dh\dh_check.d apps\dgst.d crypto\x509\x509_vfy.d crypto\asn1\a_mbstr.d crypto\asn1\d2i_pu.d ssl\statem\extensions_srvr.d ssl\ssl_mcnf.d crypto\bio\b_dump.d crypto\asn1\i2d_pr.d apps\spkac.d crypto\asn1\p5_pbe.d crypto\rsa\rsa_crpt.d apps\cms.d crypto\bn\bn_shift.d crypto\bn\bn_const.d crypto\bn\bn_blind.d crypto\asn1\x_sig.d crypto\dsa\dsa_lib.d crypto\pkcs12\p12_key.d crypto\whrlpool\wp_block.d crypto\ec\eck_prn.d crypto\pem\pem_pk8.d crypto\cryptlib.d crypto\ct\ct_vfy.d crypto\ec\ecx_meth.d crypto\ec\ecp_mont.d test\buildtest_bn.d crypto\idea\i_cbc.d crypto\evp\e_des3.d crypto\asn1\x_spki.d apps\req.d crypto\engine\tb_dh.d crypto\idea\i_ofb64.d apps\gendsa.d crypto\ec\ec_curve.d crypto\evp\m_md5.d crypto\evp\m_md5_sha1.d crypto\ec\ecp_nistputil.d crypto\camellia\cmll_ecb.d apps\crl.d crypto\pkcs12\p12_asn.d crypto\chacha\chacha_enc.d test\buildtest_evp.d crypto\modes\ctr128.d crypto\siphash\siphash_pmeth.d crypto\x509v3\v3_sxnet.d ssl\d1_lib.d crypto\kdf\scrypt.d crypto\ec\curve448\curve448_tables.d crypto\x509\x_req.d crypto\sha\keccak1600.d apps\pkcs7.d crypto\kdf\tls1_prf.d ssl\pqueue.d crypto\bio\bss_fd.d crypto\x509v3\v3_genn.d crypto\cast\c_ofb64.d crypto\asn1\x_long.d crypto\ripemd\rmd_dgst.d test\buildtest_x509.d crypto\o_dir.d apps\speed.d test\buildtest_md4.d crypto\x509\x509_req.d ssl\ssl_ciph.d crypto\asn1\a_type.d crypto\pkcs7\pk7_doit.d crypto\ec\ec_check.d crypto\x509\x509_trs.d crypto\ec\ec_key.d crypto\asn1\x_val.d crypto\modes\cfb128.d test\buildtest_srp.d crypto\x509v3\pcy_tree.d crypto\evp\cmeth_lib.d crypto\asn1\nsseq.d crypto\async\arch\async_win.d crypto\asn1\bio_asn1.d crypto\asn1\x_int64.d crypto\x509\x509_vpm.d crypto\engine\tb_dsa.d apps\s_cb.d crypto\rand\rand_egd.d crypto\sm2\sm2_crypt.d crypto\asn1\a_utf8.d test\buildtest_ct.d crypto\x509v3\v3_conf.d test\buildtest_async.d crypto\poly1305\poly1305_pmeth.d crypto\rsa\rsa_x931.d test\buildtest_conf_api.d crypto\bn\bn_mont.d test\buildtest_ssl.d crypto\dh\dh_meth.d crypto\ocsp\ocsp_lib.d crypto\asn1\a_dup.d test\buildtest_engine.d crypto\uid.d crypto\evp\e_bf.d crypto\des\str2key.d test\buildtest_stack.d test\buildtest_modes.d test\buildtest_aes.d crypto\sha\sha1_one.d crypto\asn1\tasn_fre.d crypto\asn1\a_strnid.d crypto\bn\bn_x931p.d crypto\x509v3\v3_skey.d crypto\ts\ts_err.d crypto\ocsp\v3_ocsp.d crypto\ct\ct_err.d crypto\bn\bn_recp.d ssl\statem\extensions_cust.d crypto\bn\bn_prime.d ssl\record\ssl3_record_tls13.d crypto\evp\p_verify.d crypto\ct\ct_oct.d crypto\dso\dso_win32.d crypto\rc2\rc2ofb64.d crypto\ui\ui_null.d crypto\rand\randfile.d crypto\ec\ecp_oct.d test\buildtest_hmac.d crypto\asn1\p5_scrypt.d crypto\evp\p5_crpt.d crypto\evp\e_aes_cbc_hmac_sha256.d test\buildtest_sha.d crypto\store\store_lib.d ssl\record\rec_layer_s3.d crypto\ts\ts_req_utils.d test\buildtest_ossl_typ.d crypto\evp\pbe_scrypt.d crypto\cmac\cmac.d crypto\asn1\evp_asn1.d test\buildtest_conf.d crypto\pkcs12\p12_init.d apps\dhparam.d crypto\pkcs12\p12_add.d crypto\asn1\asn1_par.d crypto\conf\conf_mall.d ssl\ssl_txt.d crypto\x509\x_x509.d crypto\bio\bf_lbuf.d test\buildtest_objects.d crypto\evp\e_rc5.d crypto\dso\dso_lib.d crypto\rand\rand_unix.d crypto\x509v3\v3_pcia.d crypto\modes\ocb128.d crypto\asn1\tasn_typ.d crypto\cpt_err.d crypto\aes\aes_wrap.d crypto\pkcs12\p12_decr.d apps\srp.d crypto\evp\e_des.d crypto\rand\drbg_ctr.d crypto\ec\ec2_oct.d crypto\evp\evp_key.d apps\ocsp.d crypto\engine\tb_cipher.d ssl\s3_msg.d crypto\seed\seed_ofb.d crypto\bn\bn_nist.d crypto\x509v3\v3_pci.d crypto\bio\b_print.d apps\app_rand.d crypto\x509v3\v3err.d crypto\ec\ec_lib.d crypto\evp\evp_cnf.d crypto\modes\ccm128.d ms\applink.d test\buildtest_pem.d crypto\dh\dh_prn.d crypto\threads_none.d apps\dsaparam.d crypto\aes\aes_core.d crypto\kdf\kdf_err.d crypto\bn\bn_sqrt.d crypto\dsa\dsa_key.d crypto\objects\obj_xref.d crypto\x509\t_crl.d ssl\statem\statem_lib.d crypto\conf\conf_sap.d ssl\t1_enc.d crypto\rand\rand_vms.d apps\rsa.d crypto\store\store_init.d crypto\dsa\dsa_asn1.d crypto\asn1\asn1_lib.d crypto\x509v3\v3_pcons.d crypto\ct\ct_b64.d crypto\evp\pmeth_lib.d crypto\asn1\asn_moid.d crypto\o_init.d crypto\pem\pem_lib.d crypto\x509v3\v3_akey.d crypto\des\fcrypt_b.d crypto\camellia\cmll_ofb.d crypto\cms\cms_io.d crypto\store\store_register.d crypto\modes\gcm128.d crypto\ocsp\ocsp_asn.d crypto\des\pcbc_enc.d crypto\bf\bf_enc.d crypto\engine\eng_init.d crypto\threads_win.d crypto\asn1\tasn_prn.d crypto\bio\bf_nbio.d crypto\pkcs7\pk7_mime.d test\buildtest_dtls1.d crypto\ocsp\ocsp_ht.d crypto\aes\aes_misc.d crypto\evp\p_enc.d crypto\evp\p_dec.d crypto\rsa\rsa_x931g.d apps\asn1pars.d crypto\ts\ts_verify_ctx.d test\buildtest_idea.d apps\x509.d crypto\rand\rand_lib.d engines\e_capi.d crypto\x509\x509_r2x.d crypto\cms\cms_sd.d crypto\init.d crypto\x509v3\v3_cpols.d apps\crl2p7.d crypto\hmac\hmac.d crypto\x509v3\v3_prn.d crypto\ct\ct_sct.d crypto\seed\seed_cbc.d ssl\d1_msg.d ssl\record\ssl3_buffer.d apps\opt.d crypto\pem\pem_all.d crypto\rsa\rsa_asn1.d crypto\stack\stack.d crypto\ocsp\ocsp_cl.d crypto\evp\evp_enc.d crypto\pem\pem_pkey.d crypto\bn\bn_ctx.d apps\dsa.d test\buildtest_srtp.d crypto\ts\ts_asn1.d apps\apps.d crypto\x509v3\v3_int.d apps\ts.d crypto\md5\md5_dgst.d test\buildtest_x509_vfy.d crypto\asn1\t_pkey.d crypto\evp\m_sigver.d crypto\kdf\hkdf.d crypto\cms\cms_kari.d crypto\sm3\m_sm3.d crypto\engine\eng_rdrand.d crypto\ec\curve448\arch_32\f_impl.d crypto\pkcs7\bio_pk7.d crypto\ec\ecdsa_sign.d crypto\engine\eng_cnf.d test\buildtest_comp.d test\buildtest_obj_mac.d crypto\ui\ui_err.d ssl\d1_srtp.d crypto\getenv.d test\buildtest_pkcs7.d crypto\x509\x509name.d crypto\ec\curve448\curve448.d crypto\bn\bn_kron.d crypto\pkcs7\pk7_attr.d crypto\x509\x509type.d crypto\x509v3\v3_enum.d crypto\mem_clr.d crypto\conf\conf_ssl.d crypto\engine\eng_all.d crypto\modes\xts128.d crypto\objects\o_names.d crypto\o_fips.d crypto\x509v3\v3_ncons.d crypto\evp\pmeth_fn.d crypto\bio\bss_dgram.d crypto\asn1\asn1_err.d test\buildtest_mdc2.d crypto\asn1\a_d2i_fp.d crypto\evp\e_rc4_hmac_md5.d crypto\bf\bf_ecb.d apps\nseq.d crypto\ts\ts_rsp_sign.d crypto\engine\tb_pkmeth.d crypto\evp\evp_lib.d crypto\dso\dso_dlfcn.d crypto\pkcs12\p12_npas.d crypto\sha\sha512.d crypto\evp\encode.d crypto\rsa\rsa_chk.d crypto\x509\x_x509a.d crypto\bn\bn_lib.d crypto\dsa\dsa_gen.d ssl\record\ssl3_record.d crypto\seed\seed_ecb.d crypto\des\cfb64ede.d crypto\dh\dh_lib.d crypto\x509v3\pcy_lib.d crypto\bf\bf_skey.d crypto\rand\drbg_lib.d crypto\cms\cms_err.d apps\smime.d crypto\bn\bn_word.d crypto\bn\bn_srp.d crypto\evp\pmeth_gn.d ssl\statem\extensions.d apps\passwd.d crypto\asn1\a_time.d crypto\cast\c_ecb.d crypto\bio\bss_bio.d crypto\des\ecb_enc.d crypto\modes\cts128.d crypto\engine\tb_rsa.d crypto\evp\digest.d crypto\rand\rand_err.d crypto\des\xcbc_enc.d crypto\bn\bn_div.d crypto\asn1\tasn_dec.d test\buildtest_rsa.d crypto\x509\x509_obj.d crypto\asn1\tasn_new.d crypto\siphash\siphash.d crypto\bio\bss_file.d crypto\idea\i_ecb.d crypto\des\cbc_cksm.d test\buildtest_buffer.d crypto\evp\c_allc.d ssl\s3_lib.d crypto\ec\curve448\eddsa.d crypto\evp\e_seed.d ssl\ssl_init.d crypto\pkcs7\pk7_lib.d crypto\ec\ecdsa_vrf.d crypto\ripemd\rmd_one.d crypto\dso\dso_openssl.d crypto\ec\ecp_nistp521.d crypto\engine\tb_asnmth.d crypto\sha\sha256.d apps\win32_init.d apps\genpkey.d crypto\rsa\rsa_gen.d crypto\bio\bio_lib.d crypto\x509\x_pubkey.d test\buildtest_ocsp.d crypto\asn1\a_octet.d crypto\x509v3\pcy_map.d crypto\x509\x509_def.d crypto\evp\evp_pkey.d
+DEPS=crypto\evp\e_rc4.d ssl\ssl_lib.d crypto\bio\bio_lib.d crypto\x509\x509spki.d crypto\rc4\rc4_enc.d test\buildtest_engine.d crypto\pkcs7\pk7_doit.d ssl\t1_trce.d crypto\ctype.d crypto\mem_clr.d engines\e_padlock.d crypto\bio\bss_fd.d crypto\x509\x_req.d test\buildtest_rsa.d test\buildtest_crypto.d crypto\modes\ofb128.d crypto\seed\seed_ofb.d crypto\des\ofb_enc.d crypto\ui\ui_openssl.d crypto\evp\e_bf.d test\buildtest_bn.d crypto\engine\tb_dsa.d crypto\evp\e_idea.d crypto\ocsp\ocsp_srv.d crypto\pkcs7\pk7_smime.d crypto\bf\bf_skey.d test\buildtest_blowfish.d crypto\ec\ec2_oct.d crypto\asn1\d2i_pr.d test\buildtest_tls1.d crypto\evp\m_md5_sha1.d crypto\evp\digest.d crypto\md5\md5_one.d crypto\ts\ts_rsp_verify.d crypto\x509\x509_set.d apps\s_time.d crypto\rsa\rsa_oaep.d crypto\asn1\asn_pack.d crypto\ct\ct_log.d test\buildtest_srp.d crypto\x509\x_exten.d apps\speed.d crypto\evp\e_rc5.d crypto\x509v3\v3_alt.d crypto\asn1\x_info.d crypto\rsa\rsa_saos.d crypto\engine\eng_err.d ssl\statem\statem.d crypto\evp\p_lib.d crypto\x509v3\pcy_data.d crypto\blake2\m_blake2s.d apps\pkcs7.d crypto\x509v3\v3_cpols.d crypto\bio\b_addr.d crypto\camellia\cmll_ecb.d crypto\ec\ecp_nist.d crypto\des\pcbc_enc.d crypto\store\store_init.d crypto\ec\ec_pmeth.d crypto\evp\e_cast.d crypto\ec\ec_oct.d crypto\ocsp\ocsp_cl.d crypto\engine\tb_rsa.d crypto\ocsp\ocsp_err.d crypto\x509v3\v3_enum.d crypto\bio\bss_acpt.d crypto\modes\gcm128.d crypto\kdf\tls1_prf.d crypto\engine\tb_dh.d crypto\cms\cms_pwri.d crypto\ct\ct_prn.d crypto\pem\pem_x509.d crypto\siphash\siphash_pmeth.d ssl\tls13_enc.d crypto\bn\bn_gcd.d crypto\asn1\x_int64.d crypto\x509\x509_trs.d crypto\rc4\rc4_skey.d crypto\bn\bn_mpi.d crypto\camellia\cmll_cfb.d crypto\engine\tb_digest.d crypto\ts\ts_req_print.d crypto\evp\p5_crpt2.d test\buildtest_pem2.d crypto\des\ofb64ede.d crypto\x509v3\v3_asid.d crypto\conf\conf_ssl.d crypto\x509v3\v3_bcons.d crypto\camellia\cmll_ctr.d crypto\x509\t_x509.d crypto\ec\ecdh_kdf.d ssl\s3_enc.d crypto\rsa\rsa_ameth.d apps\rsa.d crypto\x509v3\v3_tlsf.d crypto\siphash\siphash_ameth.d crypto\x509\x509_r2x.d crypto\bf\bf_ofb64.d test\buildtest_comp.d crypto\asn1\a_print.d crypto\rsa\rsa_asn1.d apps\openssl.d crypto\cmac\cm_ameth.d ssl\tls_srp.d crypto\seed\seed_cfb.d test\buildtest_ripemd.d crypto\bn\bn_srp.d crypto\ec\curve448\curve448_tables.d crypto\dh\dh_rfc5114.d crypto\rsa\rsa_x931.d test\buildtest_ebcdic.d ssl\statem\statem_lib.d crypto\asn1\asn_mstbl.d crypto\asn1\a_octet.d test\buildtest_md5.d apps\dgst.d crypto\engine\eng_openssl.d engines\e_capi.d crypto\x509\x509_vfy.d crypto\evp\m_mdc2.d ssl\record\ssl3_record_tls13.d test\buildtest_ecdsa.d apps\ts.d crypto\o_time.d test\buildtest_ssl.d ssl\ssl_asn1.d crypto\evp\bio_enc.d ssl\d1_msg.d crypto\rsa\rsa_prn.d crypto\x509\t_req.d crypto\bio\bf_buff.d apps\enc.d crypto\lhash\lhash.d crypto\evp\p_sign.d crypto\rsa\rsa_crpt.d crypto\dso\dso_dlfcn.d crypto\bn\bn_print.d test\buildtest_kdf.d crypto\bn\bn_dh.d crypto\pkcs12\p12_mutl.d crypto\ripemd\rmd_one.d crypto\bn\bn_exp.d crypto\x509v3\v3_lib.d crypto\ct\ct_sct.d crypto\x509v3\v3_skey.d crypto\ec\ec_mult.d test\buildtest_ocsp.d apps\x509.d crypto\siphash\siphash.d crypto\ripemd\rmd_dgst.d crypto\pkcs12\p12_npas.d crypto\sha\keccak1600.d crypto\txt_db\txt_db.d crypto\pem\pem_pkey.d crypto\x509\x_x509.d crypto\cms\cms_ess.d crypto\ocsp\ocsp_ht.d crypto\sha\sha1dgst.d crypto\chacha\chacha_enc.d crypto\ts\ts_req_utils.d crypto\cpt_err.d test\buildtest_ecdh.d crypto\x509v3\v3_pmaps.d ssl\d1_srtp.d crypto\x509\x509_att.d crypto\pem\pem_oth.d test\buildtest_modes.d test\buildtest_pkcs12.d crypto\x509\by_file.d crypto\bio\bio_err.d crypto\des\ofb64enc.d crypto\asn1\tasn_fre.d test\buildtest_ts.d crypto\ex_data.d apps\s_socket.d crypto\cms\cms_asn1.d crypto\ocsp\ocsp_lib.d test\buildtest_safestack.d ssl\record\rec_layer_s3.d apps\smime.d crypto\ui\ui_lib.d crypto\evp\e_aes.d crypto\x509v3\v3_akey.d crypto\ec\ec_print.d crypto\ec\ecp_nistp224.d ssl\ssl_conf.d crypto\x509\by_dir.d crypto\asn1\f_int.d crypto\evp\pmeth_lib.d crypto\aria\aria.d crypto\pkcs12\p12_crt.d apps\opt.d crypto\evp\m_md5.d crypto\dso\dso_openssl.d crypto\bn\bn_sqr.d ssl\t1_lib.d crypto\ui\ui_null.d crypto\bn\bn_shift.d crypto\x509v3\v3_pci.d crypto\asn1\a_utf8.d crypto\aes\aes_cfb.d crypto\engine\tb_pkmeth.d crypto\evp\m_null.d crypto\asn1\nsseq.d crypto\conf\conf_sap.d crypto\des\xcbc_enc.d crypto\dso\dso_win32.d crypto\cms\cms_io.d ssl\record\ssl3_record.d crypto\rand\drbg_lib.d crypto\evp\e_aes_cbc_hmac_sha256.d crypto\dsa\dsa_depr.d crypto\des\ecb_enc.d test\buildtest_idea.d test\buildtest_ct.d crypto\asn1\a_i2d_fp.d crypto\engine\eng_cnf.d crypto\getenv.d test\buildtest_cast.d crypto\des\cfb64enc.d crypto\bio\bss_log.d crypto\asn1\x_spki.d ssl\statem\statem_clnt.d apps\storeutl.d crypto\aes\aes_misc.d crypto\ct\ct_err.d ssl\statem\extensions_srvr.d apps\srp.d crypto\modes\ocb128.d crypto\asn1\tasn_utl.d crypto\evp\p_seal.d crypto\conf\conf_mall.d crypto\cms\cms_err.d crypto\rand\rand_err.d crypto\ec\ec2_smpl.d crypto\ui\ui_err.d crypto\ec\curve448\f_generic.d crypto\evp\evp_pbe.d crypto\async\arch\async_null.d crypto\asn1\x_long.d apps\dhparam.d crypto\x509v3\v3_extku.d crypto\rsa\rsa_sign.d crypto\engine\eng_list.d crypto\blake2\blake2s.d apps\rand.d crypto\dh\dh_pmeth.d crypto\sm2\sm2_crypt.d apps\ecparam.d crypto\asn1\tasn_prn.d crypto\pkcs12\p12_decr.d crypto\cms\cms_att.d crypto\bf\bf_ecb.d crypto\ocsp\v3_ocsp.d crypto\x509\x509_ext.d ssl\ssl_utst.d crypto\dsa\dsa_vrf.d crypto\x509v3\v3_genn.d crypto\poly1305\poly1305.d crypto\evp\m_md4.d crypto\x509v3\v3_admis.d crypto\bio\bss_mem.d crypto\bn\bn_exp2.d test\buildtest_dsa.d crypto\rsa\rsa_err.d crypto\ec\curve448\curve448.d crypto\aes\aes_cbc.d crypto\x509v3\v3_sxnet.d apps\apps.d crypto\bn\bn_recp.d crypto\mdc2\mdc2_one.d crypto\asn1\asn_moid.d test\ssl_ctx_test.d crypto\dsa\dsa_gen.d crypto\md4\md4_dgst.d test\buildtest_aes.d crypto\pkcs12\p12_utl.d crypto\ec\ecp_nistp256.d test\buildtest_seed.d crypto\des\str2key.d test\buildtest_rand_drbg.d apps\genpkey.d test\buildtest_x509.d crypto\asn1\a_sign.d crypto\dh\dh_meth.d apps\cms.d crypto\bio\bss_sock.d crypto\pkcs12\p12_sbag.d crypto\asn1\asn1_err.d crypto\bio\bss_conn.d crypto\lhash\lh_stats.d apps\version.d crypto\x509\x_pubkey.d crypto\x509\t_crl.d crypto\bio\b_sock2.d crypto\engine\eng_rdrand.d crypto\x509v3\pcy_lib.d crypto\asn1\a_digest.d ssl\ssl_cert.d crypto\bn\bn_kron.d crypto\pem\pem_info.d crypto\asn1\bio_asn1.d test\buildtest_objects.d crypto\pkcs12\p12_p8d.d crypto\asn1\x_sig.d crypto\x509v3\v3_ncons.d crypto\asn1\tasn_typ.d crypto\ec\curve25519.d crypto\whrlpool\wp_block.d crypto\bio\bf_nbio.d crypto\evp\bio_b64.d crypto\evp\e_aes_cbc_hmac_sha1.d crypto\rsa\rsa_ossl.d crypto\engine\eng_init.d crypto\asn1\x_algor.d crypto\ec\curve448\eddsa.d crypto\evp\evp_err.d crypto\dso\dso_vms.d crypto\bn\bn_div.d crypto\asn1\t_spki.d crypto\des\cfb64ede.d crypto\pkcs7\pk7_asn1.d crypto\x509\x509rset.d crypto\evp\p_dec.d crypto\idea\i_cfb64.d crypto\bn\bn_asm.d test\buildtest_async.d crypto\x509v3\pcy_map.d crypto\bn\bn_intern.d crypto\evp\evp_lib.d crypto\pkcs7\pkcs7err.d ssl\pqueue.d crypto\pkcs12\p12_kiss.d crypto\store\loader_file.d crypto\rsa\rsa_lib.d test\buildtest_e_os2.d crypto\asn1\a_bitstr.d crypto\evp\m_sha1.d crypto\dsa\dsa_meth.d ssl\packet.d crypto\evp\evp_cnf.d crypto\rsa\rsa_pmeth.d crypto\aes\aes_ige.d crypto\buffer\buf_err.d crypto\x509v3\v3_purp.d crypto\x509v3\pcy_cache.d crypto\pkcs12\pk12err.d crypto\rand\rand_lib.d crypto\cmac\cm_pmeth.d crypto\mem_dbg.d test\buildtest_des.d crypto\pem\pem_xaux.d crypto\x509\x_name.d crypto\x509\x_crl.d crypto\evp\pmeth_fn.d crypto\cms\cms_lib.d crypto\dsa\dsa_key.d crypto\asn1\d2i_pu.d ssl\statem\extensions_cust.d crypto\aes\aes_ecb.d crypto\asn1\p5_scrypt.d crypto\bio\b_sock.d test\buildtest_dtls1.d crypto\cast\c_cfb64.d crypto\mdc2\mdc2dgst.d crypto\engine\eng_dyn.d crypto\x509v3\pcy_tree.d crypto\srp\srp_lib.d crypto\rc2\rc2_skey.d crypto\ui\ui_util.d test\buildtest_rc2.d crypto\asn1\asn_mime.d crypto\bio\bio_cb.d test\buildtest_md4.d crypto\rand\drbg_ctr.d crypto\cmac\cmac.d apps\pkey.d crypto\asn1\tasn_scn.d crypto\x509v3\v3_addr.d crypto\modes\wrap128.d crypto\asn1\p8_pkey.d crypto\des\cfb_enc.d ssl\ssl_init.d crypto\evp\names.d crypto\x509v3\v3_bitst.d crypto\rc2\rc2cfb64.d crypto\asn1\asn1_lib.d crypto\bn\bn_rand.d crypto\asn1\bio_ndef.d crypto\rand\rand_egd.d ssl\s3_msg.d crypto\async\arch\async_posix.d crypto\ec\curve448\scalar.d ssl\ssl_mcnf.d test\buildtest_ossl_typ.d crypto\evp\e_aria.d test\buildtest_mdc2.d crypto\x509\x_attrib.d crypto\engine\eng_pkey.d crypto\ct\ct_sct_ctx.d crypto\pkcs12\p12_key.d crypto\asn1\a_verify.d crypto\threads_none.d crypto\evp\m_ripemd.d crypto\x509v3\v3_prn.d crypto\dso\dso_lib.d crypto\conf\conf_err.d crypto\sm3\m_sm3.d crypto\kdf\hkdf.d ssl\statem\extensions.d test\buildtest_lhash.d apps\prime.d crypto\x509v3\v3_utl.d crypto\pem\pem_err.d test\buildtest_pem.d crypto\ec\ecdsa_ossl.d crypto\evp\p5_crpt.d crypto\pem\pem_all.d crypto\rand\rand_win.d crypto\dsa\dsa_prn.d crypto\cryptlib.d crypto\evp\p_open.d ssl\statem\statem_dtls.d test\buildtest_rc4.d crypto\des\rand_key.d apps\ciphers.d crypto\pkcs12\p12_init.d crypto\ts\ts_rsp_sign.d crypto\asn1\a_strnid.d crypto\x509\x509_meth.d crypto\x509\x509_err.d test\buildtest_x509v3.d apps\gendsa.d crypto\seed\seed.d crypto\ec\ecp_nistputil.d test\buildtest_hmac.d crypto\aes\aes_wrap.d crypto\rand\randfile.d crypto\ocsp\ocsp_prn.d crypto\engine\eng_table.d crypto\seed\seed_ecb.d crypto\asn1\p5_pbe.d crypto\dsa\dsa_ameth.d ssl\ssl_ciph.d crypto\store\store_err.d crypto\rsa\rsa_mp.d crypto\bn\bn_sqrt.d crypto\evp\e_camellia.d crypto\ts\ts_asn1.d test\buildtest_buffer.d crypto\dsa\dsa_asn1.d crypto\ec\ec_kmeth.d crypto\dh\dh_depr.d crypto\pkcs12\p12_attr.d crypto\conf\conf_def.d apps\ca.d crypto\asn1\a_utctm.d crypto\des\cbc_cksm.d apps\sess_id.d apps\ocsp.d apps\crl2p7.d crypto\objects\obj_xref.d test\buildtest_pkcs7.d ssl\s3_cbc.d crypto\kdf\scrypt.d crypto\engine\eng_lib.d crypto\dh\dh_lib.d crypto\pkcs7\pk7_attr.d crypto\threads_pthread.d crypto\asn1\a_strex.d crypto\cms\cms_dd.d crypto\dh\dh_check.d crypto\x509\x509_def.d crypto\bn\bn_mont.d crypto\evp\pmeth_gn.d apps\bf_prefix.d crypto\hmac\hm_ameth.d crypto\sha\sha256.d crypto\x509\x509_d2.d crypto\pem\pem_sign.d crypto\x509\x509_obj.d crypto\cms\cms_cd.d crypto\pem\pem_pk8.d crypto\asn1\ameth_lib.d crypto\bn\bn_gf2m.d crypto\des\set_key.d ssl\s3_lib.d test\buildtest_sha.d crypto\pkcs7\pk7_mime.d crypto\rsa\rsa_chk.d test\buildtest_asn1t.d crypto\store\store_lib.d crypto\evp\pbe_scrypt.d crypto\dh\dh_gen.d crypto\ct\ct_b64.d crypto\x509v3\v3_conf.d crypto\asn1\p5_pbev2.d crypto\pkcs7\pk7_lib.d crypto\cversion.d crypto\x509v3\v3_pku.d crypto\x509\x_all.d apps\engine.d crypto\x509v3\v3_info.d crypto\asn1\asn1_gen.d crypto\aes\aes_core.d crypto\conf\conf_lib.d apps\spkac.d crypto\conf\conf_mod.d crypto\bio\bss_file.d crypto\dh\dh_asn1.d test\buildtest_txt_db.d apps\asn1pars.d crypto\cms\cms_smime.d crypto\bn\bn_err.d crypto\dh\dh_ameth.d apps\win32_init.d crypto\asn1\f_string.d crypto\objects\obj_dat.d crypto\bio\bss_bio.d crypto\blake2\blake2b.d crypto\ts\ts_verify_ctx.d crypto\idea\i_skey.d crypto\x509\x509_vpm.d crypto\asn1\a_int.d crypto\ec\ecdsa_vrf.d crypto\asn1\a_gentm.d crypto\aes\aes_ofb.d crypto\asn1\t_bitst.d crypto\ec\ec_key.d crypto\des\fcrypt_b.d crypto\bio\bio_meth.d crypto\evp\m_md2.d ssl\record\dtls1_bitmap.d crypto\rsa\rsa_pss.d crypto\dh\dh_prn.d crypto\rsa\rsa_ssl.d test\buildtest_evp.d crypto\x509v3\v3_int.d crypto\o_dir.d crypto\asn1\i2d_pu.d crypto\asn1\a_dup.d test\buildtest_conf_api.d apps\pkeyutl.d test\buildtest_ssl2.d ssl\ssl_err.d test\buildtest_store.d crypto\ec\ecp_oct.d crypto\des\cbc_enc.d crypto\whrlpool\wp_dgst.d crypto\x509v3\v3_ia5.d apps\errstr.d test\buildtest_stack.d crypto\asn1\x_bignum.d crypto\x509\x509type.d crypto\pkcs12\p12_crpt.d crypto\ebcdic.d crypto\buffer\buffer.d crypto\evp\e_null.d crypto\objects\o_names.d crypto\ec\ec_err.d test\buildtest_asn1.d crypto\evp\e_chacha20_poly1305.d crypto\ocsp\ocsp_vfy.d crypto\x509\x509_v3.d crypto\bn\bn_word.d crypto\dso\dso_err.d crypto\sha\sha1_one.d crypto\rand\rand_unix.d crypto\cast\c_skey.d crypto\evp\cmeth_lib.d crypto\ct\ct_x509v3.d crypto\o_str.d ssl\bio_ssl.d crypto\md4\md4_one.d test\buildtest_bio.d crypto\store\store_strings.d test\buildtest_dh.d crypto\pem\pem_lib.d crypto\err\err_all.d crypto\ts\ts_lib.d crypto\mem_sec.d apps\rehash.d crypto\engine\eng_ctrl.d apps\rsautl.d test\buildtest_symhacks.d apps\s_cb.d crypto\poly1305\poly1305_ameth.d ssl\t1_enc.d crypto\cms\cms_env.d crypto\ec\ec_check.d crypto\ec\ec_cvt.d crypto\dsa\dsa_pmeth.d crypto\err\err.d apps\dsa.d test\buildtest_srtp.d crypto\pkcs7\bio_pk7.d test\buildtest_opensslv.d crypto\threads_win.d test\buildtest_obj_mac.d crypto\rc2\rc2ofb64.d crypto\err\err_prn.d crypto\dsa\dsa_lib.d crypto\engine\eng_fat.d crypto\engine\tb_rand.d test\buildtest_conf.d crypto\rsa\rsa_meth.d crypto\mem.d apps\crl.d apps\pkcs12.d ssl\d1_lib.d crypto\asn1\a_mbstr.d crypto\asn1\i2d_pr.d crypto\ts\ts_err.d crypto\rsa\rsa_none.d crypto\o_fopen.d crypto\evp\p_enc.d crypto\dh\dh_kdf.d crypto\asn1\t_pkey.d crypto\cast\c_ofb64.d crypto\x509\x509_lu.d crypto\evp\e_des.d crypto\bf\bf_enc.d crypto\sm3\sm3.d crypto\evp\c_allc.d crypto\rc2\rc2_cbc.d crypto\store\store_register.d crypto\hmac\hmac.d crypto\ec\ec_lib.d ssl\ssl_stat.d crypto\x509\x509_cmp.d ssl\statem\extensions_clnt.d ssl\record\rec_layer_d1.d crypto\bf\bf_cfb64.d test\buildtest_camellia.d ssl\ssl_rsa.d crypto\sm2\sm2_pmeth.d crypto\evp\evp_key.d crypto\ts\ts_conf.d crypto\comp\comp_err.d crypto\stack\stack.d crypto\ec\curve448\arch_32\f_impl.d crypto\camellia\camellia.d crypto\bio\b_print.d crypto\engine\tb_cipher.d crypto\modes\xts128.d crypto\sha\sha512.d crypto\poly1305\poly1305_pmeth.d test\buildtest_cmac.d crypto\ocsp\ocsp_asn.d crypto\engine\eng_all.d crypto\bio\bss_null.d crypto\x509\x509_txt.d crypto\x509v3\pcy_node.d crypto\hmac\hm_pmeth.d apps\s_server.d apps\nseq.d crypto\dh\dh_rfc7919.d crypto\ct\ct_policy.d crypto\engine\tb_eckey.d crypto\bn\bn_depr.d crypto\des\ecb3_enc.d crypto\x509\x509name.d crypto\bn\bn_blind.d crypto\objects\obj_err.d crypto\modes\ccm128.d crypto\evp\encode.d crypto\conf\conf_api.d crypto\bn\bn_mod.d crypto\bio\b_dump.d crypto\bn\bn_const.d crypto\evp\e_sm4.d apps\s_client.d crypto\dso\dso_dl.d crypto\asn1\asn1_item_list.d crypto\cms\cms_kari.d crypto\ts\ts_rsp_utils.d crypto\des\des_enc.d crypto\rsa\rsa_pk1.d crypto\idea\i_ofb64.d crypto\ec\ecx_meth.d crypto\asn1\a_d2i_fp.d crypto\bn\bn_lib.d crypto\asn1\a_time.d crypto\asn1\x_val.d crypto\bn\bn_prime.d crypto\modes\cts128.d crypto\async\async.d crypto\evp\c_alld.d crypto\idea\i_cbc.d apps\genrsa.d crypto\ocsp\ocsp_ext.d crypto\dsa\dsa_sign.d test\buildtest_ec.d crypto\dh\dh_err.d crypto\o_init.d crypto\bio\bss_dgram.d crypto\evp\e_des3.d crypto\blake2\m_blake2b.d crypto\camellia\cmll_misc.d crypto\async\arch\async_win.d crypto\x509\x509cset.d crypto\asn1\x_pkey.d crypto\cms\cms_sd.d crypto\asn1\asn1_par.d crypto\modes\cbc128.d crypto\init.d crypto\md5\md5_dgst.d apps\passwd.d crypto\ec\ecp_mont.d apps\app_rand.d crypto\x509v3\v3err.d ssl\ssl_sess.d crypto\asn1\a_object.d crypto\idea\i_ecb.d crypto\ct\ct_oct.d ssl\statem\statem_srvr.d crypto\pkcs12\p12_add.d crypto\comp\c_zlib.d crypto\modes\cfb128.d crypto\evp\m_wp.d crypto\pem\pvkfmt.d crypto\rsa\rsa_x931g.d crypto\bn\bn_ctx.d crypto\asn1\tasn_new.d crypto\evp\bio_md.d crypto\o_fips.d crypto\evp\p_verify.d test\buildtest_whrlpool.d crypto\rsa\rsa_depr.d ssl\record\ssl3_buffer.d crypto\x509\x_x509a.d crypto\bn\bn_add.d crypto\camellia\cmll_cbc.d crypto\asn1\tasn_dec.d crypto\rc2\rc2_ecb.d crypto\asn1\tasn_enc.d crypto\cms\cms_enc.d crypto\bn\bn_mul.d crypto\evp\evp_pkey.d crypto\evp\e_old.d crypto\bn\bn_nist.d apps\pkeyparam.d crypto\x509v3\v3_pcons.d crypto\sm2\sm2_err.d crypto\ts\ts_rsp_print.d crypto\bn\bn_x931p.d crypto\sm2\sm2_sign.d crypto\evp\m_sha3.d crypto\cast\c_enc.d apps\pkcs8.d crypto\asn1\n_pkey.d crypto\cast\c_ecb.d crypto\ec\ec_ameth.d test\buildtest_cms.d crypto\evp\bio_ok.d crypto\ec\ec_curve.d crypto\bio\bf_lbuf.d crypto\dsa\dsa_ossl.d crypto\modes\ctr128.d crypto\srp\srp_vfy.d crypto\x509v3\v3_crld.d apps\ec.d crypto\pkcs12\p12_p8e.d apps\req.d crypto\kdf\kdf_err.d crypto\objects\obj_lib.d crypto\ec\ecp_smpl.d test\buildtest_ui.d crypto\dh\dh_key.d crypto\ec\ecdsa_sign.d crypto\ec\ecdh_ossl.d crypto\x509v3\v3_pcia.d ssl\ssl_txt.d test\buildtest_rand.d crypto\comp\comp_lib.d crypto\uid.d crypto\asn1\a_type.d crypto\evp\m_sigver.d crypto\ec\ecp_nistp521.d crypto\bio\bf_null.d apps\dsaparam.d crypto\x509\x509_req.d crypto\x509v3\v3_akeya.d test\buildtest_x509_vfy.d crypto\ct\ct_vfy.d crypto\des\qud_cksm.d crypto\async\async_err.d crypto\asn1\evp_asn1.d crypto\evp\evp_enc.d crypto\rsa\rsa_gen.d crypto\async\async_wait.d crypto\pkcs12\p12_asn.d apps\verify.d crypto\engine\tb_asnmth.d crypto\rand\rand_vms.d crypto\ec\eck_prn.d crypto\evp\e_seed.d crypto\seed\seed_cbc.d crypto\camellia\cmll_ofb.d crypto\des\fcrypt.d crypto\evp\e_xcbc_d.d crypto\sm4\sm4.d crypto\dsa\dsa_err.d crypto\evp\e_rc4_hmac_md5.d crypto\ec\ec_asn1.d ssl\methods.d crypto\evp\e_rc2.d
 
 GENERATED_MANDATORY=include\crypto\bn_conf.h include\crypto\dso_conf.h include\openssl\opensslconf.h
-GENERATED=apps\CA.pl apps\openssl.rc apps\progs.h apps\tsget.pl crypto\buildinf.h crypto\uplink-x86_64.asm libcrypto.def libcrypto.rc libssl.def libssl.rc test\buildtest_aes.c test\buildtest_asn1.c test\buildtest_asn1t.c test\buildtest_async.c test\buildtest_bio.c test\buildtest_blowfish.c test\buildtest_bn.c test\buildtest_buffer.c test\buildtest_camellia.c test\buildtest_cast.c test\buildtest_cmac.c test\buildtest_cms.c test\buildtest_comp.c test\buildtest_conf.c test\buildtest_conf_api.c test\buildtest_crypto.c test\buildtest_ct.c test\buildtest_des.c test\buildtest_dh.c test\buildtest_dsa.c test\buildtest_dtls1.c test\buildtest_e_os2.c test\buildtest_ebcdic.c test\buildtest_ec.c test\buildtest_ecdh.c test\buildtest_ecdsa.c test\buildtest_engine.c test\buildtest_evp.c test\buildtest_hmac.c test\buildtest_idea.c test\buildtest_kdf.c test\buildtest_lhash.c test\buildtest_md4.c test\buildtest_md5.c test\buildtest_mdc2.c test\buildtest_modes.c test\buildtest_obj_mac.c test\buildtest_objects.c test\buildtest_ocsp.c test\buildtest_opensslv.c test\buildtest_ossl_typ.c test\buildtest_pem.c test\buildtest_pem2.c test\buildtest_pkcs12.c test\buildtest_pkcs7.c test\buildtest_rand.c test\buildtest_rand_drbg.c test\buildtest_rc2.c test\buildtest_rc4.c test\buildtest_ripemd.c test\buildtest_rsa.c test\buildtest_safestack.c test\buildtest_seed.c test\buildtest_sha.c test\buildtest_srp.c test\buildtest_srtp.c test\buildtest_ssl.c test\buildtest_ssl2.c test\buildtest_stack.c test\buildtest_store.c test\buildtest_symhacks.c test\buildtest_tls1.c test\buildtest_ts.c test\buildtest_txt_db.c test\buildtest_ui.c test\buildtest_whrlpool.c test\buildtest_x509.c test\buildtest_x509_vfy.c test\buildtest_x509v3.c tools\c_rehash.pl
+GENERATED=apps\CA.pl apps\openssl.rc apps\progs.h apps\tsget.pl crypto\buildinf.h test\buildtest_aes.c test\buildtest_asn1.c test\buildtest_asn1t.c test\buildtest_async.c test\buildtest_bio.c test\buildtest_blowfish.c test\buildtest_bn.c test\buildtest_buffer.c test\buildtest_camellia.c test\buildtest_cast.c test\buildtest_cmac.c test\buildtest_cms.c test\buildtest_comp.c test\buildtest_conf.c test\buildtest_conf_api.c test\buildtest_crypto.c test\buildtest_ct.c test\buildtest_des.c test\buildtest_dh.c test\buildtest_dsa.c test\buildtest_dtls1.c test\buildtest_e_os2.c test\buildtest_ebcdic.c test\buildtest_ec.c test\buildtest_ecdh.c test\buildtest_ecdsa.c test\buildtest_engine.c test\buildtest_evp.c test\buildtest_hmac.c test\buildtest_idea.c test\buildtest_kdf.c test\buildtest_lhash.c test\buildtest_md4.c test\buildtest_md5.c test\buildtest_mdc2.c test\buildtest_modes.c test\buildtest_obj_mac.c test\buildtest_objects.c test\buildtest_ocsp.c test\buildtest_opensslv.c test\buildtest_ossl_typ.c test\buildtest_pem.c test\buildtest_pem2.c test\buildtest_pkcs12.c test\buildtest_pkcs7.c test\buildtest_rand.c test\buildtest_rand_drbg.c test\buildtest_rc2.c test\buildtest_rc4.c test\buildtest_ripemd.c test\buildtest_rsa.c test\buildtest_safestack.c test\buildtest_seed.c test\buildtest_sha.c test\buildtest_srp.c test\buildtest_srtp.c test\buildtest_ssl.c test\buildtest_ssl2.c test\buildtest_stack.c test\buildtest_store.c test\buildtest_symhacks.c test\buildtest_tls1.c test\buildtest_ts.c test\buildtest_txt_db.c test\buildtest_ui.c test\buildtest_whrlpool.c test\buildtest_x509.c test\buildtest_x509_vfy.c test\buildtest_x509v3.c tools\c_rehash.pl
 
 INSTALL_LIBS="libcrypto.lib" "libssl.lib"
-INSTALL_SHLIBS="libcrypto-1_1-x64.dll" "libssl-1_1-x64.dll"
-INSTALL_SHLIBPDBS="libcrypto-1_1-x64.pdb" "libssl-1_1-x64.pdb"
-INSTALL_ENGINES="engines\\capi.dll" "engines\\padlock.dll"
-INSTALL_ENGINEPDBS="engines\\capi.pdb" "engines\\padlock.pdb"
+INSTALL_SHLIBS=
+INSTALL_SHLIBPDBS=
+INSTALL_ENGINES=
+INSTALL_ENGINEPDBS=
 INSTALL_PROGRAMS="apps\\openssl.exe"
 INSTALL_PROGRAMPDBS="apps\\openssl.pdb"
 
@@ -107,8 +107,8 @@ RCOUTFLAG=/fo$(OSSL_EMPTY)
 # Variables starting with CNF_ are common variables for all product types
 
 CNF_ASFLAGS=-Ox -f win64 -DNEAR
-CNF_CPPFLAGS=-D"OPENSSL_SYS_WIN32" -D"WIN32_LEAN_AND_MEAN" -D"UNICODE" -D"_UNICODE" -D"_CRT_SECURE_NO_DEPRECATE" -D"_WINSOCK_DEPRECATED_NO_WARNINGS" -D"DEBUG" -D"_DEBUG" -D"OPENSSL_USE_APPLINK"
-CNF_CFLAGS=/Gs0 /GF /Gy /MDd
+CNF_CPPFLAGS=-D"OPENSSL_SYS_WIN32" -D"WIN32_LEAN_AND_MEAN" -D"UNICODE" -D"_UNICODE" -D"_CRT_SECURE_NO_DEPRECATE" -D"_WINSOCK_DEPRECATED_NO_WARNINGS" -D"DEBUG" -D"_DEBUG"
+CNF_CFLAGS=/Gs0 /GF /Gy
 CNF_CXXFLAGS=
 CNF_LDFLAGS=
 CNF_EX_LIBS=ws2_32.lib gdi32.lib advapi32.lib crypt32.lib user32.lib
@@ -121,7 +121,7 @@ CNF_EX_LIBS=ws2_32.lib gdi32.lib advapi32.lib crypt32.lib user32.lib
 
 LIB_ASFLAGS=$(CNF_ASFLAGS) $(ASFLAGS)
 LIB_CPPFLAGS=-D"L_ENDIAN" -D"OPENSSL_PIC" -D"OPENSSLDIR=\"E:\\Github\\OpenSSL\\openssl-1.1.1h\\x64\\Debug\\ssl\"" -D"ENGINESDIR=\"E:\\Github\\OpenSSL\\openssl-1.1.1h\\x64\\Debug\\lib\\engines-1_1\"" $(CNF_CPPFLAGS) $(CPPFLAGS)
-LIB_CFLAGS=/Zi /Fdossl_static.pdb $(CNF_CFLAGS) $(CFLAGS)
+LIB_CFLAGS=/Zi /Fdossl_static.pdb /MT /Zl $(CNF_CFLAGS) $(CFLAGS)
 LIB_LDFLAGS=/dll $(CNF_LDFLAGS) $(LDFLAGS)
 LIB_EX_LIBS=$(CNF_EX_LIBS) $(EX_LIBS)
 DSO_ASFLAGS=$(CNF_ASFLAGS) $(ASFLAGS)
@@ -158,7 +158,7 @@ build_programs: build_generated
 _build_programs: build_programs_nodep
 
 build_generated: $(GENERATED_MANDATORY)
-build_libs_nodep: $(LIBS) libcrypto.lib libssl.lib
+build_libs_nodep: $(LIBS) 
 build_engines_nodep: $(ENGINES)
 build_programs_nodep: $(PROGRAMS) $(SCRIPTS)
 
@@ -317,9 +317,6 @@ install_dev: install_runtime_libs
 	@$(ECHO) "*** Installing development files"
 	@"$(PERL)" "$(SRCDIR)\util\mkdir-p.pl" "$(INSTALLTOP)\include\openssl"
 	@
-	@"$(PERL)" "$(SRCDIR)\util\copy.pl" "$(SRCDIR)\ms\applink.c" \
-				       "$(INSTALLTOP)\include\openssl"
-	@
 	@"$(PERL)" "$(SRCDIR)\util\copy.pl" "-exclude_re=/__DECC_" \
 				       "$(SRCDIR)\include\openssl\*.h" \
 				       "$(INSTALLTOP)\include\openssl"
@@ -430,17 +427,8 @@ apps\s_socket.obj: "apps\s_socket.c"
 apps\win32_init.obj: "apps\win32_init.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) -c $(COUTFLAG)$@ "apps\win32_init.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) /Zs /showIncludes "apps\win32_init.c" 2>&1 > apps\win32_init.d
-# The import library may look like a static library, but it is not.
-# We MUST make the import library depend on the DLL, in case someone
-# mistakenly removes the latter.
-libcrypto.lib: libcrypto-1_1-x64.dll
-libcrypto-1_1-x64.dll: crypto\dllmain.obj libcrypto.res crypto\aes\aes_cbc.obj crypto\aes\aes_cfb.obj crypto\aes\aes_core.obj crypto\aes\aes_ecb.obj crypto\aes\aes_ige.obj crypto\aes\aes_misc.obj crypto\aes\aes_ofb.obj crypto\aes\aes_wrap.obj crypto\aria\aria.obj crypto\asn1\a_bitstr.obj crypto\asn1\a_d2i_fp.obj crypto\asn1\a_digest.obj crypto\asn1\a_dup.obj crypto\asn1\a_gentm.obj crypto\asn1\a_i2d_fp.obj crypto\asn1\a_int.obj crypto\asn1\a_mbstr.obj crypto\asn1\a_object.obj crypto\asn1\a_octet.obj crypto\asn1\a_print.obj crypto\asn1\a_sign.obj crypto\asn1\a_strex.obj crypto\asn1\a_strnid.obj crypto\asn1\a_time.obj crypto\asn1\a_type.obj crypto\asn1\a_utctm.obj crypto\asn1\a_utf8.obj crypto\asn1\a_verify.obj crypto\asn1\ameth_lib.obj crypto\asn1\asn1_err.obj crypto\asn1\asn1_gen.obj crypto\asn1\asn1_item_list.obj crypto\asn1\asn1_lib.obj crypto\asn1\asn1_par.obj crypto\asn1\asn_mime.obj crypto\asn1\asn_moid.obj crypto\asn1\asn_mstbl.obj crypto\asn1\asn_pack.obj crypto\asn1\bio_asn1.obj crypto\asn1\bio_ndef.obj crypto\asn1\d2i_pr.obj crypto\asn1\d2i_pu.obj crypto\asn1\evp_asn1.obj crypto\asn1\f_int.obj crypto\asn1\f_string.obj crypto\asn1\i2d_pr.obj crypto\asn1\i2d_pu.obj crypto\asn1\n_pkey.obj crypto\asn1\nsseq.obj crypto\asn1\p5_pbe.obj crypto\asn1\p5_pbev2.obj crypto\asn1\p5_scrypt.obj crypto\asn1\p8_pkey.obj crypto\asn1\t_bitst.obj crypto\asn1\t_pkey.obj crypto\asn1\t_spki.obj crypto\asn1\tasn_dec.obj crypto\asn1\tasn_enc.obj crypto\asn1\tasn_fre.obj crypto\asn1\tasn_new.obj crypto\asn1\tasn_prn.obj crypto\asn1\tasn_scn.obj crypto\asn1\tasn_typ.obj crypto\asn1\tasn_utl.obj crypto\asn1\x_algor.obj crypto\asn1\x_bignum.obj crypto\asn1\x_info.obj crypto\asn1\x_int64.obj crypto\asn1\x_long.obj crypto\asn1\x_pkey.obj crypto\asn1\x_sig.obj crypto\asn1\x_spki.obj crypto\asn1\x_val.obj crypto\async\arch\async_null.obj crypto\async\arch\async_posix.obj crypto\async\arch\async_win.obj crypto\async\async.obj crypto\async\async_err.obj crypto\async\async_wait.obj crypto\bf\bf_cfb64.obj crypto\bf\bf_ecb.obj crypto\bf\bf_enc.obj crypto\bf\bf_ofb64.obj crypto\bf\bf_skey.obj crypto\bio\b_addr.obj crypto\bio\b_dump.obj crypto\bio\b_print.obj crypto\bio\b_sock.obj crypto\bio\b_sock2.obj crypto\bio\bf_buff.obj crypto\bio\bf_lbuf.obj crypto\bio\bf_nbio.obj crypto\bio\bf_null.obj crypto\bio\bio_cb.obj crypto\bio\bio_err.obj crypto\bio\bio_lib.obj crypto\bio\bio_meth.obj crypto\bio\bss_acpt.obj crypto\bio\bss_bio.obj crypto\bio\bss_conn.obj crypto\bio\bss_dgram.obj crypto\bio\bss_fd.obj crypto\bio\bss_file.obj crypto\bio\bss_log.obj crypto\bio\bss_mem.obj crypto\bio\bss_null.obj crypto\bio\bss_sock.obj crypto\blake2\blake2b.obj crypto\blake2\blake2s.obj crypto\blake2\m_blake2b.obj crypto\blake2\m_blake2s.obj crypto\bn\bn_add.obj crypto\bn\bn_asm.obj crypto\bn\bn_blind.obj crypto\bn\bn_const.obj crypto\bn\bn_ctx.obj crypto\bn\bn_depr.obj crypto\bn\bn_dh.obj crypto\bn\bn_div.obj crypto\bn\bn_err.obj crypto\bn\bn_exp.obj crypto\bn\bn_exp2.obj crypto\bn\bn_gcd.obj crypto\bn\bn_gf2m.obj crypto\bn\bn_intern.obj crypto\bn\bn_kron.obj crypto\bn\bn_lib.obj crypto\bn\bn_mod.obj crypto\bn\bn_mont.obj crypto\bn\bn_mpi.obj crypto\bn\bn_mul.obj crypto\bn\bn_nist.obj crypto\bn\bn_prime.obj crypto\bn\bn_print.obj crypto\bn\bn_rand.obj crypto\bn\bn_recp.obj crypto\bn\bn_shift.obj crypto\bn\bn_sqr.obj crypto\bn\bn_sqrt.obj crypto\bn\bn_srp.obj crypto\bn\bn_word.obj crypto\bn\bn_x931p.obj crypto\buffer\buf_err.obj crypto\buffer\buffer.obj crypto\camellia\camellia.obj crypto\camellia\cmll_cbc.obj crypto\camellia\cmll_cfb.obj crypto\camellia\cmll_ctr.obj crypto\camellia\cmll_ecb.obj crypto\camellia\cmll_misc.obj crypto\camellia\cmll_ofb.obj crypto\cast\c_cfb64.obj crypto\cast\c_ecb.obj crypto\cast\c_enc.obj crypto\cast\c_ofb64.obj crypto\cast\c_skey.obj crypto\chacha\chacha_enc.obj crypto\cmac\cm_ameth.obj crypto\cmac\cm_pmeth.obj crypto\cmac\cmac.obj crypto\cms\cms_asn1.obj crypto\cms\cms_att.obj crypto\cms\cms_cd.obj crypto\cms\cms_dd.obj crypto\cms\cms_enc.obj crypto\cms\cms_env.obj crypto\cms\cms_err.obj crypto\cms\cms_ess.obj crypto\cms\cms_io.obj crypto\cms\cms_kari.obj crypto\cms\cms_lib.obj crypto\cms\cms_pwri.obj crypto\cms\cms_sd.obj crypto\cms\cms_smime.obj crypto\comp\c_zlib.obj crypto\comp\comp_err.obj crypto\comp\comp_lib.obj crypto\conf\conf_api.obj crypto\conf\conf_def.obj crypto\conf\conf_err.obj crypto\conf\conf_lib.obj crypto\conf\conf_mall.obj crypto\conf\conf_mod.obj crypto\conf\conf_sap.obj crypto\conf\conf_ssl.obj crypto\cpt_err.obj crypto\cryptlib.obj crypto\ct\ct_b64.obj crypto\ct\ct_err.obj crypto\ct\ct_log.obj crypto\ct\ct_oct.obj crypto\ct\ct_policy.obj crypto\ct\ct_prn.obj crypto\ct\ct_sct.obj crypto\ct\ct_sct_ctx.obj crypto\ct\ct_vfy.obj crypto\ct\ct_x509v3.obj crypto\ctype.obj crypto\cversion.obj crypto\des\cbc_cksm.obj crypto\des\cbc_enc.obj crypto\des\cfb64ede.obj crypto\des\cfb64enc.obj crypto\des\cfb_enc.obj crypto\des\des_enc.obj crypto\des\ecb3_enc.obj crypto\des\ecb_enc.obj crypto\des\fcrypt.obj crypto\des\fcrypt_b.obj crypto\des\ofb64ede.obj crypto\des\ofb64enc.obj crypto\des\ofb_enc.obj crypto\des\pcbc_enc.obj crypto\des\qud_cksm.obj crypto\des\rand_key.obj crypto\des\set_key.obj crypto\des\str2key.obj crypto\des\xcbc_enc.obj crypto\dh\dh_ameth.obj crypto\dh\dh_asn1.obj crypto\dh\dh_check.obj crypto\dh\dh_depr.obj crypto\dh\dh_err.obj crypto\dh\dh_gen.obj crypto\dh\dh_kdf.obj crypto\dh\dh_key.obj crypto\dh\dh_lib.obj crypto\dh\dh_meth.obj crypto\dh\dh_pmeth.obj crypto\dh\dh_prn.obj crypto\dh\dh_rfc5114.obj crypto\dh\dh_rfc7919.obj crypto\dsa\dsa_ameth.obj crypto\dsa\dsa_asn1.obj crypto\dsa\dsa_depr.obj crypto\dsa\dsa_err.obj crypto\dsa\dsa_gen.obj crypto\dsa\dsa_key.obj crypto\dsa\dsa_lib.obj crypto\dsa\dsa_meth.obj crypto\dsa\dsa_ossl.obj crypto\dsa\dsa_pmeth.obj crypto\dsa\dsa_prn.obj crypto\dsa\dsa_sign.obj crypto\dsa\dsa_vrf.obj crypto\dso\dso_dl.obj crypto\dso\dso_dlfcn.obj crypto\dso\dso_err.obj crypto\dso\dso_lib.obj crypto\dso\dso_openssl.obj crypto\dso\dso_vms.obj crypto\dso\dso_win32.obj crypto\ebcdic.obj crypto\ec\curve25519.obj crypto\ec\curve448\arch_32\f_impl.obj crypto\ec\curve448\curve448.obj crypto\ec\curve448\curve448_tables.obj crypto\ec\curve448\eddsa.obj crypto\ec\curve448\f_generic.obj crypto\ec\curve448\scalar.obj crypto\ec\ec2_oct.obj crypto\ec\ec2_smpl.obj crypto\ec\ec_ameth.obj crypto\ec\ec_asn1.obj crypto\ec\ec_check.obj crypto\ec\ec_curve.obj crypto\ec\ec_cvt.obj crypto\ec\ec_err.obj crypto\ec\ec_key.obj crypto\ec\ec_kmeth.obj crypto\ec\ec_lib.obj crypto\ec\ec_mult.obj crypto\ec\ec_oct.obj crypto\ec\ec_pmeth.obj crypto\ec\ec_print.obj crypto\ec\ecdh_kdf.obj crypto\ec\ecdh_ossl.obj crypto\ec\ecdsa_ossl.obj crypto\ec\ecdsa_sign.obj crypto\ec\ecdsa_vrf.obj crypto\ec\eck_prn.obj crypto\ec\ecp_mont.obj crypto\ec\ecp_nist.obj crypto\ec\ecp_nistp224.obj crypto\ec\ecp_nistp256.obj crypto\ec\ecp_nistp521.obj crypto\ec\ecp_nistputil.obj crypto\ec\ecp_oct.obj crypto\ec\ecp_smpl.obj crypto\ec\ecx_meth.obj crypto\engine\eng_all.obj crypto\engine\eng_cnf.obj crypto\engine\eng_ctrl.obj crypto\engine\eng_dyn.obj crypto\engine\eng_err.obj crypto\engine\eng_fat.obj crypto\engine\eng_init.obj crypto\engine\eng_lib.obj crypto\engine\eng_list.obj crypto\engine\eng_openssl.obj crypto\engine\eng_pkey.obj crypto\engine\eng_rdrand.obj crypto\engine\eng_table.obj crypto\engine\tb_asnmth.obj crypto\engine\tb_cipher.obj crypto\engine\tb_dh.obj crypto\engine\tb_digest.obj crypto\engine\tb_dsa.obj crypto\engine\tb_eckey.obj crypto\engine\tb_pkmeth.obj crypto\engine\tb_rand.obj crypto\engine\tb_rsa.obj crypto\err\err.obj crypto\err\err_all.obj crypto\err\err_prn.obj crypto\evp\bio_b64.obj crypto\evp\bio_enc.obj crypto\evp\bio_md.obj crypto\evp\bio_ok.obj crypto\evp\c_allc.obj crypto\evp\c_alld.obj crypto\evp\cmeth_lib.obj crypto\evp\digest.obj crypto\evp\e_aes.obj crypto\evp\e_aes_cbc_hmac_sha1.obj crypto\evp\e_aes_cbc_hmac_sha256.obj crypto\evp\e_aria.obj crypto\evp\e_bf.obj crypto\evp\e_camellia.obj crypto\evp\e_cast.obj crypto\evp\e_chacha20_poly1305.obj crypto\evp\e_des.obj crypto\evp\e_des3.obj crypto\evp\e_idea.obj crypto\evp\e_null.obj crypto\evp\e_old.obj crypto\evp\e_rc2.obj crypto\evp\e_rc4.obj crypto\evp\e_rc4_hmac_md5.obj crypto\evp\e_rc5.obj crypto\evp\e_seed.obj crypto\evp\e_sm4.obj crypto\evp\e_xcbc_d.obj crypto\evp\encode.obj crypto\evp\evp_cnf.obj crypto\evp\evp_enc.obj crypto\evp\evp_err.obj crypto\evp\evp_key.obj crypto\evp\evp_lib.obj crypto\evp\evp_pbe.obj crypto\evp\evp_pkey.obj crypto\evp\m_md2.obj crypto\evp\m_md4.obj crypto\evp\m_md5.obj crypto\evp\m_md5_sha1.obj crypto\evp\m_mdc2.obj crypto\evp\m_null.obj crypto\evp\m_ripemd.obj crypto\evp\m_sha1.obj crypto\evp\m_sha3.obj crypto\evp\m_sigver.obj crypto\evp\m_wp.obj crypto\evp\names.obj crypto\evp\p5_crpt.obj crypto\evp\p5_crpt2.obj crypto\evp\p_dec.obj crypto\evp\p_enc.obj crypto\evp\p_lib.obj crypto\evp\p_open.obj crypto\evp\p_seal.obj crypto\evp\p_sign.obj crypto\evp\p_verify.obj crypto\evp\pbe_scrypt.obj crypto\evp\pmeth_fn.obj crypto\evp\pmeth_gn.obj crypto\evp\pmeth_lib.obj crypto\ex_data.obj crypto\getenv.obj crypto\hmac\hm_ameth.obj crypto\hmac\hm_pmeth.obj crypto\hmac\hmac.obj crypto\idea\i_cbc.obj crypto\idea\i_cfb64.obj crypto\idea\i_ecb.obj crypto\idea\i_ofb64.obj crypto\idea\i_skey.obj crypto\init.obj crypto\kdf\hkdf.obj crypto\kdf\kdf_err.obj crypto\kdf\scrypt.obj crypto\kdf\tls1_prf.obj crypto\lhash\lh_stats.obj crypto\lhash\lhash.obj crypto\md4\md4_dgst.obj crypto\md4\md4_one.obj crypto\md5\md5_dgst.obj crypto\md5\md5_one.obj crypto\mdc2\mdc2_one.obj crypto\mdc2\mdc2dgst.obj crypto\mem.obj crypto\mem_clr.obj crypto\mem_dbg.obj crypto\mem_sec.obj crypto\modes\cbc128.obj crypto\modes\ccm128.obj crypto\modes\cfb128.obj crypto\modes\ctr128.obj crypto\modes\cts128.obj crypto\modes\gcm128.obj crypto\modes\ocb128.obj crypto\modes\ofb128.obj crypto\modes\wrap128.obj crypto\modes\xts128.obj crypto\o_dir.obj crypto\o_fips.obj crypto\o_fopen.obj crypto\o_init.obj crypto\o_str.obj crypto\o_time.obj crypto\objects\o_names.obj crypto\objects\obj_dat.obj crypto\objects\obj_err.obj crypto\objects\obj_lib.obj crypto\objects\obj_xref.obj crypto\ocsp\ocsp_asn.obj crypto\ocsp\ocsp_cl.obj crypto\ocsp\ocsp_err.obj crypto\ocsp\ocsp_ext.obj crypto\ocsp\ocsp_ht.obj crypto\ocsp\ocsp_lib.obj crypto\ocsp\ocsp_prn.obj crypto\ocsp\ocsp_srv.obj crypto\ocsp\ocsp_vfy.obj crypto\ocsp\v3_ocsp.obj crypto\pem\pem_all.obj crypto\pem\pem_err.obj crypto\pem\pem_info.obj crypto\pem\pem_lib.obj crypto\pem\pem_oth.obj crypto\pem\pem_pk8.obj crypto\pem\pem_pkey.obj crypto\pem\pem_sign.obj crypto\pem\pem_x509.obj crypto\pem\pem_xaux.obj crypto\pem\pvkfmt.obj crypto\pkcs12\p12_add.obj crypto\pkcs12\p12_asn.obj crypto\pkcs12\p12_attr.obj crypto\pkcs12\p12_crpt.obj crypto\pkcs12\p12_crt.obj crypto\pkcs12\p12_decr.obj crypto\pkcs12\p12_init.obj crypto\pkcs12\p12_key.obj crypto\pkcs12\p12_kiss.obj crypto\pkcs12\p12_mutl.obj crypto\pkcs12\p12_npas.obj crypto\pkcs12\p12_p8d.obj crypto\pkcs12\p12_p8e.obj crypto\pkcs12\p12_sbag.obj crypto\pkcs12\p12_utl.obj crypto\pkcs12\pk12err.obj crypto\pkcs7\bio_pk7.obj crypto\pkcs7\pk7_asn1.obj crypto\pkcs7\pk7_attr.obj crypto\pkcs7\pk7_doit.obj crypto\pkcs7\pk7_lib.obj crypto\pkcs7\pk7_mime.obj crypto\pkcs7\pk7_smime.obj crypto\pkcs7\pkcs7err.obj crypto\poly1305\poly1305.obj crypto\poly1305\poly1305_ameth.obj crypto\poly1305\poly1305_pmeth.obj crypto\rand\drbg_ctr.obj crypto\rand\drbg_lib.obj crypto\rand\rand_egd.obj crypto\rand\rand_err.obj crypto\rand\rand_lib.obj crypto\rand\rand_unix.obj crypto\rand\rand_vms.obj crypto\rand\rand_win.obj crypto\rand\randfile.obj crypto\rc2\rc2_cbc.obj crypto\rc2\rc2_ecb.obj crypto\rc2\rc2_skey.obj crypto\rc2\rc2cfb64.obj crypto\rc2\rc2ofb64.obj crypto\rc4\rc4_enc.obj crypto\rc4\rc4_skey.obj crypto\ripemd\rmd_dgst.obj crypto\ripemd\rmd_one.obj crypto\rsa\rsa_ameth.obj crypto\rsa\rsa_asn1.obj crypto\rsa\rsa_chk.obj crypto\rsa\rsa_crpt.obj crypto\rsa\rsa_depr.obj crypto\rsa\rsa_err.obj crypto\rsa\rsa_gen.obj crypto\rsa\rsa_lib.obj crypto\rsa\rsa_meth.obj crypto\rsa\rsa_mp.obj crypto\rsa\rsa_none.obj crypto\rsa\rsa_oaep.obj crypto\rsa\rsa_ossl.obj crypto\rsa\rsa_pk1.obj crypto\rsa\rsa_pmeth.obj crypto\rsa\rsa_prn.obj crypto\rsa\rsa_pss.obj crypto\rsa\rsa_saos.obj crypto\rsa\rsa_sign.obj crypto\rsa\rsa_ssl.obj crypto\rsa\rsa_x931.obj crypto\rsa\rsa_x931g.obj crypto\seed\seed.obj crypto\seed\seed_cbc.obj crypto\seed\seed_cfb.obj crypto\seed\seed_ecb.obj crypto\seed\seed_ofb.obj crypto\sha\keccak1600.obj crypto\sha\sha1_one.obj crypto\sha\sha1dgst.obj crypto\sha\sha256.obj crypto\sha\sha512.obj crypto\siphash\siphash.obj crypto\siphash\siphash_ameth.obj crypto\siphash\siphash_pmeth.obj crypto\sm2\sm2_crypt.obj crypto\sm2\sm2_err.obj crypto\sm2\sm2_pmeth.obj crypto\sm2\sm2_sign.obj crypto\sm3\m_sm3.obj crypto\sm3\sm3.obj crypto\sm4\sm4.obj crypto\srp\srp_lib.obj crypto\srp\srp_vfy.obj crypto\stack\stack.obj crypto\store\loader_file.obj crypto\store\store_err.obj crypto\store\store_init.obj crypto\store\store_lib.obj crypto\store\store_register.obj crypto\store\store_strings.obj crypto\threads_none.obj crypto\threads_pthread.obj crypto\threads_win.obj crypto\ts\ts_asn1.obj crypto\ts\ts_conf.obj crypto\ts\ts_err.obj crypto\ts\ts_lib.obj crypto\ts\ts_req_print.obj crypto\ts\ts_req_utils.obj crypto\ts\ts_rsp_print.obj crypto\ts\ts_rsp_sign.obj crypto\ts\ts_rsp_utils.obj crypto\ts\ts_rsp_verify.obj crypto\ts\ts_verify_ctx.obj crypto\txt_db\txt_db.obj crypto\ui\ui_err.obj crypto\ui\ui_lib.obj crypto\ui\ui_null.obj crypto\ui\ui_openssl.obj crypto\ui\ui_util.obj crypto\uid.obj crypto\uplink-x86_64.obj crypto\whrlpool\wp_block.obj crypto\whrlpool\wp_dgst.obj crypto\x509\by_dir.obj crypto\x509\by_file.obj crypto\x509\t_crl.obj crypto\x509\t_req.obj crypto\x509\t_x509.obj crypto\x509\x509_att.obj crypto\x509\x509_cmp.obj crypto\x509\x509_d2.obj crypto\x509\x509_def.obj crypto\x509\x509_err.obj crypto\x509\x509_ext.obj crypto\x509\x509_lu.obj crypto\x509\x509_meth.obj crypto\x509\x509_obj.obj crypto\x509\x509_r2x.obj crypto\x509\x509_req.obj crypto\x509\x509_set.obj crypto\x509\x509_trs.obj crypto\x509\x509_txt.obj crypto\x509\x509_v3.obj crypto\x509\x509_vfy.obj crypto\x509\x509_vpm.obj crypto\x509\x509cset.obj crypto\x509\x509name.obj crypto\x509\x509rset.obj crypto\x509\x509spki.obj crypto\x509\x509type.obj crypto\x509\x_all.obj crypto\x509\x_attrib.obj crypto\x509\x_crl.obj crypto\x509\x_exten.obj crypto\x509\x_name.obj crypto\x509\x_pubkey.obj crypto\x509\x_req.obj crypto\x509\x_x509.obj crypto\x509\x_x509a.obj crypto\x509v3\pcy_cache.obj crypto\x509v3\pcy_data.obj crypto\x509v3\pcy_lib.obj crypto\x509v3\pcy_map.obj crypto\x509v3\pcy_node.obj crypto\x509v3\pcy_tree.obj crypto\x509v3\v3_addr.obj crypto\x509v3\v3_admis.obj crypto\x509v3\v3_akey.obj crypto\x509v3\v3_akeya.obj crypto\x509v3\v3_alt.obj crypto\x509v3\v3_asid.obj crypto\x509v3\v3_bcons.obj crypto\x509v3\v3_bitst.obj crypto\x509v3\v3_conf.obj crypto\x509v3\v3_cpols.obj crypto\x509v3\v3_crld.obj crypto\x509v3\v3_enum.obj crypto\x509v3\v3_extku.obj crypto\x509v3\v3_genn.obj crypto\x509v3\v3_ia5.obj crypto\x509v3\v3_info.obj crypto\x509v3\v3_int.obj crypto\x509v3\v3_lib.obj crypto\x509v3\v3_ncons.obj crypto\x509v3\v3_pci.obj crypto\x509v3\v3_pcia.obj crypto\x509v3\v3_pcons.obj crypto\x509v3\v3_pku.obj crypto\x509v3\v3_pmaps.obj crypto\x509v3\v3_prn.obj crypto\x509v3\v3_purp.obj crypto\x509v3\v3_skey.obj crypto\x509v3\v3_sxnet.obj crypto\x509v3\v3_tlsf.obj crypto\x509v3\v3_utl.obj crypto\x509v3\v3err.obj ms\uplink.obj libcrypto.def
-	IF EXIST .manifest DEL /F /Q .manifest
-	IF EXIST $@ DEL /F /Q $@
-	$(LD) $(LDFLAGS) $(LIB_LDFLAGS) \
-		/implib:libcrypto.lib $(LDOUTFLAG)libcrypto-1_1-x64.dll /def:libcrypto.def @<< || (DEL /Q $(@B).* libcrypto.lib && EXIT 1)
-crypto\dllmain.obj
-libcrypto.res
+libcrypto.lib: crypto\aes\aes_cbc.obj crypto\aes\aes_cfb.obj crypto\aes\aes_core.obj crypto\aes\aes_ecb.obj crypto\aes\aes_ige.obj crypto\aes\aes_misc.obj crypto\aes\aes_ofb.obj crypto\aes\aes_wrap.obj crypto\aria\aria.obj crypto\asn1\a_bitstr.obj crypto\asn1\a_d2i_fp.obj crypto\asn1\a_digest.obj crypto\asn1\a_dup.obj crypto\asn1\a_gentm.obj crypto\asn1\a_i2d_fp.obj crypto\asn1\a_int.obj crypto\asn1\a_mbstr.obj crypto\asn1\a_object.obj crypto\asn1\a_octet.obj crypto\asn1\a_print.obj crypto\asn1\a_sign.obj crypto\asn1\a_strex.obj crypto\asn1\a_strnid.obj crypto\asn1\a_time.obj crypto\asn1\a_type.obj crypto\asn1\a_utctm.obj crypto\asn1\a_utf8.obj crypto\asn1\a_verify.obj crypto\asn1\ameth_lib.obj crypto\asn1\asn1_err.obj crypto\asn1\asn1_gen.obj crypto\asn1\asn1_item_list.obj crypto\asn1\asn1_lib.obj crypto\asn1\asn1_par.obj crypto\asn1\asn_mime.obj crypto\asn1\asn_moid.obj crypto\asn1\asn_mstbl.obj crypto\asn1\asn_pack.obj crypto\asn1\bio_asn1.obj crypto\asn1\bio_ndef.obj crypto\asn1\d2i_pr.obj crypto\asn1\d2i_pu.obj crypto\asn1\evp_asn1.obj crypto\asn1\f_int.obj crypto\asn1\f_string.obj crypto\asn1\i2d_pr.obj crypto\asn1\i2d_pu.obj crypto\asn1\n_pkey.obj crypto\asn1\nsseq.obj crypto\asn1\p5_pbe.obj crypto\asn1\p5_pbev2.obj crypto\asn1\p5_scrypt.obj crypto\asn1\p8_pkey.obj crypto\asn1\t_bitst.obj crypto\asn1\t_pkey.obj crypto\asn1\t_spki.obj crypto\asn1\tasn_dec.obj crypto\asn1\tasn_enc.obj crypto\asn1\tasn_fre.obj crypto\asn1\tasn_new.obj crypto\asn1\tasn_prn.obj crypto\asn1\tasn_scn.obj crypto\asn1\tasn_typ.obj crypto\asn1\tasn_utl.obj crypto\asn1\x_algor.obj crypto\asn1\x_bignum.obj crypto\asn1\x_info.obj crypto\asn1\x_int64.obj crypto\asn1\x_long.obj crypto\asn1\x_pkey.obj crypto\asn1\x_sig.obj crypto\asn1\x_spki.obj crypto\asn1\x_val.obj crypto\async\arch\async_null.obj crypto\async\arch\async_posix.obj crypto\async\arch\async_win.obj crypto\async\async.obj crypto\async\async_err.obj crypto\async\async_wait.obj crypto\bf\bf_cfb64.obj crypto\bf\bf_ecb.obj crypto\bf\bf_enc.obj crypto\bf\bf_ofb64.obj crypto\bf\bf_skey.obj crypto\bio\b_addr.obj crypto\bio\b_dump.obj crypto\bio\b_print.obj crypto\bio\b_sock.obj crypto\bio\b_sock2.obj crypto\bio\bf_buff.obj crypto\bio\bf_lbuf.obj crypto\bio\bf_nbio.obj crypto\bio\bf_null.obj crypto\bio\bio_cb.obj crypto\bio\bio_err.obj crypto\bio\bio_lib.obj crypto\bio\bio_meth.obj crypto\bio\bss_acpt.obj crypto\bio\bss_bio.obj crypto\bio\bss_conn.obj crypto\bio\bss_dgram.obj crypto\bio\bss_fd.obj crypto\bio\bss_file.obj crypto\bio\bss_log.obj crypto\bio\bss_mem.obj crypto\bio\bss_null.obj crypto\bio\bss_sock.obj crypto\blake2\blake2b.obj crypto\blake2\blake2s.obj crypto\blake2\m_blake2b.obj crypto\blake2\m_blake2s.obj crypto\bn\bn_add.obj crypto\bn\bn_asm.obj crypto\bn\bn_blind.obj crypto\bn\bn_const.obj crypto\bn\bn_ctx.obj crypto\bn\bn_depr.obj crypto\bn\bn_dh.obj crypto\bn\bn_div.obj crypto\bn\bn_err.obj crypto\bn\bn_exp.obj crypto\bn\bn_exp2.obj crypto\bn\bn_gcd.obj crypto\bn\bn_gf2m.obj crypto\bn\bn_intern.obj crypto\bn\bn_kron.obj crypto\bn\bn_lib.obj crypto\bn\bn_mod.obj crypto\bn\bn_mont.obj crypto\bn\bn_mpi.obj crypto\bn\bn_mul.obj crypto\bn\bn_nist.obj crypto\bn\bn_prime.obj crypto\bn\bn_print.obj crypto\bn\bn_rand.obj crypto\bn\bn_recp.obj crypto\bn\bn_shift.obj crypto\bn\bn_sqr.obj crypto\bn\bn_sqrt.obj crypto\bn\bn_srp.obj crypto\bn\bn_word.obj crypto\bn\bn_x931p.obj crypto\buffer\buf_err.obj crypto\buffer\buffer.obj crypto\camellia\camellia.obj crypto\camellia\cmll_cbc.obj crypto\camellia\cmll_cfb.obj crypto\camellia\cmll_ctr.obj crypto\camellia\cmll_ecb.obj crypto\camellia\cmll_misc.obj crypto\camellia\cmll_ofb.obj crypto\cast\c_cfb64.obj crypto\cast\c_ecb.obj crypto\cast\c_enc.obj crypto\cast\c_ofb64.obj crypto\cast\c_skey.obj crypto\chacha\chacha_enc.obj crypto\cmac\cm_ameth.obj crypto\cmac\cm_pmeth.obj crypto\cmac\cmac.obj crypto\cms\cms_asn1.obj crypto\cms\cms_att.obj crypto\cms\cms_cd.obj crypto\cms\cms_dd.obj crypto\cms\cms_enc.obj crypto\cms\cms_env.obj crypto\cms\cms_err.obj crypto\cms\cms_ess.obj crypto\cms\cms_io.obj crypto\cms\cms_kari.obj crypto\cms\cms_lib.obj crypto\cms\cms_pwri.obj crypto\cms\cms_sd.obj crypto\cms\cms_smime.obj crypto\comp\c_zlib.obj crypto\comp\comp_err.obj crypto\comp\comp_lib.obj crypto\conf\conf_api.obj crypto\conf\conf_def.obj crypto\conf\conf_err.obj crypto\conf\conf_lib.obj crypto\conf\conf_mall.obj crypto\conf\conf_mod.obj crypto\conf\conf_sap.obj crypto\conf\conf_ssl.obj crypto\cpt_err.obj crypto\cryptlib.obj crypto\ct\ct_b64.obj crypto\ct\ct_err.obj crypto\ct\ct_log.obj crypto\ct\ct_oct.obj crypto\ct\ct_policy.obj crypto\ct\ct_prn.obj crypto\ct\ct_sct.obj crypto\ct\ct_sct_ctx.obj crypto\ct\ct_vfy.obj crypto\ct\ct_x509v3.obj crypto\ctype.obj crypto\cversion.obj crypto\des\cbc_cksm.obj crypto\des\cbc_enc.obj crypto\des\cfb64ede.obj crypto\des\cfb64enc.obj crypto\des\cfb_enc.obj crypto\des\des_enc.obj crypto\des\ecb3_enc.obj crypto\des\ecb_enc.obj crypto\des\fcrypt.obj crypto\des\fcrypt_b.obj crypto\des\ofb64ede.obj crypto\des\ofb64enc.obj crypto\des\ofb_enc.obj crypto\des\pcbc_enc.obj crypto\des\qud_cksm.obj crypto\des\rand_key.obj crypto\des\set_key.obj crypto\des\str2key.obj crypto\des\xcbc_enc.obj crypto\dh\dh_ameth.obj crypto\dh\dh_asn1.obj crypto\dh\dh_check.obj crypto\dh\dh_depr.obj crypto\dh\dh_err.obj crypto\dh\dh_gen.obj crypto\dh\dh_kdf.obj crypto\dh\dh_key.obj crypto\dh\dh_lib.obj crypto\dh\dh_meth.obj crypto\dh\dh_pmeth.obj crypto\dh\dh_prn.obj crypto\dh\dh_rfc5114.obj crypto\dh\dh_rfc7919.obj crypto\dsa\dsa_ameth.obj crypto\dsa\dsa_asn1.obj crypto\dsa\dsa_depr.obj crypto\dsa\dsa_err.obj crypto\dsa\dsa_gen.obj crypto\dsa\dsa_key.obj crypto\dsa\dsa_lib.obj crypto\dsa\dsa_meth.obj crypto\dsa\dsa_ossl.obj crypto\dsa\dsa_pmeth.obj crypto\dsa\dsa_prn.obj crypto\dsa\dsa_sign.obj crypto\dsa\dsa_vrf.obj crypto\dso\dso_dl.obj crypto\dso\dso_dlfcn.obj crypto\dso\dso_err.obj crypto\dso\dso_lib.obj crypto\dso\dso_openssl.obj crypto\dso\dso_vms.obj crypto\dso\dso_win32.obj crypto\ebcdic.obj crypto\ec\curve25519.obj crypto\ec\curve448\arch_32\f_impl.obj crypto\ec\curve448\curve448.obj crypto\ec\curve448\curve448_tables.obj crypto\ec\curve448\eddsa.obj crypto\ec\curve448\f_generic.obj crypto\ec\curve448\scalar.obj crypto\ec\ec2_oct.obj crypto\ec\ec2_smpl.obj crypto\ec\ec_ameth.obj crypto\ec\ec_asn1.obj crypto\ec\ec_check.obj crypto\ec\ec_curve.obj crypto\ec\ec_cvt.obj crypto\ec\ec_err.obj crypto\ec\ec_key.obj crypto\ec\ec_kmeth.obj crypto\ec\ec_lib.obj crypto\ec\ec_mult.obj crypto\ec\ec_oct.obj crypto\ec\ec_pmeth.obj crypto\ec\ec_print.obj crypto\ec\ecdh_kdf.obj crypto\ec\ecdh_ossl.obj crypto\ec\ecdsa_ossl.obj crypto\ec\ecdsa_sign.obj crypto\ec\ecdsa_vrf.obj crypto\ec\eck_prn.obj crypto\ec\ecp_mont.obj crypto\ec\ecp_nist.obj crypto\ec\ecp_nistp224.obj crypto\ec\ecp_nistp256.obj crypto\ec\ecp_nistp521.obj crypto\ec\ecp_nistputil.obj crypto\ec\ecp_oct.obj crypto\ec\ecp_smpl.obj crypto\ec\ecx_meth.obj crypto\engine\eng_all.obj crypto\engine\eng_cnf.obj crypto\engine\eng_ctrl.obj crypto\engine\eng_dyn.obj crypto\engine\eng_err.obj crypto\engine\eng_fat.obj crypto\engine\eng_init.obj crypto\engine\eng_lib.obj crypto\engine\eng_list.obj crypto\engine\eng_openssl.obj crypto\engine\eng_pkey.obj crypto\engine\eng_rdrand.obj crypto\engine\eng_table.obj crypto\engine\tb_asnmth.obj crypto\engine\tb_cipher.obj crypto\engine\tb_dh.obj crypto\engine\tb_digest.obj crypto\engine\tb_dsa.obj crypto\engine\tb_eckey.obj crypto\engine\tb_pkmeth.obj crypto\engine\tb_rand.obj crypto\engine\tb_rsa.obj crypto\err\err.obj crypto\err\err_all.obj crypto\err\err_prn.obj crypto\evp\bio_b64.obj crypto\evp\bio_enc.obj crypto\evp\bio_md.obj crypto\evp\bio_ok.obj crypto\evp\c_allc.obj crypto\evp\c_alld.obj crypto\evp\cmeth_lib.obj crypto\evp\digest.obj crypto\evp\e_aes.obj crypto\evp\e_aes_cbc_hmac_sha1.obj crypto\evp\e_aes_cbc_hmac_sha256.obj crypto\evp\e_aria.obj crypto\evp\e_bf.obj crypto\evp\e_camellia.obj crypto\evp\e_cast.obj crypto\evp\e_chacha20_poly1305.obj crypto\evp\e_des.obj crypto\evp\e_des3.obj crypto\evp\e_idea.obj crypto\evp\e_null.obj crypto\evp\e_old.obj crypto\evp\e_rc2.obj crypto\evp\e_rc4.obj crypto\evp\e_rc4_hmac_md5.obj crypto\evp\e_rc5.obj crypto\evp\e_seed.obj crypto\evp\e_sm4.obj crypto\evp\e_xcbc_d.obj crypto\evp\encode.obj crypto\evp\evp_cnf.obj crypto\evp\evp_enc.obj crypto\evp\evp_err.obj crypto\evp\evp_key.obj crypto\evp\evp_lib.obj crypto\evp\evp_pbe.obj crypto\evp\evp_pkey.obj crypto\evp\m_md2.obj crypto\evp\m_md4.obj crypto\evp\m_md5.obj crypto\evp\m_md5_sha1.obj crypto\evp\m_mdc2.obj crypto\evp\m_null.obj crypto\evp\m_ripemd.obj crypto\evp\m_sha1.obj crypto\evp\m_sha3.obj crypto\evp\m_sigver.obj crypto\evp\m_wp.obj crypto\evp\names.obj crypto\evp\p5_crpt.obj crypto\evp\p5_crpt2.obj crypto\evp\p_dec.obj crypto\evp\p_enc.obj crypto\evp\p_lib.obj crypto\evp\p_open.obj crypto\evp\p_seal.obj crypto\evp\p_sign.obj crypto\evp\p_verify.obj crypto\evp\pbe_scrypt.obj crypto\evp\pmeth_fn.obj crypto\evp\pmeth_gn.obj crypto\evp\pmeth_lib.obj crypto\ex_data.obj crypto\getenv.obj crypto\hmac\hm_ameth.obj crypto\hmac\hm_pmeth.obj crypto\hmac\hmac.obj crypto\idea\i_cbc.obj crypto\idea\i_cfb64.obj crypto\idea\i_ecb.obj crypto\idea\i_ofb64.obj crypto\idea\i_skey.obj crypto\init.obj crypto\kdf\hkdf.obj crypto\kdf\kdf_err.obj crypto\kdf\scrypt.obj crypto\kdf\tls1_prf.obj crypto\lhash\lh_stats.obj crypto\lhash\lhash.obj crypto\md4\md4_dgst.obj crypto\md4\md4_one.obj crypto\md5\md5_dgst.obj crypto\md5\md5_one.obj crypto\mdc2\mdc2_one.obj crypto\mdc2\mdc2dgst.obj crypto\mem.obj crypto\mem_clr.obj crypto\mem_dbg.obj crypto\mem_sec.obj crypto\modes\cbc128.obj crypto\modes\ccm128.obj crypto\modes\cfb128.obj crypto\modes\ctr128.obj crypto\modes\cts128.obj crypto\modes\gcm128.obj crypto\modes\ocb128.obj crypto\modes\ofb128.obj crypto\modes\wrap128.obj crypto\modes\xts128.obj crypto\o_dir.obj crypto\o_fips.obj crypto\o_fopen.obj crypto\o_init.obj crypto\o_str.obj crypto\o_time.obj crypto\objects\o_names.obj crypto\objects\obj_dat.obj crypto\objects\obj_err.obj crypto\objects\obj_lib.obj crypto\objects\obj_xref.obj crypto\ocsp\ocsp_asn.obj crypto\ocsp\ocsp_cl.obj crypto\ocsp\ocsp_err.obj crypto\ocsp\ocsp_ext.obj crypto\ocsp\ocsp_ht.obj crypto\ocsp\ocsp_lib.obj crypto\ocsp\ocsp_prn.obj crypto\ocsp\ocsp_srv.obj crypto\ocsp\ocsp_vfy.obj crypto\ocsp\v3_ocsp.obj crypto\pem\pem_all.obj crypto\pem\pem_err.obj crypto\pem\pem_info.obj crypto\pem\pem_lib.obj crypto\pem\pem_oth.obj crypto\pem\pem_pk8.obj crypto\pem\pem_pkey.obj crypto\pem\pem_sign.obj crypto\pem\pem_x509.obj crypto\pem\pem_xaux.obj crypto\pem\pvkfmt.obj crypto\pkcs12\p12_add.obj crypto\pkcs12\p12_asn.obj crypto\pkcs12\p12_attr.obj crypto\pkcs12\p12_crpt.obj crypto\pkcs12\p12_crt.obj crypto\pkcs12\p12_decr.obj crypto\pkcs12\p12_init.obj crypto\pkcs12\p12_key.obj crypto\pkcs12\p12_kiss.obj crypto\pkcs12\p12_mutl.obj crypto\pkcs12\p12_npas.obj crypto\pkcs12\p12_p8d.obj crypto\pkcs12\p12_p8e.obj crypto\pkcs12\p12_sbag.obj crypto\pkcs12\p12_utl.obj crypto\pkcs12\pk12err.obj crypto\pkcs7\bio_pk7.obj crypto\pkcs7\pk7_asn1.obj crypto\pkcs7\pk7_attr.obj crypto\pkcs7\pk7_doit.obj crypto\pkcs7\pk7_lib.obj crypto\pkcs7\pk7_mime.obj crypto\pkcs7\pk7_smime.obj crypto\pkcs7\pkcs7err.obj crypto\poly1305\poly1305.obj crypto\poly1305\poly1305_ameth.obj crypto\poly1305\poly1305_pmeth.obj crypto\rand\drbg_ctr.obj crypto\rand\drbg_lib.obj crypto\rand\rand_egd.obj crypto\rand\rand_err.obj crypto\rand\rand_lib.obj crypto\rand\rand_unix.obj crypto\rand\rand_vms.obj crypto\rand\rand_win.obj crypto\rand\randfile.obj crypto\rc2\rc2_cbc.obj crypto\rc2\rc2_ecb.obj crypto\rc2\rc2_skey.obj crypto\rc2\rc2cfb64.obj crypto\rc2\rc2ofb64.obj crypto\rc4\rc4_enc.obj crypto\rc4\rc4_skey.obj crypto\ripemd\rmd_dgst.obj crypto\ripemd\rmd_one.obj crypto\rsa\rsa_ameth.obj crypto\rsa\rsa_asn1.obj crypto\rsa\rsa_chk.obj crypto\rsa\rsa_crpt.obj crypto\rsa\rsa_depr.obj crypto\rsa\rsa_err.obj crypto\rsa\rsa_gen.obj crypto\rsa\rsa_lib.obj crypto\rsa\rsa_meth.obj crypto\rsa\rsa_mp.obj crypto\rsa\rsa_none.obj crypto\rsa\rsa_oaep.obj crypto\rsa\rsa_ossl.obj crypto\rsa\rsa_pk1.obj crypto\rsa\rsa_pmeth.obj crypto\rsa\rsa_prn.obj crypto\rsa\rsa_pss.obj crypto\rsa\rsa_saos.obj crypto\rsa\rsa_sign.obj crypto\rsa\rsa_ssl.obj crypto\rsa\rsa_x931.obj crypto\rsa\rsa_x931g.obj crypto\seed\seed.obj crypto\seed\seed_cbc.obj crypto\seed\seed_cfb.obj crypto\seed\seed_ecb.obj crypto\seed\seed_ofb.obj crypto\sha\keccak1600.obj crypto\sha\sha1_one.obj crypto\sha\sha1dgst.obj crypto\sha\sha256.obj crypto\sha\sha512.obj crypto\siphash\siphash.obj crypto\siphash\siphash_ameth.obj crypto\siphash\siphash_pmeth.obj crypto\sm2\sm2_crypt.obj crypto\sm2\sm2_err.obj crypto\sm2\sm2_pmeth.obj crypto\sm2\sm2_sign.obj crypto\sm3\m_sm3.obj crypto\sm3\sm3.obj crypto\sm4\sm4.obj crypto\srp\srp_lib.obj crypto\srp\srp_vfy.obj crypto\stack\stack.obj crypto\store\loader_file.obj crypto\store\store_err.obj crypto\store\store_init.obj crypto\store\store_lib.obj crypto\store\store_register.obj crypto\store\store_strings.obj crypto\threads_none.obj crypto\threads_pthread.obj crypto\threads_win.obj crypto\ts\ts_asn1.obj crypto\ts\ts_conf.obj crypto\ts\ts_err.obj crypto\ts\ts_lib.obj crypto\ts\ts_req_print.obj crypto\ts\ts_req_utils.obj crypto\ts\ts_rsp_print.obj crypto\ts\ts_rsp_sign.obj crypto\ts\ts_rsp_utils.obj crypto\ts\ts_rsp_verify.obj crypto\ts\ts_verify_ctx.obj crypto\txt_db\txt_db.obj crypto\ui\ui_err.obj crypto\ui\ui_lib.obj crypto\ui\ui_null.obj crypto\ui\ui_openssl.obj crypto\ui\ui_util.obj crypto\uid.obj crypto\whrlpool\wp_block.obj crypto\whrlpool\wp_dgst.obj crypto\x509\by_dir.obj crypto\x509\by_file.obj crypto\x509\t_crl.obj crypto\x509\t_req.obj crypto\x509\t_x509.obj crypto\x509\x509_att.obj crypto\x509\x509_cmp.obj crypto\x509\x509_d2.obj crypto\x509\x509_def.obj crypto\x509\x509_err.obj crypto\x509\x509_ext.obj crypto\x509\x509_lu.obj crypto\x509\x509_meth.obj crypto\x509\x509_obj.obj crypto\x509\x509_r2x.obj crypto\x509\x509_req.obj crypto\x509\x509_set.obj crypto\x509\x509_trs.obj crypto\x509\x509_txt.obj crypto\x509\x509_v3.obj crypto\x509\x509_vfy.obj crypto\x509\x509_vpm.obj crypto\x509\x509cset.obj crypto\x509\x509name.obj crypto\x509\x509rset.obj crypto\x509\x509spki.obj crypto\x509\x509type.obj crypto\x509\x_all.obj crypto\x509\x_attrib.obj crypto\x509\x_crl.obj crypto\x509\x_exten.obj crypto\x509\x_name.obj crypto\x509\x_pubkey.obj crypto\x509\x_req.obj crypto\x509\x_x509.obj crypto\x509\x_x509a.obj crypto\x509v3\pcy_cache.obj crypto\x509v3\pcy_data.obj crypto\x509v3\pcy_lib.obj crypto\x509v3\pcy_map.obj crypto\x509v3\pcy_node.obj crypto\x509v3\pcy_tree.obj crypto\x509v3\v3_addr.obj crypto\x509v3\v3_admis.obj crypto\x509v3\v3_akey.obj crypto\x509v3\v3_akeya.obj crypto\x509v3\v3_alt.obj crypto\x509v3\v3_asid.obj crypto\x509v3\v3_bcons.obj crypto\x509v3\v3_bitst.obj crypto\x509v3\v3_conf.obj crypto\x509v3\v3_cpols.obj crypto\x509v3\v3_crld.obj crypto\x509v3\v3_enum.obj crypto\x509v3\v3_extku.obj crypto\x509v3\v3_genn.obj crypto\x509v3\v3_ia5.obj crypto\x509v3\v3_info.obj crypto\x509v3\v3_int.obj crypto\x509v3\v3_lib.obj crypto\x509v3\v3_ncons.obj crypto\x509v3\v3_pci.obj crypto\x509v3\v3_pcia.obj crypto\x509v3\v3_pcons.obj crypto\x509v3\v3_pku.obj crypto\x509v3\v3_pmaps.obj crypto\x509v3\v3_prn.obj crypto\x509v3\v3_purp.obj crypto\x509v3\v3_skey.obj crypto\x509v3\v3_sxnet.obj crypto\x509v3\v3_tlsf.obj crypto\x509v3\v3_utl.obj crypto\x509v3\v3err.obj engines\e_capi.obj engines\e_padlock.obj
+	$(AR) $(ARFLAGS) $(AROUTFLAG)libcrypto.lib @<<
 crypto\aes\aes_cbc.obj
 crypto\aes\aes_cfb.obj
 crypto\aes\aes_core.obj
@@ -1003,7 +991,6 @@ crypto\ui\ui_null.obj
 crypto\ui\ui_openssl.obj
 crypto\ui\ui_util.obj
 crypto\uid.obj
-crypto\uplink-x86_64.obj
 crypto\whrlpool\wp_block.obj
 crypto\whrlpool\wp_dgst.obj
 crypto\x509\by_dir.obj
@@ -1079,26 +1066,9 @@ crypto\x509v3\v3_sxnet.obj
 crypto\x509v3\v3_tlsf.obj
 crypto\x509v3\v3_utl.obj
 crypto\x509v3\v3err.obj
-ms\uplink.obj
-$(LIB_EX_LIBS)
+engines\e_capi.obj
+engines\e_padlock.obj
 <<
-	IF EXIST libcrypto-1_1-x64.dll.manifest \
-	   $(MT) $(MTFLAGS) $(MTINFLAG)libcrypto-1_1-x64.dll.manifest $(MTOUTFLAG)libcrypto-1_1-x64.dll
-	IF EXIST apps\libcrypto-1_1-x64.dll DEL /Q /F apps\libcrypto-1_1-x64.dll
-	IF EXIST test\libcrypto-1_1-x64.dll DEL /Q /F test\libcrypto-1_1-x64.dll
-	IF EXIST fuzz\libcrypto-1_1-x64.dll DEL /Q /F fuzz\libcrypto-1_1-x64.dll
-	COPY libcrypto-1_1-x64.dll apps
-	COPY libcrypto-1_1-x64.dll test
-	COPY libcrypto-1_1-x64.dll fuzz
-crypto\dllmain.obj: "crypto\dllmain.c"
-	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) -c $(COUTFLAG)$@ "crypto\dllmain.c"
-	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) /Zs /showIncludes "crypto\dllmain.c" 2>&1 > crypto\dllmain.d
-libcrypto.def: "util\mkdef.pl" "util\libcrypto.num"
-	"$(PERL)" "util\mkdef.pl" crypto 32 > $@
-libcrypto.res: "libcrypto.rc"
-	$(RC) $(RCFLAGS) $(RCOUTFLAG)$@ "libcrypto.rc"
-libcrypto.rc: "util\mkrc.pl" 
-	"$(PERL)" "util\mkrc.pl" libcrypto > $@
 crypto\aes\aes_cbc.obj: "crypto\aes\aes_cbc.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) -c $(COUTFLAG)$@ "crypto\aes\aes_cbc.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) /Zs /showIncludes "crypto\aes\aes_cbc.c" 2>&1 > crypto\aes\aes_cbc.d
@@ -2787,11 +2757,6 @@ crypto\ui\ui_util.obj: "crypto\ui\ui_util.c"
 crypto\uid.obj: "crypto\uid.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) -c $(COUTFLAG)$@ "crypto\uid.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) /Zs /showIncludes "crypto\uid.c" 2>&1 > crypto\uid.d
-crypto\uplink-x86_64.obj: "crypto\uplink-x86_64.asm"
-	$(AS)  $(LIB_ASFLAGS) $(ASOUTFLAG)$@ "crypto\uplink-x86_64.asm"
-crypto\uplink-x86_64.asm: "ms\uplink-x86_64.pl" 
-	set ASM=$(AS)
-	"$(PERL)" "ms\uplink-x86_64.pl" $(PERLASM_SCHEME) $@
 crypto\whrlpool\wp_block.obj: "crypto\whrlpool\wp_block.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) -c $(COUTFLAG)$@ "crypto\whrlpool\wp_block.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) /Zs /showIncludes "crypto\whrlpool\wp_block.c" 2>&1 > crypto\whrlpool\wp_block.d
@@ -3017,661 +2982,14 @@ crypto\x509v3\v3_utl.obj: "crypto\x509v3\v3_utl.c"
 crypto\x509v3\v3err.obj: "crypto\x509v3\v3err.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) -c $(COUTFLAG)$@ "crypto\x509v3\v3err.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) /Zs /showIncludes "crypto\x509v3\v3err.c" 2>&1 > crypto\x509v3\v3err.d
-ms\uplink.obj: "ms\uplink.c"
-	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) -c $(COUTFLAG)$@ "ms\uplink.c"
-	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) /Zs /showIncludes "ms\uplink.c" 2>&1 > ms\uplink.d
-libcrypto_static.lib: crypto\aes\aes_cbc.obj crypto\aes\aes_cfb.obj crypto\aes\aes_core.obj crypto\aes\aes_ecb.obj crypto\aes\aes_ige.obj crypto\aes\aes_misc.obj crypto\aes\aes_ofb.obj crypto\aes\aes_wrap.obj crypto\aria\aria.obj crypto\asn1\a_bitstr.obj crypto\asn1\a_d2i_fp.obj crypto\asn1\a_digest.obj crypto\asn1\a_dup.obj crypto\asn1\a_gentm.obj crypto\asn1\a_i2d_fp.obj crypto\asn1\a_int.obj crypto\asn1\a_mbstr.obj crypto\asn1\a_object.obj crypto\asn1\a_octet.obj crypto\asn1\a_print.obj crypto\asn1\a_sign.obj crypto\asn1\a_strex.obj crypto\asn1\a_strnid.obj crypto\asn1\a_time.obj crypto\asn1\a_type.obj crypto\asn1\a_utctm.obj crypto\asn1\a_utf8.obj crypto\asn1\a_verify.obj crypto\asn1\ameth_lib.obj crypto\asn1\asn1_err.obj crypto\asn1\asn1_gen.obj crypto\asn1\asn1_item_list.obj crypto\asn1\asn1_lib.obj crypto\asn1\asn1_par.obj crypto\asn1\asn_mime.obj crypto\asn1\asn_moid.obj crypto\asn1\asn_mstbl.obj crypto\asn1\asn_pack.obj crypto\asn1\bio_asn1.obj crypto\asn1\bio_ndef.obj crypto\asn1\d2i_pr.obj crypto\asn1\d2i_pu.obj crypto\asn1\evp_asn1.obj crypto\asn1\f_int.obj crypto\asn1\f_string.obj crypto\asn1\i2d_pr.obj crypto\asn1\i2d_pu.obj crypto\asn1\n_pkey.obj crypto\asn1\nsseq.obj crypto\asn1\p5_pbe.obj crypto\asn1\p5_pbev2.obj crypto\asn1\p5_scrypt.obj crypto\asn1\p8_pkey.obj crypto\asn1\t_bitst.obj crypto\asn1\t_pkey.obj crypto\asn1\t_spki.obj crypto\asn1\tasn_dec.obj crypto\asn1\tasn_enc.obj crypto\asn1\tasn_fre.obj crypto\asn1\tasn_new.obj crypto\asn1\tasn_prn.obj crypto\asn1\tasn_scn.obj crypto\asn1\tasn_typ.obj crypto\asn1\tasn_utl.obj crypto\asn1\x_algor.obj crypto\asn1\x_bignum.obj crypto\asn1\x_info.obj crypto\asn1\x_int64.obj crypto\asn1\x_long.obj crypto\asn1\x_pkey.obj crypto\asn1\x_sig.obj crypto\asn1\x_spki.obj crypto\asn1\x_val.obj crypto\async\arch\async_null.obj crypto\async\arch\async_posix.obj crypto\async\arch\async_win.obj crypto\async\async.obj crypto\async\async_err.obj crypto\async\async_wait.obj crypto\bf\bf_cfb64.obj crypto\bf\bf_ecb.obj crypto\bf\bf_enc.obj crypto\bf\bf_ofb64.obj crypto\bf\bf_skey.obj crypto\bio\b_addr.obj crypto\bio\b_dump.obj crypto\bio\b_print.obj crypto\bio\b_sock.obj crypto\bio\b_sock2.obj crypto\bio\bf_buff.obj crypto\bio\bf_lbuf.obj crypto\bio\bf_nbio.obj crypto\bio\bf_null.obj crypto\bio\bio_cb.obj crypto\bio\bio_err.obj crypto\bio\bio_lib.obj crypto\bio\bio_meth.obj crypto\bio\bss_acpt.obj crypto\bio\bss_bio.obj crypto\bio\bss_conn.obj crypto\bio\bss_dgram.obj crypto\bio\bss_fd.obj crypto\bio\bss_file.obj crypto\bio\bss_log.obj crypto\bio\bss_mem.obj crypto\bio\bss_null.obj crypto\bio\bss_sock.obj crypto\blake2\blake2b.obj crypto\blake2\blake2s.obj crypto\blake2\m_blake2b.obj crypto\blake2\m_blake2s.obj crypto\bn\bn_add.obj crypto\bn\bn_asm.obj crypto\bn\bn_blind.obj crypto\bn\bn_const.obj crypto\bn\bn_ctx.obj crypto\bn\bn_depr.obj crypto\bn\bn_dh.obj crypto\bn\bn_div.obj crypto\bn\bn_err.obj crypto\bn\bn_exp.obj crypto\bn\bn_exp2.obj crypto\bn\bn_gcd.obj crypto\bn\bn_gf2m.obj crypto\bn\bn_intern.obj crypto\bn\bn_kron.obj crypto\bn\bn_lib.obj crypto\bn\bn_mod.obj crypto\bn\bn_mont.obj crypto\bn\bn_mpi.obj crypto\bn\bn_mul.obj crypto\bn\bn_nist.obj crypto\bn\bn_prime.obj crypto\bn\bn_print.obj crypto\bn\bn_rand.obj crypto\bn\bn_recp.obj crypto\bn\bn_shift.obj crypto\bn\bn_sqr.obj crypto\bn\bn_sqrt.obj crypto\bn\bn_srp.obj crypto\bn\bn_word.obj crypto\bn\bn_x931p.obj crypto\buffer\buf_err.obj crypto\buffer\buffer.obj crypto\camellia\camellia.obj crypto\camellia\cmll_cbc.obj crypto\camellia\cmll_cfb.obj crypto\camellia\cmll_ctr.obj crypto\camellia\cmll_ecb.obj crypto\camellia\cmll_misc.obj crypto\camellia\cmll_ofb.obj crypto\cast\c_cfb64.obj crypto\cast\c_ecb.obj crypto\cast\c_enc.obj crypto\cast\c_ofb64.obj crypto\cast\c_skey.obj crypto\chacha\chacha_enc.obj crypto\cmac\cm_ameth.obj crypto\cmac\cm_pmeth.obj crypto\cmac\cmac.obj crypto\cms\cms_asn1.obj crypto\cms\cms_att.obj crypto\cms\cms_cd.obj crypto\cms\cms_dd.obj crypto\cms\cms_enc.obj crypto\cms\cms_env.obj crypto\cms\cms_err.obj crypto\cms\cms_ess.obj crypto\cms\cms_io.obj crypto\cms\cms_kari.obj crypto\cms\cms_lib.obj crypto\cms\cms_pwri.obj crypto\cms\cms_sd.obj crypto\cms\cms_smime.obj crypto\comp\c_zlib.obj crypto\comp\comp_err.obj crypto\comp\comp_lib.obj crypto\conf\conf_api.obj crypto\conf\conf_def.obj crypto\conf\conf_err.obj crypto\conf\conf_lib.obj crypto\conf\conf_mall.obj crypto\conf\conf_mod.obj crypto\conf\conf_sap.obj crypto\conf\conf_ssl.obj crypto\cpt_err.obj crypto\cryptlib.obj crypto\ct\ct_b64.obj crypto\ct\ct_err.obj crypto\ct\ct_log.obj crypto\ct\ct_oct.obj crypto\ct\ct_policy.obj crypto\ct\ct_prn.obj crypto\ct\ct_sct.obj crypto\ct\ct_sct_ctx.obj crypto\ct\ct_vfy.obj crypto\ct\ct_x509v3.obj crypto\ctype.obj crypto\cversion.obj crypto\des\cbc_cksm.obj crypto\des\cbc_enc.obj crypto\des\cfb64ede.obj crypto\des\cfb64enc.obj crypto\des\cfb_enc.obj crypto\des\des_enc.obj crypto\des\ecb3_enc.obj crypto\des\ecb_enc.obj crypto\des\fcrypt.obj crypto\des\fcrypt_b.obj crypto\des\ofb64ede.obj crypto\des\ofb64enc.obj crypto\des\ofb_enc.obj crypto\des\pcbc_enc.obj crypto\des\qud_cksm.obj crypto\des\rand_key.obj crypto\des\set_key.obj crypto\des\str2key.obj crypto\des\xcbc_enc.obj crypto\dh\dh_ameth.obj crypto\dh\dh_asn1.obj crypto\dh\dh_check.obj crypto\dh\dh_depr.obj crypto\dh\dh_err.obj crypto\dh\dh_gen.obj crypto\dh\dh_kdf.obj crypto\dh\dh_key.obj crypto\dh\dh_lib.obj crypto\dh\dh_meth.obj crypto\dh\dh_pmeth.obj crypto\dh\dh_prn.obj crypto\dh\dh_rfc5114.obj crypto\dh\dh_rfc7919.obj crypto\dsa\dsa_ameth.obj crypto\dsa\dsa_asn1.obj crypto\dsa\dsa_depr.obj crypto\dsa\dsa_err.obj crypto\dsa\dsa_gen.obj crypto\dsa\dsa_key.obj crypto\dsa\dsa_lib.obj crypto\dsa\dsa_meth.obj crypto\dsa\dsa_ossl.obj crypto\dsa\dsa_pmeth.obj crypto\dsa\dsa_prn.obj crypto\dsa\dsa_sign.obj crypto\dsa\dsa_vrf.obj crypto\dso\dso_dl.obj crypto\dso\dso_dlfcn.obj crypto\dso\dso_err.obj crypto\dso\dso_lib.obj crypto\dso\dso_openssl.obj crypto\dso\dso_vms.obj crypto\dso\dso_win32.obj crypto\ebcdic.obj crypto\ec\curve25519.obj crypto\ec\curve448\arch_32\f_impl.obj crypto\ec\curve448\curve448.obj crypto\ec\curve448\curve448_tables.obj crypto\ec\curve448\eddsa.obj crypto\ec\curve448\f_generic.obj crypto\ec\curve448\scalar.obj crypto\ec\ec2_oct.obj crypto\ec\ec2_smpl.obj crypto\ec\ec_ameth.obj crypto\ec\ec_asn1.obj crypto\ec\ec_check.obj crypto\ec\ec_curve.obj crypto\ec\ec_cvt.obj crypto\ec\ec_err.obj crypto\ec\ec_key.obj crypto\ec\ec_kmeth.obj crypto\ec\ec_lib.obj crypto\ec\ec_mult.obj crypto\ec\ec_oct.obj crypto\ec\ec_pmeth.obj crypto\ec\ec_print.obj crypto\ec\ecdh_kdf.obj crypto\ec\ecdh_ossl.obj crypto\ec\ecdsa_ossl.obj crypto\ec\ecdsa_sign.obj crypto\ec\ecdsa_vrf.obj crypto\ec\eck_prn.obj crypto\ec\ecp_mont.obj crypto\ec\ecp_nist.obj crypto\ec\ecp_nistp224.obj crypto\ec\ecp_nistp256.obj crypto\ec\ecp_nistp521.obj crypto\ec\ecp_nistputil.obj crypto\ec\ecp_oct.obj crypto\ec\ecp_smpl.obj crypto\ec\ecx_meth.obj crypto\engine\eng_all.obj crypto\engine\eng_cnf.obj crypto\engine\eng_ctrl.obj crypto\engine\eng_dyn.obj crypto\engine\eng_err.obj crypto\engine\eng_fat.obj crypto\engine\eng_init.obj crypto\engine\eng_lib.obj crypto\engine\eng_list.obj crypto\engine\eng_openssl.obj crypto\engine\eng_pkey.obj crypto\engine\eng_rdrand.obj crypto\engine\eng_table.obj crypto\engine\tb_asnmth.obj crypto\engine\tb_cipher.obj crypto\engine\tb_dh.obj crypto\engine\tb_digest.obj crypto\engine\tb_dsa.obj crypto\engine\tb_eckey.obj crypto\engine\tb_pkmeth.obj crypto\engine\tb_rand.obj crypto\engine\tb_rsa.obj crypto\err\err.obj crypto\err\err_all.obj crypto\err\err_prn.obj crypto\evp\bio_b64.obj crypto\evp\bio_enc.obj crypto\evp\bio_md.obj crypto\evp\bio_ok.obj crypto\evp\c_allc.obj crypto\evp\c_alld.obj crypto\evp\cmeth_lib.obj crypto\evp\digest.obj crypto\evp\e_aes.obj crypto\evp\e_aes_cbc_hmac_sha1.obj crypto\evp\e_aes_cbc_hmac_sha256.obj crypto\evp\e_aria.obj crypto\evp\e_bf.obj crypto\evp\e_camellia.obj crypto\evp\e_cast.obj crypto\evp\e_chacha20_poly1305.obj crypto\evp\e_des.obj crypto\evp\e_des3.obj crypto\evp\e_idea.obj crypto\evp\e_null.obj crypto\evp\e_old.obj crypto\evp\e_rc2.obj crypto\evp\e_rc4.obj crypto\evp\e_rc4_hmac_md5.obj crypto\evp\e_rc5.obj crypto\evp\e_seed.obj crypto\evp\e_sm4.obj crypto\evp\e_xcbc_d.obj crypto\evp\encode.obj crypto\evp\evp_cnf.obj crypto\evp\evp_enc.obj crypto\evp\evp_err.obj crypto\evp\evp_key.obj crypto\evp\evp_lib.obj crypto\evp\evp_pbe.obj crypto\evp\evp_pkey.obj crypto\evp\m_md2.obj crypto\evp\m_md4.obj crypto\evp\m_md5.obj crypto\evp\m_md5_sha1.obj crypto\evp\m_mdc2.obj crypto\evp\m_null.obj crypto\evp\m_ripemd.obj crypto\evp\m_sha1.obj crypto\evp\m_sha3.obj crypto\evp\m_sigver.obj crypto\evp\m_wp.obj crypto\evp\names.obj crypto\evp\p5_crpt.obj crypto\evp\p5_crpt2.obj crypto\evp\p_dec.obj crypto\evp\p_enc.obj crypto\evp\p_lib.obj crypto\evp\p_open.obj crypto\evp\p_seal.obj crypto\evp\p_sign.obj crypto\evp\p_verify.obj crypto\evp\pbe_scrypt.obj crypto\evp\pmeth_fn.obj crypto\evp\pmeth_gn.obj crypto\evp\pmeth_lib.obj crypto\ex_data.obj crypto\getenv.obj crypto\hmac\hm_ameth.obj crypto\hmac\hm_pmeth.obj crypto\hmac\hmac.obj crypto\idea\i_cbc.obj crypto\idea\i_cfb64.obj crypto\idea\i_ecb.obj crypto\idea\i_ofb64.obj crypto\idea\i_skey.obj crypto\init.obj crypto\kdf\hkdf.obj crypto\kdf\kdf_err.obj crypto\kdf\scrypt.obj crypto\kdf\tls1_prf.obj crypto\lhash\lh_stats.obj crypto\lhash\lhash.obj crypto\md4\md4_dgst.obj crypto\md4\md4_one.obj crypto\md5\md5_dgst.obj crypto\md5\md5_one.obj crypto\mdc2\mdc2_one.obj crypto\mdc2\mdc2dgst.obj crypto\mem.obj crypto\mem_clr.obj crypto\mem_dbg.obj crypto\mem_sec.obj crypto\modes\cbc128.obj crypto\modes\ccm128.obj crypto\modes\cfb128.obj crypto\modes\ctr128.obj crypto\modes\cts128.obj crypto\modes\gcm128.obj crypto\modes\ocb128.obj crypto\modes\ofb128.obj crypto\modes\wrap128.obj crypto\modes\xts128.obj crypto\o_dir.obj crypto\o_fips.obj crypto\o_fopen.obj crypto\o_init.obj crypto\o_str.obj crypto\o_time.obj crypto\objects\o_names.obj crypto\objects\obj_dat.obj crypto\objects\obj_err.obj crypto\objects\obj_lib.obj crypto\objects\obj_xref.obj crypto\ocsp\ocsp_asn.obj crypto\ocsp\ocsp_cl.obj crypto\ocsp\ocsp_err.obj crypto\ocsp\ocsp_ext.obj crypto\ocsp\ocsp_ht.obj crypto\ocsp\ocsp_lib.obj crypto\ocsp\ocsp_prn.obj crypto\ocsp\ocsp_srv.obj crypto\ocsp\ocsp_vfy.obj crypto\ocsp\v3_ocsp.obj crypto\pem\pem_all.obj crypto\pem\pem_err.obj crypto\pem\pem_info.obj crypto\pem\pem_lib.obj crypto\pem\pem_oth.obj crypto\pem\pem_pk8.obj crypto\pem\pem_pkey.obj crypto\pem\pem_sign.obj crypto\pem\pem_x509.obj crypto\pem\pem_xaux.obj crypto\pem\pvkfmt.obj crypto\pkcs12\p12_add.obj crypto\pkcs12\p12_asn.obj crypto\pkcs12\p12_attr.obj crypto\pkcs12\p12_crpt.obj crypto\pkcs12\p12_crt.obj crypto\pkcs12\p12_decr.obj crypto\pkcs12\p12_init.obj crypto\pkcs12\p12_key.obj crypto\pkcs12\p12_kiss.obj crypto\pkcs12\p12_mutl.obj crypto\pkcs12\p12_npas.obj crypto\pkcs12\p12_p8d.obj crypto\pkcs12\p12_p8e.obj crypto\pkcs12\p12_sbag.obj crypto\pkcs12\p12_utl.obj crypto\pkcs12\pk12err.obj crypto\pkcs7\bio_pk7.obj crypto\pkcs7\pk7_asn1.obj crypto\pkcs7\pk7_attr.obj crypto\pkcs7\pk7_doit.obj crypto\pkcs7\pk7_lib.obj crypto\pkcs7\pk7_mime.obj crypto\pkcs7\pk7_smime.obj crypto\pkcs7\pkcs7err.obj crypto\poly1305\poly1305.obj crypto\poly1305\poly1305_ameth.obj crypto\poly1305\poly1305_pmeth.obj crypto\rand\drbg_ctr.obj crypto\rand\drbg_lib.obj crypto\rand\rand_egd.obj crypto\rand\rand_err.obj crypto\rand\rand_lib.obj crypto\rand\rand_unix.obj crypto\rand\rand_vms.obj crypto\rand\rand_win.obj crypto\rand\randfile.obj crypto\rc2\rc2_cbc.obj crypto\rc2\rc2_ecb.obj crypto\rc2\rc2_skey.obj crypto\rc2\rc2cfb64.obj crypto\rc2\rc2ofb64.obj crypto\rc4\rc4_enc.obj crypto\rc4\rc4_skey.obj crypto\ripemd\rmd_dgst.obj crypto\ripemd\rmd_one.obj crypto\rsa\rsa_ameth.obj crypto\rsa\rsa_asn1.obj crypto\rsa\rsa_chk.obj crypto\rsa\rsa_crpt.obj crypto\rsa\rsa_depr.obj crypto\rsa\rsa_err.obj crypto\rsa\rsa_gen.obj crypto\rsa\rsa_lib.obj crypto\rsa\rsa_meth.obj crypto\rsa\rsa_mp.obj crypto\rsa\rsa_none.obj crypto\rsa\rsa_oaep.obj crypto\rsa\rsa_ossl.obj crypto\rsa\rsa_pk1.obj crypto\rsa\rsa_pmeth.obj crypto\rsa\rsa_prn.obj crypto\rsa\rsa_pss.obj crypto\rsa\rsa_saos.obj crypto\rsa\rsa_sign.obj crypto\rsa\rsa_ssl.obj crypto\rsa\rsa_x931.obj crypto\rsa\rsa_x931g.obj crypto\seed\seed.obj crypto\seed\seed_cbc.obj crypto\seed\seed_cfb.obj crypto\seed\seed_ecb.obj crypto\seed\seed_ofb.obj crypto\sha\keccak1600.obj crypto\sha\sha1_one.obj crypto\sha\sha1dgst.obj crypto\sha\sha256.obj crypto\sha\sha512.obj crypto\siphash\siphash.obj crypto\siphash\siphash_ameth.obj crypto\siphash\siphash_pmeth.obj crypto\sm2\sm2_crypt.obj crypto\sm2\sm2_err.obj crypto\sm2\sm2_pmeth.obj crypto\sm2\sm2_sign.obj crypto\sm3\m_sm3.obj crypto\sm3\sm3.obj crypto\sm4\sm4.obj crypto\srp\srp_lib.obj crypto\srp\srp_vfy.obj crypto\stack\stack.obj crypto\store\loader_file.obj crypto\store\store_err.obj crypto\store\store_init.obj crypto\store\store_lib.obj crypto\store\store_register.obj crypto\store\store_strings.obj crypto\threads_none.obj crypto\threads_pthread.obj crypto\threads_win.obj crypto\ts\ts_asn1.obj crypto\ts\ts_conf.obj crypto\ts\ts_err.obj crypto\ts\ts_lib.obj crypto\ts\ts_req_print.obj crypto\ts\ts_req_utils.obj crypto\ts\ts_rsp_print.obj crypto\ts\ts_rsp_sign.obj crypto\ts\ts_rsp_utils.obj crypto\ts\ts_rsp_verify.obj crypto\ts\ts_verify_ctx.obj crypto\txt_db\txt_db.obj crypto\ui\ui_err.obj crypto\ui\ui_lib.obj crypto\ui\ui_null.obj crypto\ui\ui_openssl.obj crypto\ui\ui_util.obj crypto\uid.obj crypto\uplink-x86_64.obj crypto\whrlpool\wp_block.obj crypto\whrlpool\wp_dgst.obj crypto\x509\by_dir.obj crypto\x509\by_file.obj crypto\x509\t_crl.obj crypto\x509\t_req.obj crypto\x509\t_x509.obj crypto\x509\x509_att.obj crypto\x509\x509_cmp.obj crypto\x509\x509_d2.obj crypto\x509\x509_def.obj crypto\x509\x509_err.obj crypto\x509\x509_ext.obj crypto\x509\x509_lu.obj crypto\x509\x509_meth.obj crypto\x509\x509_obj.obj crypto\x509\x509_r2x.obj crypto\x509\x509_req.obj crypto\x509\x509_set.obj crypto\x509\x509_trs.obj crypto\x509\x509_txt.obj crypto\x509\x509_v3.obj crypto\x509\x509_vfy.obj crypto\x509\x509_vpm.obj crypto\x509\x509cset.obj crypto\x509\x509name.obj crypto\x509\x509rset.obj crypto\x509\x509spki.obj crypto\x509\x509type.obj crypto\x509\x_all.obj crypto\x509\x_attrib.obj crypto\x509\x_crl.obj crypto\x509\x_exten.obj crypto\x509\x_name.obj crypto\x509\x_pubkey.obj crypto\x509\x_req.obj crypto\x509\x_x509.obj crypto\x509\x_x509a.obj crypto\x509v3\pcy_cache.obj crypto\x509v3\pcy_data.obj crypto\x509v3\pcy_lib.obj crypto\x509v3\pcy_map.obj crypto\x509v3\pcy_node.obj crypto\x509v3\pcy_tree.obj crypto\x509v3\v3_addr.obj crypto\x509v3\v3_admis.obj crypto\x509v3\v3_akey.obj crypto\x509v3\v3_akeya.obj crypto\x509v3\v3_alt.obj crypto\x509v3\v3_asid.obj crypto\x509v3\v3_bcons.obj crypto\x509v3\v3_bitst.obj crypto\x509v3\v3_conf.obj crypto\x509v3\v3_cpols.obj crypto\x509v3\v3_crld.obj crypto\x509v3\v3_enum.obj crypto\x509v3\v3_extku.obj crypto\x509v3\v3_genn.obj crypto\x509v3\v3_ia5.obj crypto\x509v3\v3_info.obj crypto\x509v3\v3_int.obj crypto\x509v3\v3_lib.obj crypto\x509v3\v3_ncons.obj crypto\x509v3\v3_pci.obj crypto\x509v3\v3_pcia.obj crypto\x509v3\v3_pcons.obj crypto\x509v3\v3_pku.obj crypto\x509v3\v3_pmaps.obj crypto\x509v3\v3_prn.obj crypto\x509v3\v3_purp.obj crypto\x509v3\v3_skey.obj crypto\x509v3\v3_sxnet.obj crypto\x509v3\v3_tlsf.obj crypto\x509v3\v3_utl.obj crypto\x509v3\v3err.obj ms\uplink.obj
-	$(AR) $(ARFLAGS) $(AROUTFLAG)libcrypto_static.lib @<<
-crypto\aes\aes_cbc.obj
-crypto\aes\aes_cfb.obj
-crypto\aes\aes_core.obj
-crypto\aes\aes_ecb.obj
-crypto\aes\aes_ige.obj
-crypto\aes\aes_misc.obj
-crypto\aes\aes_ofb.obj
-crypto\aes\aes_wrap.obj
-crypto\aria\aria.obj
-crypto\asn1\a_bitstr.obj
-crypto\asn1\a_d2i_fp.obj
-crypto\asn1\a_digest.obj
-crypto\asn1\a_dup.obj
-crypto\asn1\a_gentm.obj
-crypto\asn1\a_i2d_fp.obj
-crypto\asn1\a_int.obj
-crypto\asn1\a_mbstr.obj
-crypto\asn1\a_object.obj
-crypto\asn1\a_octet.obj
-crypto\asn1\a_print.obj
-crypto\asn1\a_sign.obj
-crypto\asn1\a_strex.obj
-crypto\asn1\a_strnid.obj
-crypto\asn1\a_time.obj
-crypto\asn1\a_type.obj
-crypto\asn1\a_utctm.obj
-crypto\asn1\a_utf8.obj
-crypto\asn1\a_verify.obj
-crypto\asn1\ameth_lib.obj
-crypto\asn1\asn1_err.obj
-crypto\asn1\asn1_gen.obj
-crypto\asn1\asn1_item_list.obj
-crypto\asn1\asn1_lib.obj
-crypto\asn1\asn1_par.obj
-crypto\asn1\asn_mime.obj
-crypto\asn1\asn_moid.obj
-crypto\asn1\asn_mstbl.obj
-crypto\asn1\asn_pack.obj
-crypto\asn1\bio_asn1.obj
-crypto\asn1\bio_ndef.obj
-crypto\asn1\d2i_pr.obj
-crypto\asn1\d2i_pu.obj
-crypto\asn1\evp_asn1.obj
-crypto\asn1\f_int.obj
-crypto\asn1\f_string.obj
-crypto\asn1\i2d_pr.obj
-crypto\asn1\i2d_pu.obj
-crypto\asn1\n_pkey.obj
-crypto\asn1\nsseq.obj
-crypto\asn1\p5_pbe.obj
-crypto\asn1\p5_pbev2.obj
-crypto\asn1\p5_scrypt.obj
-crypto\asn1\p8_pkey.obj
-crypto\asn1\t_bitst.obj
-crypto\asn1\t_pkey.obj
-crypto\asn1\t_spki.obj
-crypto\asn1\tasn_dec.obj
-crypto\asn1\tasn_enc.obj
-crypto\asn1\tasn_fre.obj
-crypto\asn1\tasn_new.obj
-crypto\asn1\tasn_prn.obj
-crypto\asn1\tasn_scn.obj
-crypto\asn1\tasn_typ.obj
-crypto\asn1\tasn_utl.obj
-crypto\asn1\x_algor.obj
-crypto\asn1\x_bignum.obj
-crypto\asn1\x_info.obj
-crypto\asn1\x_int64.obj
-crypto\asn1\x_long.obj
-crypto\asn1\x_pkey.obj
-crypto\asn1\x_sig.obj
-crypto\asn1\x_spki.obj
-crypto\asn1\x_val.obj
-crypto\async\arch\async_null.obj
-crypto\async\arch\async_posix.obj
-crypto\async\arch\async_win.obj
-crypto\async\async.obj
-crypto\async\async_err.obj
-crypto\async\async_wait.obj
-crypto\bf\bf_cfb64.obj
-crypto\bf\bf_ecb.obj
-crypto\bf\bf_enc.obj
-crypto\bf\bf_ofb64.obj
-crypto\bf\bf_skey.obj
-crypto\bio\b_addr.obj
-crypto\bio\b_dump.obj
-crypto\bio\b_print.obj
-crypto\bio\b_sock.obj
-crypto\bio\b_sock2.obj
-crypto\bio\bf_buff.obj
-crypto\bio\bf_lbuf.obj
-crypto\bio\bf_nbio.obj
-crypto\bio\bf_null.obj
-crypto\bio\bio_cb.obj
-crypto\bio\bio_err.obj
-crypto\bio\bio_lib.obj
-crypto\bio\bio_meth.obj
-crypto\bio\bss_acpt.obj
-crypto\bio\bss_bio.obj
-crypto\bio\bss_conn.obj
-crypto\bio\bss_dgram.obj
-crypto\bio\bss_fd.obj
-crypto\bio\bss_file.obj
-crypto\bio\bss_log.obj
-crypto\bio\bss_mem.obj
-crypto\bio\bss_null.obj
-crypto\bio\bss_sock.obj
-crypto\blake2\blake2b.obj
-crypto\blake2\blake2s.obj
-crypto\blake2\m_blake2b.obj
-crypto\blake2\m_blake2s.obj
-crypto\bn\bn_add.obj
-crypto\bn\bn_asm.obj
-crypto\bn\bn_blind.obj
-crypto\bn\bn_const.obj
-crypto\bn\bn_ctx.obj
-crypto\bn\bn_depr.obj
-crypto\bn\bn_dh.obj
-crypto\bn\bn_div.obj
-crypto\bn\bn_err.obj
-crypto\bn\bn_exp.obj
-crypto\bn\bn_exp2.obj
-crypto\bn\bn_gcd.obj
-crypto\bn\bn_gf2m.obj
-crypto\bn\bn_intern.obj
-crypto\bn\bn_kron.obj
-crypto\bn\bn_lib.obj
-crypto\bn\bn_mod.obj
-crypto\bn\bn_mont.obj
-crypto\bn\bn_mpi.obj
-crypto\bn\bn_mul.obj
-crypto\bn\bn_nist.obj
-crypto\bn\bn_prime.obj
-crypto\bn\bn_print.obj
-crypto\bn\bn_rand.obj
-crypto\bn\bn_recp.obj
-crypto\bn\bn_shift.obj
-crypto\bn\bn_sqr.obj
-crypto\bn\bn_sqrt.obj
-crypto\bn\bn_srp.obj
-crypto\bn\bn_word.obj
-crypto\bn\bn_x931p.obj
-crypto\buffer\buf_err.obj
-crypto\buffer\buffer.obj
-crypto\camellia\camellia.obj
-crypto\camellia\cmll_cbc.obj
-crypto\camellia\cmll_cfb.obj
-crypto\camellia\cmll_ctr.obj
-crypto\camellia\cmll_ecb.obj
-crypto\camellia\cmll_misc.obj
-crypto\camellia\cmll_ofb.obj
-crypto\cast\c_cfb64.obj
-crypto\cast\c_ecb.obj
-crypto\cast\c_enc.obj
-crypto\cast\c_ofb64.obj
-crypto\cast\c_skey.obj
-crypto\chacha\chacha_enc.obj
-crypto\cmac\cm_ameth.obj
-crypto\cmac\cm_pmeth.obj
-crypto\cmac\cmac.obj
-crypto\cms\cms_asn1.obj
-crypto\cms\cms_att.obj
-crypto\cms\cms_cd.obj
-crypto\cms\cms_dd.obj
-crypto\cms\cms_enc.obj
-crypto\cms\cms_env.obj
-crypto\cms\cms_err.obj
-crypto\cms\cms_ess.obj
-crypto\cms\cms_io.obj
-crypto\cms\cms_kari.obj
-crypto\cms\cms_lib.obj
-crypto\cms\cms_pwri.obj
-crypto\cms\cms_sd.obj
-crypto\cms\cms_smime.obj
-crypto\comp\c_zlib.obj
-crypto\comp\comp_err.obj
-crypto\comp\comp_lib.obj
-crypto\conf\conf_api.obj
-crypto\conf\conf_def.obj
-crypto\conf\conf_err.obj
-crypto\conf\conf_lib.obj
-crypto\conf\conf_mall.obj
-crypto\conf\conf_mod.obj
-crypto\conf\conf_sap.obj
-crypto\conf\conf_ssl.obj
-crypto\cpt_err.obj
-crypto\cryptlib.obj
-crypto\ct\ct_b64.obj
-crypto\ct\ct_err.obj
-crypto\ct\ct_log.obj
-crypto\ct\ct_oct.obj
-crypto\ct\ct_policy.obj
-crypto\ct\ct_prn.obj
-crypto\ct\ct_sct.obj
-crypto\ct\ct_sct_ctx.obj
-crypto\ct\ct_vfy.obj
-crypto\ct\ct_x509v3.obj
-crypto\ctype.obj
-crypto\cversion.obj
-crypto\des\cbc_cksm.obj
-crypto\des\cbc_enc.obj
-crypto\des\cfb64ede.obj
-crypto\des\cfb64enc.obj
-crypto\des\cfb_enc.obj
-crypto\des\des_enc.obj
-crypto\des\ecb3_enc.obj
-crypto\des\ecb_enc.obj
-crypto\des\fcrypt.obj
-crypto\des\fcrypt_b.obj
-crypto\des\ofb64ede.obj
-crypto\des\ofb64enc.obj
-crypto\des\ofb_enc.obj
-crypto\des\pcbc_enc.obj
-crypto\des\qud_cksm.obj
-crypto\des\rand_key.obj
-crypto\des\set_key.obj
-crypto\des\str2key.obj
-crypto\des\xcbc_enc.obj
-crypto\dh\dh_ameth.obj
-crypto\dh\dh_asn1.obj
-crypto\dh\dh_check.obj
-crypto\dh\dh_depr.obj
-crypto\dh\dh_err.obj
-crypto\dh\dh_gen.obj
-crypto\dh\dh_kdf.obj
-crypto\dh\dh_key.obj
-crypto\dh\dh_lib.obj
-crypto\dh\dh_meth.obj
-crypto\dh\dh_pmeth.obj
-crypto\dh\dh_prn.obj
-crypto\dh\dh_rfc5114.obj
-crypto\dh\dh_rfc7919.obj
-crypto\dsa\dsa_ameth.obj
-crypto\dsa\dsa_asn1.obj
-crypto\dsa\dsa_depr.obj
-crypto\dsa\dsa_err.obj
-crypto\dsa\dsa_gen.obj
-crypto\dsa\dsa_key.obj
-crypto\dsa\dsa_lib.obj
-crypto\dsa\dsa_meth.obj
-crypto\dsa\dsa_ossl.obj
-crypto\dsa\dsa_pmeth.obj
-crypto\dsa\dsa_prn.obj
-crypto\dsa\dsa_sign.obj
-crypto\dsa\dsa_vrf.obj
-crypto\dso\dso_dl.obj
-crypto\dso\dso_dlfcn.obj
-crypto\dso\dso_err.obj
-crypto\dso\dso_lib.obj
-crypto\dso\dso_openssl.obj
-crypto\dso\dso_vms.obj
-crypto\dso\dso_win32.obj
-crypto\ebcdic.obj
-crypto\ec\curve25519.obj
-crypto\ec\curve448\arch_32\f_impl.obj
-crypto\ec\curve448\curve448.obj
-crypto\ec\curve448\curve448_tables.obj
-crypto\ec\curve448\eddsa.obj
-crypto\ec\curve448\f_generic.obj
-crypto\ec\curve448\scalar.obj
-crypto\ec\ec2_oct.obj
-crypto\ec\ec2_smpl.obj
-crypto\ec\ec_ameth.obj
-crypto\ec\ec_asn1.obj
-crypto\ec\ec_check.obj
-crypto\ec\ec_curve.obj
-crypto\ec\ec_cvt.obj
-crypto\ec\ec_err.obj
-crypto\ec\ec_key.obj
-crypto\ec\ec_kmeth.obj
-crypto\ec\ec_lib.obj
-crypto\ec\ec_mult.obj
-crypto\ec\ec_oct.obj
-crypto\ec\ec_pmeth.obj
-crypto\ec\ec_print.obj
-crypto\ec\ecdh_kdf.obj
-crypto\ec\ecdh_ossl.obj
-crypto\ec\ecdsa_ossl.obj
-crypto\ec\ecdsa_sign.obj
-crypto\ec\ecdsa_vrf.obj
-crypto\ec\eck_prn.obj
-crypto\ec\ecp_mont.obj
-crypto\ec\ecp_nist.obj
-crypto\ec\ecp_nistp224.obj
-crypto\ec\ecp_nistp256.obj
-crypto\ec\ecp_nistp521.obj
-crypto\ec\ecp_nistputil.obj
-crypto\ec\ecp_oct.obj
-crypto\ec\ecp_smpl.obj
-crypto\ec\ecx_meth.obj
-crypto\engine\eng_all.obj
-crypto\engine\eng_cnf.obj
-crypto\engine\eng_ctrl.obj
-crypto\engine\eng_dyn.obj
-crypto\engine\eng_err.obj
-crypto\engine\eng_fat.obj
-crypto\engine\eng_init.obj
-crypto\engine\eng_lib.obj
-crypto\engine\eng_list.obj
-crypto\engine\eng_openssl.obj
-crypto\engine\eng_pkey.obj
-crypto\engine\eng_rdrand.obj
-crypto\engine\eng_table.obj
-crypto\engine\tb_asnmth.obj
-crypto\engine\tb_cipher.obj
-crypto\engine\tb_dh.obj
-crypto\engine\tb_digest.obj
-crypto\engine\tb_dsa.obj
-crypto\engine\tb_eckey.obj
-crypto\engine\tb_pkmeth.obj
-crypto\engine\tb_rand.obj
-crypto\engine\tb_rsa.obj
-crypto\err\err.obj
-crypto\err\err_all.obj
-crypto\err\err_prn.obj
-crypto\evp\bio_b64.obj
-crypto\evp\bio_enc.obj
-crypto\evp\bio_md.obj
-crypto\evp\bio_ok.obj
-crypto\evp\c_allc.obj
-crypto\evp\c_alld.obj
-crypto\evp\cmeth_lib.obj
-crypto\evp\digest.obj
-crypto\evp\e_aes.obj
-crypto\evp\e_aes_cbc_hmac_sha1.obj
-crypto\evp\e_aes_cbc_hmac_sha256.obj
-crypto\evp\e_aria.obj
-crypto\evp\e_bf.obj
-crypto\evp\e_camellia.obj
-crypto\evp\e_cast.obj
-crypto\evp\e_chacha20_poly1305.obj
-crypto\evp\e_des.obj
-crypto\evp\e_des3.obj
-crypto\evp\e_idea.obj
-crypto\evp\e_null.obj
-crypto\evp\e_old.obj
-crypto\evp\e_rc2.obj
-crypto\evp\e_rc4.obj
-crypto\evp\e_rc4_hmac_md5.obj
-crypto\evp\e_rc5.obj
-crypto\evp\e_seed.obj
-crypto\evp\e_sm4.obj
-crypto\evp\e_xcbc_d.obj
-crypto\evp\encode.obj
-crypto\evp\evp_cnf.obj
-crypto\evp\evp_enc.obj
-crypto\evp\evp_err.obj
-crypto\evp\evp_key.obj
-crypto\evp\evp_lib.obj
-crypto\evp\evp_pbe.obj
-crypto\evp\evp_pkey.obj
-crypto\evp\m_md2.obj
-crypto\evp\m_md4.obj
-crypto\evp\m_md5.obj
-crypto\evp\m_md5_sha1.obj
-crypto\evp\m_mdc2.obj
-crypto\evp\m_null.obj
-crypto\evp\m_ripemd.obj
-crypto\evp\m_sha1.obj
-crypto\evp\m_sha3.obj
-crypto\evp\m_sigver.obj
-crypto\evp\m_wp.obj
-crypto\evp\names.obj
-crypto\evp\p5_crpt.obj
-crypto\evp\p5_crpt2.obj
-crypto\evp\p_dec.obj
-crypto\evp\p_enc.obj
-crypto\evp\p_lib.obj
-crypto\evp\p_open.obj
-crypto\evp\p_seal.obj
-crypto\evp\p_sign.obj
-crypto\evp\p_verify.obj
-crypto\evp\pbe_scrypt.obj
-crypto\evp\pmeth_fn.obj
-crypto\evp\pmeth_gn.obj
-crypto\evp\pmeth_lib.obj
-crypto\ex_data.obj
-crypto\getenv.obj
-crypto\hmac\hm_ameth.obj
-crypto\hmac\hm_pmeth.obj
-crypto\hmac\hmac.obj
-crypto\idea\i_cbc.obj
-crypto\idea\i_cfb64.obj
-crypto\idea\i_ecb.obj
-crypto\idea\i_ofb64.obj
-crypto\idea\i_skey.obj
-crypto\init.obj
-crypto\kdf\hkdf.obj
-crypto\kdf\kdf_err.obj
-crypto\kdf\scrypt.obj
-crypto\kdf\tls1_prf.obj
-crypto\lhash\lh_stats.obj
-crypto\lhash\lhash.obj
-crypto\md4\md4_dgst.obj
-crypto\md4\md4_one.obj
-crypto\md5\md5_dgst.obj
-crypto\md5\md5_one.obj
-crypto\mdc2\mdc2_one.obj
-crypto\mdc2\mdc2dgst.obj
-crypto\mem.obj
-crypto\mem_clr.obj
-crypto\mem_dbg.obj
-crypto\mem_sec.obj
-crypto\modes\cbc128.obj
-crypto\modes\ccm128.obj
-crypto\modes\cfb128.obj
-crypto\modes\ctr128.obj
-crypto\modes\cts128.obj
-crypto\modes\gcm128.obj
-crypto\modes\ocb128.obj
-crypto\modes\ofb128.obj
-crypto\modes\wrap128.obj
-crypto\modes\xts128.obj
-crypto\o_dir.obj
-crypto\o_fips.obj
-crypto\o_fopen.obj
-crypto\o_init.obj
-crypto\o_str.obj
-crypto\o_time.obj
-crypto\objects\o_names.obj
-crypto\objects\obj_dat.obj
-crypto\objects\obj_err.obj
-crypto\objects\obj_lib.obj
-crypto\objects\obj_xref.obj
-crypto\ocsp\ocsp_asn.obj
-crypto\ocsp\ocsp_cl.obj
-crypto\ocsp\ocsp_err.obj
-crypto\ocsp\ocsp_ext.obj
-crypto\ocsp\ocsp_ht.obj
-crypto\ocsp\ocsp_lib.obj
-crypto\ocsp\ocsp_prn.obj
-crypto\ocsp\ocsp_srv.obj
-crypto\ocsp\ocsp_vfy.obj
-crypto\ocsp\v3_ocsp.obj
-crypto\pem\pem_all.obj
-crypto\pem\pem_err.obj
-crypto\pem\pem_info.obj
-crypto\pem\pem_lib.obj
-crypto\pem\pem_oth.obj
-crypto\pem\pem_pk8.obj
-crypto\pem\pem_pkey.obj
-crypto\pem\pem_sign.obj
-crypto\pem\pem_x509.obj
-crypto\pem\pem_xaux.obj
-crypto\pem\pvkfmt.obj
-crypto\pkcs12\p12_add.obj
-crypto\pkcs12\p12_asn.obj
-crypto\pkcs12\p12_attr.obj
-crypto\pkcs12\p12_crpt.obj
-crypto\pkcs12\p12_crt.obj
-crypto\pkcs12\p12_decr.obj
-crypto\pkcs12\p12_init.obj
-crypto\pkcs12\p12_key.obj
-crypto\pkcs12\p12_kiss.obj
-crypto\pkcs12\p12_mutl.obj
-crypto\pkcs12\p12_npas.obj
-crypto\pkcs12\p12_p8d.obj
-crypto\pkcs12\p12_p8e.obj
-crypto\pkcs12\p12_sbag.obj
-crypto\pkcs12\p12_utl.obj
-crypto\pkcs12\pk12err.obj
-crypto\pkcs7\bio_pk7.obj
-crypto\pkcs7\pk7_asn1.obj
-crypto\pkcs7\pk7_attr.obj
-crypto\pkcs7\pk7_doit.obj
-crypto\pkcs7\pk7_lib.obj
-crypto\pkcs7\pk7_mime.obj
-crypto\pkcs7\pk7_smime.obj
-crypto\pkcs7\pkcs7err.obj
-crypto\poly1305\poly1305.obj
-crypto\poly1305\poly1305_ameth.obj
-crypto\poly1305\poly1305_pmeth.obj
-crypto\rand\drbg_ctr.obj
-crypto\rand\drbg_lib.obj
-crypto\rand\rand_egd.obj
-crypto\rand\rand_err.obj
-crypto\rand\rand_lib.obj
-crypto\rand\rand_unix.obj
-crypto\rand\rand_vms.obj
-crypto\rand\rand_win.obj
-crypto\rand\randfile.obj
-crypto\rc2\rc2_cbc.obj
-crypto\rc2\rc2_ecb.obj
-crypto\rc2\rc2_skey.obj
-crypto\rc2\rc2cfb64.obj
-crypto\rc2\rc2ofb64.obj
-crypto\rc4\rc4_enc.obj
-crypto\rc4\rc4_skey.obj
-crypto\ripemd\rmd_dgst.obj
-crypto\ripemd\rmd_one.obj
-crypto\rsa\rsa_ameth.obj
-crypto\rsa\rsa_asn1.obj
-crypto\rsa\rsa_chk.obj
-crypto\rsa\rsa_crpt.obj
-crypto\rsa\rsa_depr.obj
-crypto\rsa\rsa_err.obj
-crypto\rsa\rsa_gen.obj
-crypto\rsa\rsa_lib.obj
-crypto\rsa\rsa_meth.obj
-crypto\rsa\rsa_mp.obj
-crypto\rsa\rsa_none.obj
-crypto\rsa\rsa_oaep.obj
-crypto\rsa\rsa_ossl.obj
-crypto\rsa\rsa_pk1.obj
-crypto\rsa\rsa_pmeth.obj
-crypto\rsa\rsa_prn.obj
-crypto\rsa\rsa_pss.obj
-crypto\rsa\rsa_saos.obj
-crypto\rsa\rsa_sign.obj
-crypto\rsa\rsa_ssl.obj
-crypto\rsa\rsa_x931.obj
-crypto\rsa\rsa_x931g.obj
-crypto\seed\seed.obj
-crypto\seed\seed_cbc.obj
-crypto\seed\seed_cfb.obj
-crypto\seed\seed_ecb.obj
-crypto\seed\seed_ofb.obj
-crypto\sha\keccak1600.obj
-crypto\sha\sha1_one.obj
-crypto\sha\sha1dgst.obj
-crypto\sha\sha256.obj
-crypto\sha\sha512.obj
-crypto\siphash\siphash.obj
-crypto\siphash\siphash_ameth.obj
-crypto\siphash\siphash_pmeth.obj
-crypto\sm2\sm2_crypt.obj
-crypto\sm2\sm2_err.obj
-crypto\sm2\sm2_pmeth.obj
-crypto\sm2\sm2_sign.obj
-crypto\sm3\m_sm3.obj
-crypto\sm3\sm3.obj
-crypto\sm4\sm4.obj
-crypto\srp\srp_lib.obj
-crypto\srp\srp_vfy.obj
-crypto\stack\stack.obj
-crypto\store\loader_file.obj
-crypto\store\store_err.obj
-crypto\store\store_init.obj
-crypto\store\store_lib.obj
-crypto\store\store_register.obj
-crypto\store\store_strings.obj
-crypto\threads_none.obj
-crypto\threads_pthread.obj
-crypto\threads_win.obj
-crypto\ts\ts_asn1.obj
-crypto\ts\ts_conf.obj
-crypto\ts\ts_err.obj
-crypto\ts\ts_lib.obj
-crypto\ts\ts_req_print.obj
-crypto\ts\ts_req_utils.obj
-crypto\ts\ts_rsp_print.obj
-crypto\ts\ts_rsp_sign.obj
-crypto\ts\ts_rsp_utils.obj
-crypto\ts\ts_rsp_verify.obj
-crypto\ts\ts_verify_ctx.obj
-crypto\txt_db\txt_db.obj
-crypto\ui\ui_err.obj
-crypto\ui\ui_lib.obj
-crypto\ui\ui_null.obj
-crypto\ui\ui_openssl.obj
-crypto\ui\ui_util.obj
-crypto\uid.obj
-crypto\uplink-x86_64.obj
-crypto\whrlpool\wp_block.obj
-crypto\whrlpool\wp_dgst.obj
-crypto\x509\by_dir.obj
-crypto\x509\by_file.obj
-crypto\x509\t_crl.obj
-crypto\x509\t_req.obj
-crypto\x509\t_x509.obj
-crypto\x509\x509_att.obj
-crypto\x509\x509_cmp.obj
-crypto\x509\x509_d2.obj
-crypto\x509\x509_def.obj
-crypto\x509\x509_err.obj
-crypto\x509\x509_ext.obj
-crypto\x509\x509_lu.obj
-crypto\x509\x509_meth.obj
-crypto\x509\x509_obj.obj
-crypto\x509\x509_r2x.obj
-crypto\x509\x509_req.obj
-crypto\x509\x509_set.obj
-crypto\x509\x509_trs.obj
-crypto\x509\x509_txt.obj
-crypto\x509\x509_v3.obj
-crypto\x509\x509_vfy.obj
-crypto\x509\x509_vpm.obj
-crypto\x509\x509cset.obj
-crypto\x509\x509name.obj
-crypto\x509\x509rset.obj
-crypto\x509\x509spki.obj
-crypto\x509\x509type.obj
-crypto\x509\x_all.obj
-crypto\x509\x_attrib.obj
-crypto\x509\x_crl.obj
-crypto\x509\x_exten.obj
-crypto\x509\x_name.obj
-crypto\x509\x_pubkey.obj
-crypto\x509\x_req.obj
-crypto\x509\x_x509.obj
-crypto\x509\x_x509a.obj
-crypto\x509v3\pcy_cache.obj
-crypto\x509v3\pcy_data.obj
-crypto\x509v3\pcy_lib.obj
-crypto\x509v3\pcy_map.obj
-crypto\x509v3\pcy_node.obj
-crypto\x509v3\pcy_tree.obj
-crypto\x509v3\v3_addr.obj
-crypto\x509v3\v3_admis.obj
-crypto\x509v3\v3_akey.obj
-crypto\x509v3\v3_akeya.obj
-crypto\x509v3\v3_alt.obj
-crypto\x509v3\v3_asid.obj
-crypto\x509v3\v3_bcons.obj
-crypto\x509v3\v3_bitst.obj
-crypto\x509v3\v3_conf.obj
-crypto\x509v3\v3_cpols.obj
-crypto\x509v3\v3_crld.obj
-crypto\x509v3\v3_enum.obj
-crypto\x509v3\v3_extku.obj
-crypto\x509v3\v3_genn.obj
-crypto\x509v3\v3_ia5.obj
-crypto\x509v3\v3_info.obj
-crypto\x509v3\v3_int.obj
-crypto\x509v3\v3_lib.obj
-crypto\x509v3\v3_ncons.obj
-crypto\x509v3\v3_pci.obj
-crypto\x509v3\v3_pcia.obj
-crypto\x509v3\v3_pcons.obj
-crypto\x509v3\v3_pku.obj
-crypto\x509v3\v3_pmaps.obj
-crypto\x509v3\v3_prn.obj
-crypto\x509v3\v3_purp.obj
-crypto\x509v3\v3_skey.obj
-crypto\x509v3\v3_sxnet.obj
-crypto\x509v3\v3_tlsf.obj
-crypto\x509v3\v3_utl.obj
-crypto\x509v3\v3err.obj
-ms\uplink.obj
-<<
-# The import library may look like a static library, but it is not.
-# We MUST make the import library depend on the DLL, in case someone
-# mistakenly removes the latter.
-libssl.lib: libssl-1_1-x64.dll
-libssl-1_1-x64.dll: libssl.res ssl\bio_ssl.obj ssl\d1_lib.obj ssl\d1_msg.obj ssl\d1_srtp.obj ssl\methods.obj ssl\packet.obj ssl\pqueue.obj ssl\record\dtls1_bitmap.obj ssl\record\rec_layer_d1.obj ssl\record\rec_layer_s3.obj ssl\record\ssl3_buffer.obj ssl\record\ssl3_record.obj ssl\record\ssl3_record_tls13.obj ssl\s3_cbc.obj ssl\s3_enc.obj ssl\s3_lib.obj ssl\s3_msg.obj ssl\ssl_asn1.obj ssl\ssl_cert.obj ssl\ssl_ciph.obj ssl\ssl_conf.obj ssl\ssl_err.obj ssl\ssl_init.obj ssl\ssl_lib.obj ssl\ssl_mcnf.obj ssl\ssl_rsa.obj ssl\ssl_sess.obj ssl\ssl_stat.obj ssl\ssl_txt.obj ssl\ssl_utst.obj ssl\statem\extensions.obj ssl\statem\extensions_clnt.obj ssl\statem\extensions_cust.obj ssl\statem\extensions_srvr.obj ssl\statem\statem.obj ssl\statem\statem_clnt.obj ssl\statem\statem_dtls.obj ssl\statem\statem_lib.obj ssl\statem\statem_srvr.obj ssl\t1_enc.obj ssl\t1_lib.obj ssl\t1_trce.obj ssl\tls13_enc.obj ssl\tls_srp.obj libssl.def libcrypto.lib
-	IF EXIST .manifest DEL /F /Q .manifest
-	IF EXIST $@ DEL /F /Q $@
-	$(LD) $(LDFLAGS) $(LIB_LDFLAGS) \
-		/implib:libssl.lib $(LDOUTFLAG)libssl-1_1-x64.dll /def:libssl.def @<< || (DEL /Q $(@B).* libssl.lib && EXIT 1)
-libssl.res
+engines\e_capi.obj: "engines\e_capi.c"
+	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) -c $(COUTFLAG)$@ "engines\e_capi.c"
+	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) /Zs /showIncludes "engines\e_capi.c" 2>&1 > engines\e_capi.d
+engines\e_padlock.obj: "engines\e_padlock.c"
+	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) -c $(COUTFLAG)$@ "engines\e_padlock.c"
+	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) /Zs /showIncludes "engines\e_padlock.c" 2>&1 > engines\e_padlock.d
+libssl.lib: ssl\bio_ssl.obj ssl\d1_lib.obj ssl\d1_msg.obj ssl\d1_srtp.obj ssl\methods.obj ssl\packet.obj ssl\pqueue.obj ssl\record\dtls1_bitmap.obj ssl\record\rec_layer_d1.obj ssl\record\rec_layer_s3.obj ssl\record\ssl3_buffer.obj ssl\record\ssl3_record.obj ssl\record\ssl3_record_tls13.obj ssl\s3_cbc.obj ssl\s3_enc.obj ssl\s3_lib.obj ssl\s3_msg.obj ssl\ssl_asn1.obj ssl\ssl_cert.obj ssl\ssl_ciph.obj ssl\ssl_conf.obj ssl\ssl_err.obj ssl\ssl_init.obj ssl\ssl_lib.obj ssl\ssl_mcnf.obj ssl\ssl_rsa.obj ssl\ssl_sess.obj ssl\ssl_stat.obj ssl\ssl_txt.obj ssl\ssl_utst.obj ssl\statem\extensions.obj ssl\statem\extensions_clnt.obj ssl\statem\extensions_cust.obj ssl\statem\extensions_srvr.obj ssl\statem\statem.obj ssl\statem\statem_clnt.obj ssl\statem\statem_dtls.obj ssl\statem\statem_lib.obj ssl\statem\statem_srvr.obj ssl\t1_enc.obj ssl\t1_lib.obj ssl\t1_trce.obj ssl\tls13_enc.obj ssl\tls_srp.obj
+	$(AR) $(ARFLAGS) $(AROUTFLAG)libssl.lib @<<
 ssl\bio_ssl.obj
 ssl\d1_lib.obj
 ssl\d1_msg.obj
@@ -3716,23 +3034,7 @@ ssl\t1_lib.obj
 ssl\t1_trce.obj
 ssl\tls13_enc.obj
 ssl\tls_srp.obj
-libcrypto.lib
-$(LIB_EX_LIBS)
 <<
-	IF EXIST libssl-1_1-x64.dll.manifest \
-	   $(MT) $(MTFLAGS) $(MTINFLAG)libssl-1_1-x64.dll.manifest $(MTOUTFLAG)libssl-1_1-x64.dll
-	IF EXIST apps\libssl-1_1-x64.dll DEL /Q /F apps\libssl-1_1-x64.dll
-	IF EXIST test\libssl-1_1-x64.dll DEL /Q /F test\libssl-1_1-x64.dll
-	IF EXIST fuzz\libssl-1_1-x64.dll DEL /Q /F fuzz\libssl-1_1-x64.dll
-	COPY libssl-1_1-x64.dll apps
-	COPY libssl-1_1-x64.dll test
-	COPY libssl-1_1-x64.dll fuzz
-libssl.def: "util\mkdef.pl" "util\libssl.num"
-	"$(PERL)" "util\mkdef.pl" ssl 32 > $@
-libssl.res: "libssl.rc"
-	$(RC) $(RCFLAGS) $(RCOUTFLAG)$@ "libssl.rc"
-libssl.rc: "util\mkrc.pl" 
-	"$(PERL)" "util\mkrc.pl" libssl > $@
 ssl\bio_ssl.obj: "ssl\bio_ssl.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) -c $(COUTFLAG)$@ "ssl\bio_ssl.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) /Zs /showIncludes "ssl\bio_ssl.c" 2>&1 > ssl\bio_ssl.d
@@ -3865,122 +3167,7 @@ ssl\tls13_enc.obj: "ssl\tls13_enc.c"
 ssl\tls_srp.obj: "ssl\tls_srp.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) -c $(COUTFLAG)$@ "ssl\tls_srp.c"
 	$(CC)  $(LIB_CFLAGS) /I "." /I "include" $(LIB_CPPFLAGS) /Zs /showIncludes "ssl\tls_srp.c" 2>&1 > ssl\tls_srp.d
-libssl_static.lib: ssl\bio_ssl.obj ssl\d1_lib.obj ssl\d1_msg.obj ssl\d1_srtp.obj ssl\methods.obj ssl\packet.obj ssl\pqueue.obj ssl\record\dtls1_bitmap.obj ssl\record\rec_layer_d1.obj ssl\record\rec_layer_s3.obj ssl\record\ssl3_buffer.obj ssl\record\ssl3_record.obj ssl\record\ssl3_record_tls13.obj ssl\s3_cbc.obj ssl\s3_enc.obj ssl\s3_lib.obj ssl\s3_msg.obj ssl\ssl_asn1.obj ssl\ssl_cert.obj ssl\ssl_ciph.obj ssl\ssl_conf.obj ssl\ssl_err.obj ssl\ssl_init.obj ssl\ssl_lib.obj ssl\ssl_mcnf.obj ssl\ssl_rsa.obj ssl\ssl_sess.obj ssl\ssl_stat.obj ssl\ssl_txt.obj ssl\ssl_utst.obj ssl\statem\extensions.obj ssl\statem\extensions_clnt.obj ssl\statem\extensions_cust.obj ssl\statem\extensions_srvr.obj ssl\statem\statem.obj ssl\statem\statem_clnt.obj ssl\statem\statem_dtls.obj ssl\statem\statem_lib.obj ssl\statem\statem_srvr.obj ssl\t1_enc.obj ssl\t1_lib.obj ssl\t1_trce.obj ssl\tls13_enc.obj ssl\tls_srp.obj
-	$(AR) $(ARFLAGS) $(AROUTFLAG)libssl_static.lib @<<
-ssl\bio_ssl.obj
-ssl\d1_lib.obj
-ssl\d1_msg.obj
-ssl\d1_srtp.obj
-ssl\methods.obj
-ssl\packet.obj
-ssl\pqueue.obj
-ssl\record\dtls1_bitmap.obj
-ssl\record\rec_layer_d1.obj
-ssl\record\rec_layer_s3.obj
-ssl\record\ssl3_buffer.obj
-ssl\record\ssl3_record.obj
-ssl\record\ssl3_record_tls13.obj
-ssl\s3_cbc.obj
-ssl\s3_enc.obj
-ssl\s3_lib.obj
-ssl\s3_msg.obj
-ssl\ssl_asn1.obj
-ssl\ssl_cert.obj
-ssl\ssl_ciph.obj
-ssl\ssl_conf.obj
-ssl\ssl_err.obj
-ssl\ssl_init.obj
-ssl\ssl_lib.obj
-ssl\ssl_mcnf.obj
-ssl\ssl_rsa.obj
-ssl\ssl_sess.obj
-ssl\ssl_stat.obj
-ssl\ssl_txt.obj
-ssl\ssl_utst.obj
-ssl\statem\extensions.obj
-ssl\statem\extensions_clnt.obj
-ssl\statem\extensions_cust.obj
-ssl\statem\extensions_srvr.obj
-ssl\statem\statem.obj
-ssl\statem\statem_clnt.obj
-ssl\statem\statem_dtls.obj
-ssl\statem\statem_lib.obj
-ssl\statem\statem_srvr.obj
-ssl\t1_enc.obj
-ssl\t1_lib.obj
-ssl\t1_trce.obj
-ssl\tls13_enc.obj
-ssl\tls_srp.obj
-<<
-engines\capi.dll: engines\e_capi.obj libcrypto.lib
-	IF EXIST engines\capi.dll.manifest DEL /F /Q engines\capi.dll.manifest
-	$(LD) $(LDFLAGS) $(DSO_LDFLAGS) $(LDOUTFLAG)engines\capi.dll /def:<< @<<
-LIBRARY         capi
-EXPORTS
-    bind_engine		
-    v_check		
-<<
-engines\e_capi.obj
-libcrypto.lib
- $(DSO_EX_LIBS)
-<<
-	IF EXIST engines\capi.dll.manifest \
-	   $(MT) $(MTFLAGS) $(MTINFLAG)engines\capi.dll.manifest $(MTOUTFLAG)engines\capi.dll
-engines\e_capi.obj: "engines\e_capi.c"
-	$(CC)  $(DSO_CFLAGS) /I "include" $(DSO_CPPFLAGS) -c $(COUTFLAG)$@ "engines\e_capi.c"
-	$(CC)  $(DSO_CFLAGS) /I "include" $(DSO_CPPFLAGS) /Zs /showIncludes "engines\e_capi.c" 2>&1 > engines\e_capi.d
-engines\dasync.dll: engines\e_dasync.obj libcrypto.lib
-	IF EXIST engines\dasync.dll.manifest DEL /F /Q engines\dasync.dll.manifest
-	$(LD) $(LDFLAGS) $(DSO_LDFLAGS) $(LDOUTFLAG)engines\dasync.dll /def:<< @<<
-LIBRARY         dasync
-EXPORTS
-    bind_engine		
-    v_check		
-<<
-engines\e_dasync.obj
-libcrypto.lib
- $(DSO_EX_LIBS)
-<<
-	IF EXIST engines\dasync.dll.manifest \
-	   $(MT) $(MTFLAGS) $(MTINFLAG)engines\dasync.dll.manifest $(MTOUTFLAG)engines\dasync.dll
-engines\e_dasync.obj: "engines\e_dasync.c"
-	$(CC)  $(DSO_CFLAGS) /I "include" $(DSO_CPPFLAGS) -c $(COUTFLAG)$@ "engines\e_dasync.c"
-	$(CC)  $(DSO_CFLAGS) /I "include" $(DSO_CPPFLAGS) /Zs /showIncludes "engines\e_dasync.c" 2>&1 > engines\e_dasync.d
-engines\ossltest.dll: engines\e_ossltest.obj libcrypto.lib
-	IF EXIST engines\ossltest.dll.manifest DEL /F /Q engines\ossltest.dll.manifest
-	$(LD) $(LDFLAGS) $(DSO_LDFLAGS) $(LDOUTFLAG)engines\ossltest.dll /def:<< @<<
-LIBRARY         ossltest
-EXPORTS
-    bind_engine		
-    v_check		
-<<
-engines\e_ossltest.obj
-libcrypto.lib
- $(DSO_EX_LIBS)
-<<
-	IF EXIST engines\ossltest.dll.manifest \
-	   $(MT) $(MTFLAGS) $(MTINFLAG)engines\ossltest.dll.manifest $(MTOUTFLAG)engines\ossltest.dll
-engines\e_ossltest.obj: "engines\e_ossltest.c"
-	$(CC)  $(DSO_CFLAGS) /I "include" $(DSO_CPPFLAGS) -c $(COUTFLAG)$@ "engines\e_ossltest.c"
-	$(CC)  $(DSO_CFLAGS) /I "include" $(DSO_CPPFLAGS) /Zs /showIncludes "engines\e_ossltest.c" 2>&1 > engines\e_ossltest.d
-engines\padlock.dll: engines\e_padlock.obj libcrypto.lib
-	IF EXIST engines\padlock.dll.manifest DEL /F /Q engines\padlock.dll.manifest
-	$(LD) $(LDFLAGS) $(DSO_LDFLAGS) $(LDOUTFLAG)engines\padlock.dll /def:<< @<<
-LIBRARY         padlock
-EXPORTS
-    bind_engine		
-    v_check		
-<<
-engines\e_padlock.obj
-libcrypto.lib
- $(DSO_EX_LIBS)
-<<
-	IF EXIST engines\padlock.dll.manifest \
-	   $(MT) $(MTFLAGS) $(MTINFLAG)engines\padlock.dll.manifest $(MTOUTFLAG)engines\padlock.dll
-engines\e_padlock.obj: "engines\e_padlock.c"
-	$(CC)  $(DSO_CFLAGS) /I "include" $(DSO_CPPFLAGS) -c $(COUTFLAG)$@ "engines\e_padlock.c"
-	$(CC)  $(DSO_CFLAGS) /I "include" $(DSO_CPPFLAGS) /Zs /showIncludes "engines\e_padlock.c" 2>&1 > engines\e_padlock.d
-apps\openssl.exe: apps\asn1pars.obj apps\ca.obj apps\ciphers.obj apps\cms.obj apps\crl.obj apps\crl2p7.obj apps\dgst.obj apps\dhparam.obj apps\dsa.obj apps\dsaparam.obj apps\ec.obj apps\ecparam.obj apps\enc.obj apps\engine.obj apps\errstr.obj apps\gendsa.obj apps\genpkey.obj apps\genrsa.obj apps\nseq.obj apps\ocsp.obj apps\openssl.obj apps\openssl.res apps\passwd.obj apps\pkcs12.obj apps\pkcs7.obj apps\pkcs8.obj apps\pkey.obj apps\pkeyparam.obj apps\pkeyutl.obj apps\prime.obj apps\rand.obj apps\rehash.obj apps\req.obj apps\rsa.obj apps\rsautl.obj apps\s_client.obj apps\s_server.obj apps\s_time.obj apps\sess_id.obj apps\smime.obj apps\speed.obj apps\spkac.obj apps\srp.obj apps\storeutl.obj apps\ts.obj apps\verify.obj apps\version.obj apps\x509.obj ms\applink.obj apps\libapps.lib libssl.lib libcrypto.lib
+apps\openssl.exe: apps\asn1pars.obj apps\ca.obj apps\ciphers.obj apps\cms.obj apps\crl.obj apps\crl2p7.obj apps\dgst.obj apps\dhparam.obj apps\dsa.obj apps\dsaparam.obj apps\ec.obj apps\ecparam.obj apps\enc.obj apps\engine.obj apps\errstr.obj apps\gendsa.obj apps\genpkey.obj apps\genrsa.obj apps\nseq.obj apps\ocsp.obj apps\openssl.obj apps\openssl.res apps\passwd.obj apps\pkcs12.obj apps\pkcs7.obj apps\pkcs8.obj apps\pkey.obj apps\pkeyparam.obj apps\pkeyutl.obj apps\prime.obj apps\rand.obj apps\rehash.obj apps\req.obj apps\rsa.obj apps\rsautl.obj apps\s_client.obj apps\s_server.obj apps\s_time.obj apps\sess_id.obj apps\smime.obj apps\speed.obj apps\spkac.obj apps\srp.obj apps\storeutl.obj apps\ts.obj apps\verify.obj apps\version.obj apps\x509.obj apps\libapps.lib libssl.lib libcrypto.lib
 	IF EXIST apps\openssl.exe.manifest DEL /F /Q apps\openssl.exe.manifest
 	$(LD) $(LDFLAGS) $(BIN_LDFLAGS) $(LDOUTFLAG)apps\openssl.exe @<<
 apps\asn1pars.obj
@@ -4031,7 +3218,6 @@ apps\ts.obj
 apps\verify.obj
 apps\version.obj
 apps\x509.obj
-ms\applink.obj
 setargv.obj
 apps\libapps.lib
 libssl.lib
@@ -4187,9 +3373,6 @@ apps\version.obj: "apps\version.c" "apps\progs.h"
 apps\x509.obj: "apps\x509.c" "apps\progs.h"
 	$(CC)  $(BIN_CFLAGS) /I "." /I "include" /I "apps" $(BIN_CPPFLAGS) -c $(COUTFLAG)$@ "apps\x509.c"
 	$(CC)  $(BIN_CFLAGS) /I "." /I "include" /I "apps" $(BIN_CPPFLAGS) /Zs /showIncludes "apps\x509.c" 2>&1 > apps\x509.d
-ms\applink.obj: "ms\applink.c"
-	$(CC)  $(BIN_CFLAGS) /I "." /I "include" $(BIN_CPPFLAGS) -c $(COUTFLAG)$@ "ms\applink.c"
-	$(CC)  $(BIN_CFLAGS) /I "." /I "include" $(BIN_CPPFLAGS) /Zs /showIncludes "ms\applink.c" 2>&1 > ms\applink.d
 test\buildtest_c_aes.exe: test\buildtest_aes.obj libssl.lib libcrypto.lib
 	IF EXIST test\buildtest_c_aes.exe.manifest DEL /F /Q test\buildtest_c_aes.exe.manifest
 	$(LD) $(LDFLAGS) $(BIN_LDFLAGS) $(LDOUTFLAG)test\buildtest_c_aes.exe @<<
@@ -5304,7 +4487,7 @@ tools\c_rehash.pl: "tools\c_rehash.in"
 	"$(PERL)" "-I$(BLDDIR)" -Mconfigdata "util\dofile.pl" \
 	    "-omakefile" "tools\c_rehash.in" > "tools\c_rehash.pl"
 apps apps\ : apps\openssl.exe apps\CA.pl apps\tsget.pl
-crypto crypto\ : crypto\cpt_err.obj crypto\cryptlib.obj crypto\ctype.obj crypto\cversion.obj crypto\ebcdic.obj crypto\ex_data.obj crypto\getenv.obj crypto\init.obj crypto\mem.obj crypto\mem_clr.obj crypto\mem_dbg.obj crypto\mem_sec.obj crypto\o_dir.obj crypto\o_fips.obj crypto\o_fopen.obj crypto\o_init.obj crypto\o_str.obj crypto\o_time.obj crypto\threads_none.obj crypto\threads_pthread.obj crypto\threads_win.obj crypto\uid.obj crypto\uplink-x86_64.obj crypto\dllmain.obj
+crypto crypto\ : crypto\cpt_err.obj crypto\cryptlib.obj crypto\ctype.obj crypto\cversion.obj crypto\ebcdic.obj crypto\ex_data.obj crypto\getenv.obj crypto\init.obj crypto\mem.obj crypto\mem_clr.obj crypto\mem_dbg.obj crypto\mem_sec.obj crypto\o_dir.obj crypto\o_fips.obj crypto\o_fopen.obj crypto\o_init.obj crypto\o_str.obj crypto\o_time.obj crypto\threads_none.obj crypto\threads_pthread.obj crypto\threads_win.obj crypto\uid.obj
 crypto\aes crypto\aes\ : crypto\aes\aes_cbc.obj crypto\aes\aes_cfb.obj crypto\aes\aes_core.obj crypto\aes\aes_ecb.obj crypto\aes\aes_ige.obj crypto\aes\aes_misc.obj crypto\aes\aes_ofb.obj crypto\aes\aes_wrap.obj
 crypto\aria crypto\aria\ : crypto\aria\aria.obj
 crypto\asn1 crypto\asn1\ : crypto\asn1\a_bitstr.obj crypto\asn1\a_d2i_fp.obj crypto\asn1\a_digest.obj crypto\asn1\a_dup.obj crypto\asn1\a_gentm.obj crypto\asn1\a_i2d_fp.obj crypto\asn1\a_int.obj crypto\asn1\a_mbstr.obj crypto\asn1\a_object.obj crypto\asn1\a_octet.obj crypto\asn1\a_print.obj crypto\asn1\a_sign.obj crypto\asn1\a_strex.obj crypto\asn1\a_strnid.obj crypto\asn1\a_time.obj crypto\asn1\a_type.obj crypto\asn1\a_utctm.obj crypto\asn1\a_utf8.obj crypto\asn1\a_verify.obj crypto\asn1\ameth_lib.obj crypto\asn1\asn1_err.obj crypto\asn1\asn1_gen.obj crypto\asn1\asn1_item_list.obj crypto\asn1\asn1_lib.obj crypto\asn1\asn1_par.obj crypto\asn1\asn_mime.obj crypto\asn1\asn_moid.obj crypto\asn1\asn_mstbl.obj crypto\asn1\asn_pack.obj crypto\asn1\bio_asn1.obj crypto\asn1\bio_ndef.obj crypto\asn1\d2i_pr.obj crypto\asn1\d2i_pu.obj crypto\asn1\evp_asn1.obj crypto\asn1\f_int.obj crypto\asn1\f_string.obj crypto\asn1\i2d_pr.obj crypto\asn1\i2d_pu.obj crypto\asn1\n_pkey.obj crypto\asn1\nsseq.obj crypto\asn1\p5_pbe.obj crypto\asn1\p5_pbev2.obj crypto\asn1\p5_scrypt.obj crypto\asn1\p8_pkey.obj crypto\asn1\t_bitst.obj crypto\asn1\t_pkey.obj crypto\asn1\t_spki.obj crypto\asn1\tasn_dec.obj crypto\asn1\tasn_enc.obj crypto\asn1\tasn_fre.obj crypto\asn1\tasn_new.obj crypto\asn1\tasn_prn.obj crypto\asn1\tasn_scn.obj crypto\asn1\tasn_typ.obj crypto\asn1\tasn_utl.obj crypto\asn1\x_algor.obj crypto\asn1\x_bignum.obj crypto\asn1\x_info.obj crypto\asn1\x_int64.obj crypto\asn1\x_long.obj crypto\asn1\x_pkey.obj crypto\asn1\x_sig.obj crypto\asn1\x_spki.obj crypto\asn1\x_val.obj
@@ -5367,10 +4550,10 @@ crypto\ui crypto\ui\ : crypto\ui\ui_err.obj crypto\ui\ui_lib.obj crypto\ui\ui_nu
 crypto\whrlpool crypto\whrlpool\ : crypto\whrlpool\wp_block.obj crypto\whrlpool\wp_dgst.obj
 crypto\x509 crypto\x509\ : crypto\x509\by_dir.obj crypto\x509\by_file.obj crypto\x509\t_crl.obj crypto\x509\t_req.obj crypto\x509\t_x509.obj crypto\x509\x509_att.obj crypto\x509\x509_cmp.obj crypto\x509\x509_d2.obj crypto\x509\x509_def.obj crypto\x509\x509_err.obj crypto\x509\x509_ext.obj crypto\x509\x509_lu.obj crypto\x509\x509_meth.obj crypto\x509\x509_obj.obj crypto\x509\x509_r2x.obj crypto\x509\x509_req.obj crypto\x509\x509_set.obj crypto\x509\x509_trs.obj crypto\x509\x509_txt.obj crypto\x509\x509_v3.obj crypto\x509\x509_vfy.obj crypto\x509\x509_vpm.obj crypto\x509\x509cset.obj crypto\x509\x509name.obj crypto\x509\x509rset.obj crypto\x509\x509spki.obj crypto\x509\x509type.obj crypto\x509\x_all.obj crypto\x509\x_attrib.obj crypto\x509\x_crl.obj crypto\x509\x_exten.obj crypto\x509\x_name.obj crypto\x509\x_pubkey.obj crypto\x509\x_req.obj crypto\x509\x_x509.obj crypto\x509\x_x509a.obj
 crypto\x509v3 crypto\x509v3\ : crypto\x509v3\pcy_cache.obj crypto\x509v3\pcy_data.obj crypto\x509v3\pcy_lib.obj crypto\x509v3\pcy_map.obj crypto\x509v3\pcy_node.obj crypto\x509v3\pcy_tree.obj crypto\x509v3\v3_addr.obj crypto\x509v3\v3_admis.obj crypto\x509v3\v3_akey.obj crypto\x509v3\v3_akeya.obj crypto\x509v3\v3_alt.obj crypto\x509v3\v3_asid.obj crypto\x509v3\v3_bcons.obj crypto\x509v3\v3_bitst.obj crypto\x509v3\v3_conf.obj crypto\x509v3\v3_cpols.obj crypto\x509v3\v3_crld.obj crypto\x509v3\v3_enum.obj crypto\x509v3\v3_extku.obj crypto\x509v3\v3_genn.obj crypto\x509v3\v3_ia5.obj crypto\x509v3\v3_info.obj crypto\x509v3\v3_int.obj crypto\x509v3\v3_lib.obj crypto\x509v3\v3_ncons.obj crypto\x509v3\v3_pci.obj crypto\x509v3\v3_pcia.obj crypto\x509v3\v3_pcons.obj crypto\x509v3\v3_pku.obj crypto\x509v3\v3_pmaps.obj crypto\x509v3\v3_prn.obj crypto\x509v3\v3_purp.obj crypto\x509v3\v3_skey.obj crypto\x509v3\v3_sxnet.obj crypto\x509v3\v3_tlsf.obj crypto\x509v3\v3_utl.obj crypto\x509v3\v3err.obj
-engines engines\ : engines\capi.dll engines\dasync.dll engines\ossltest.dll engines\padlock.dll
-ms ms\ : ms\uplink.obj ms\applink.obj
+engines engines\ : engines\e_capi.obj engines\e_padlock.obj
 ssl ssl\ : ssl\bio_ssl.obj ssl\d1_lib.obj ssl\d1_msg.obj ssl\d1_srtp.obj ssl\methods.obj ssl\packet.obj ssl\pqueue.obj ssl\s3_cbc.obj ssl\s3_enc.obj ssl\s3_lib.obj ssl\s3_msg.obj ssl\ssl_asn1.obj ssl\ssl_cert.obj ssl\ssl_ciph.obj ssl\ssl_conf.obj ssl\ssl_err.obj ssl\ssl_init.obj ssl\ssl_lib.obj ssl\ssl_mcnf.obj ssl\ssl_rsa.obj ssl\ssl_sess.obj ssl\ssl_stat.obj ssl\ssl_txt.obj ssl\ssl_utst.obj ssl\t1_enc.obj ssl\t1_lib.obj ssl\t1_trce.obj ssl\tls13_enc.obj ssl\tls_srp.obj
 ssl\record ssl\record\ : ssl\record\dtls1_bitmap.obj ssl\record\rec_layer_d1.obj ssl\record\rec_layer_s3.obj ssl\record\ssl3_buffer.obj ssl\record\ssl3_record.obj ssl\record\ssl3_record_tls13.obj
 ssl\statem ssl\statem\ : ssl\statem\extensions.obj ssl\statem\extensions_clnt.obj ssl\statem\extensions_cust.obj ssl\statem\extensions_srvr.obj ssl\statem\statem.obj ssl\statem\statem_clnt.obj ssl\statem\statem_dtls.obj ssl\statem\statem_lib.obj ssl\statem\statem_srvr.obj
 tools tools\ : tools\c_rehash.pl
 
+# DO NOT DELETE THIS LINE -- make depend depends on it.

@@ -48,7 +48,7 @@ our %config = (
   cxxflags => [  ],
   defines => [  ],
   dirs => [ "crypto", "ssl", "engines", "apps", "test", "util", "tools", "fuzz" ],
-  dynamic_engines => "1",
+  dynamic_engines => "0",
   engdirs => [  ],
   ex_libs => [  ],
   export_var_as_fn => "1",
@@ -60,15 +60,15 @@ our %config = (
   minor => "1.1",
   openssl_algorithm_defines => [ "OPENSSL_NO_MD2", "OPENSSL_NO_RC5" ],
   openssl_api_defines => [  ],
-  openssl_other_defines => [ "OPENSSL_RAND_SEED_OS", "OPENSSL_NO_AFALGENG", "OPENSSL_NO_ASAN", "OPENSSL_NO_ASM", "OPENSSL_NO_CRYPTO_MDEBUG", "OPENSSL_NO_CRYPTO_MDEBUG_BACKTRACE", "OPENSSL_NO_DEVCRYPTOENG", "OPENSSL_NO_EC_NISTP_64_GCC_128", "OPENSSL_NO_EGD", "OPENSSL_NO_EXTERNAL_TESTS", "OPENSSL_NO_FUZZ_AFL", "OPENSSL_NO_FUZZ_LIBFUZZER", "OPENSSL_NO_HEARTBEATS", "OPENSSL_NO_MSAN", "OPENSSL_NO_SCTP", "OPENSSL_NO_SSL_TRACE", "OPENSSL_NO_SSL3", "OPENSSL_NO_SSL3_METHOD", "OPENSSL_NO_TESTS", "OPENSSL_NO_UBSAN", "OPENSSL_NO_UNIT_TEST", "OPENSSL_NO_WEAK_SSL_CIPHERS", "OPENSSL_NO_STATIC_ENGINE" ],
+  openssl_other_defines => [ "OPENSSL_RAND_SEED_OS", "OPENSSL_NO_AFALGENG", "OPENSSL_NO_ASAN", "OPENSSL_NO_ASM", "OPENSSL_NO_CRYPTO_MDEBUG", "OPENSSL_NO_CRYPTO_MDEBUG_BACKTRACE", "OPENSSL_NO_DEVCRYPTOENG", "OPENSSL_NO_EC_NISTP_64_GCC_128", "OPENSSL_NO_EGD", "OPENSSL_NO_EXTERNAL_TESTS", "OPENSSL_NO_FUZZ_AFL", "OPENSSL_NO_FUZZ_LIBFUZZER", "OPENSSL_NO_HEARTBEATS", "OPENSSL_NO_MSAN", "OPENSSL_NO_SCTP", "OPENSSL_NO_SSL_TRACE", "OPENSSL_NO_SSL3", "OPENSSL_NO_SSL3_METHOD", "OPENSSL_NO_TESTS", "OPENSSL_NO_UBSAN", "OPENSSL_NO_UNIT_TEST", "OPENSSL_NO_WEAK_SSL_CIPHERS", "OPENSSL_NO_DYNAMIC_ENGINE" ],
   openssl_sys_defines => [ "OPENSSL_SYS_WIN64A" ],
   openssl_thread_defines => [ "OPENSSL_THREADS" ],
   openssldir => "E:\\Github\\OpenSSL\\openssl-1.1.1h\\x64\\Debug\\ssl",
-  options => "--debug --prefix=E:\\Github\\OpenSSL\\openssl-1.1.1h\\x64\\Debug --openssldir=E:\\Github\\OpenSSL\\openssl-1.1.1h\\x64\\Debug\\ssl no-afalgeng no-asan no-asm no-buildtest-c++ no-crypto-mdebug no-crypto-mdebug-backtrace no-devcryptoeng no-ec_nistp_64_gcc_128 no-egd no-external-tests no-fuzz-afl no-fuzz-libfuzzer no-heartbeats no-md2 no-msan no-rc5 no-sctp no-ssl-trace no-ssl3 no-ssl3-method no-tests no-ubsan no-unit-test no-weak-ssl-ciphers no-zlib no-zlib-dynamic",
+  options => "--debug --prefix=E:\\Github\\OpenSSL\\openssl-1.1.1h\\x64\\Debug --openssldir=E:\\Github\\OpenSSL\\openssl-1.1.1h\\x64\\Debug\\ssl no-afalgeng no-asan no-asm no-buildtest-c++ no-crypto-mdebug no-crypto-mdebug-backtrace no-devcryptoeng no-dynamic-engine no-ec_nistp_64_gcc_128 no-egd no-external-tests no-fuzz-afl no-fuzz-libfuzzer no-heartbeats no-md2 no-msan no-rc5 no-sctp no-shared no-ssl-trace no-ssl3 no-ssl3-method no-tests no-ubsan no-unit-test no-weak-ssl-ciphers no-zlib no-zlib-dynamic",
   perl_archname => "MSWin32-x64-multi-thread",
   perl_cmd => "D:\\ActivePerl5.28\\bin\\perl.exe",
   perl_version => "5.28.1",
-  perlargv => [ "VC-WIN64A", "no-asm", "no-tests", "--debug", "--prefix=E:\\Github\\OpenSSL\\openssl-1.1.1h\\x64\\Debug", "--openssldir=E:\\Github\\OpenSSL\\openssl-1.1.1h\\x64\\Debug\\ssl" ],
+  perlargv => [ "VC-WIN64A", "no-asm", "no-tests", "no-shared", "--debug", "--prefix=E:\\Github\\OpenSSL\\openssl-1.1.1h\\x64\\Debug", "--openssldir=E:\\Github\\OpenSSL\\openssl-1.1.1h\\x64\\Debug\\ssl" ],
   perlenv => {
       "AR" => undef,
       "ARFLAGS" => undef,
@@ -133,13 +133,13 @@ our %target = (
   LDFLAGS => "/nologo /debug",
   MT => "mt",
   MTFLAGS => "-nologo",
-  RANLIB => "CODE(0x5b76e8)",
+  RANLIB => "CODE(0x497b00)",
   RC => "rc",
-  _conf_fname_int => [ "Configurations\\00-base-templates.conf", "Configurations\\00-base-templates.conf", "Configurations\\10-main.conf", "Configurations\\10-main.conf", "Configurations\\10-main.conf", "Configurations\\00-base-templates.conf", "Configurations\\00-base-templates.conf", "Configurations\\10-main.conf", "Configurations\\shared-info.pl" ],
+  _conf_fname_int => [ "Configurations\\00-base-templates.conf", "Configurations\\00-base-templates.conf", "Configurations\\10-main.conf", "Configurations\\10-main.conf", "Configurations\\10-main.conf", "Configurations\\10-main.conf", "Configurations\\shared-info.pl" ],
   aes_asm_src => "aes_core.c aes_cbc.c",
   aes_obj => "aes_core.o aes_cbc.o",
   apps_aux_src => "win32_init.c",
-  apps_init_src => "../ms/applink.c",
+  apps_init_src => "",
   apps_obj => "win32_init.o",
   aroutflag => "/out:",
   asflags => "-Ox -f win64 -DNEAR",
@@ -155,7 +155,7 @@ our %target = (
   build_scheme => [ "unified", "windows", "VC-common" ],
   cast_asm_src => "c_enc.c",
   cast_obj => "c_enc.o",
-  cflags => "/Gs0 /GF /Gy /MDd",
+  cflags => "/Gs0 /GF /Gy",
   chacha_asm_src => "chacha_enc.c",
   chacha_obj => "chacha_enc.o",
   cmll_asm_src => "camellia.c cmll_misc.c cmll_cbc.c",
@@ -164,7 +164,7 @@ our %target = (
   cppflags => "",
   cpuid_asm_src => "mem_clr.c",
   cpuid_obj => "mem_clr.o",
-  defines => [ "OPENSSL_SYS_WIN32", "WIN32_LEAN_AND_MEAN", "UNICODE", "_UNICODE", "_CRT_SECURE_NO_DEPRECATE", "_WINSOCK_DEPRECATED_NO_WARNINGS", "DEBUG", "_DEBUG", "OPENSSL_USE_APPLINK" ],
+  defines => [ "OPENSSL_SYS_WIN32", "WIN32_LEAN_AND_MEAN", "UNICODE", "_UNICODE", "_CRT_SECURE_NO_DEPRECATE", "_WINSOCK_DEPRECATED_NO_WARNINGS", "DEBUG", "_DEBUG" ],
   des_asm_src => "des_enc.c fcrypt_b.c",
   des_obj => "des_enc.o fcrypt_b.o",
   disable => [  ],
@@ -181,7 +181,7 @@ our %target = (
   keccak1600_obj => "keccak1600.o",
   ldoutflag => "/out:",
   lflags => "",
-  lib_cflags => "/Zi /Fdossl_static.pdb",
+  lib_cflags => "/Zi /Fdossl_static.pdb /MT /Zl",
   lib_cppflags => "",
   lib_defines => [ "L_ENDIAN" ],
   md5_asm_src => "",
@@ -218,8 +218,8 @@ our %target = (
   thread_defines => [  ],
   thread_scheme => "winthreads",
   unistd => "<unistd.h>",
-  uplink_aux_src => "../ms/uplink.c uplink-x86_64.s",
-  uplink_obj => "../ms/uplink.o uplink-x86_64.o",
+  uplink_aux_src => "",
+  uplink_obj => "",
   wp_asm_src => "wp_block.c",
   wp_obj => "wp_block.o",
 );
@@ -346,6 +346,7 @@ our %disabled = (
   "crypto-mdebug" => "default",
   "crypto-mdebug-backtrace" => "default",
   "devcryptoeng" => "default",
+  "dynamic-engine" => "cascade",
   "ec_nistp_64_gcc_128" => "default",
   "egd" => "default",
   "external-tests" => "default",
@@ -356,6 +357,7 @@ our %disabled = (
   "msan" => "default",
   "rc5" => "default",
   "sctp" => "default",
+  "shared" => "option",
   "ssl-trace" => "default",
   "ssl3" => "default",
   "ssl3-method" => "default",
@@ -671,22 +673,6 @@ our %unified_info = (
             "crypto\\x86cpuid.s" =>
                 [
                     "crypto\\perlasm\\x86asm.pl",
-                ],
-            "engines\\capi" =>
-                [
-                    "libcrypto",
-                ],
-            "engines\\dasync" =>
-                [
-                    "libcrypto",
-                ],
-            "engines\\ossltest" =>
-                [
-                    "libcrypto",
-                ],
-            "engines\\padlock" =>
-                [
-                    "libcrypto",
                 ],
             "include\\crypto\\bn_conf.h" =>
                 [
@@ -1111,8 +1097,6 @@ our %unified_info = (
                             "crypto\\threads_pthread.o",
                             "crypto\\threads_win.o",
                             "crypto\\uid.o",
-                            "crypto\\uplink-x86_64.o",
-                            "crypto\\dllmain.o",
                         ],
                     "products" =>
                         {
@@ -2545,30 +2529,13 @@ our %unified_info = (
                 },
             "engines" =>
                 {
-                    "products" =>
-                        {
-                            "dso" =>
-                                [
-                                    "engines\\capi",
-                                    "engines\\dasync",
-                                    "engines\\ossltest",
-                                    "engines\\padlock",
-                                ],
-                        },
-                },
-            "ms" =>
-                {
                     "deps" =>
                         [
-                            "ms\\uplink.o",
-                            "ms\\applink.o",
+                            "engines\\e_capi.o",
+                            "engines\\e_padlock.o",
                         ],
                     "products" =>
                         {
-                            "bin" =>
-                                [
-                                    "apps\\openssl",
-                                ],
                             "lib" =>
                                 [
                                     "libcrypto",
@@ -2671,10 +2638,6 @@ our %unified_info = (
         },
     "engines" =>
         [
-            "engines\\capi",
-            "engines\\dasync",
-            "engines\\ossltest",
-            "engines\\padlock",
         ],
     "extra" =>
         [
@@ -5551,11 +5514,6 @@ our %unified_info = (
                     ".",
                     "include",
                 ],
-            "crypto\\dllmain.o" =>
-                [
-                    ".",
-                    "include",
-                ],
             "crypto\\dsa\\dsa_ameth.o" =>
                 [
                     ".",
@@ -7349,11 +7307,6 @@ our %unified_info = (
                     ".",
                     "include",
                 ],
-            "crypto\\uplink-x86_64.o" =>
-                [
-                    ".",
-                    "include",
-                ],
             "crypto\\whrlpool\\wp_block.o" =>
                 [
                     ".",
@@ -7731,18 +7684,12 @@ our %unified_info = (
                 ],
             "engines\\e_capi.o" =>
                 [
-                    "include",
-                ],
-            "engines\\e_dasync.o" =>
-                [
-                    "include",
-                ],
-            "engines\\e_ossltest.o" =>
-                [
+                    ".",
                     "include",
                 ],
             "engines\\e_padlock.o" =>
                 [
+                    ".",
                     "include",
                 ],
             "include\\crypto\\bn_conf.h" =>
@@ -7756,16 +7703,6 @@ our %unified_info = (
             "include\\openssl\\opensslconf.h" =>
                 [
                     ".",
-                ],
-            "ms\\applink.o" =>
-                [
-                    ".",
-                    "include",
-                ],
-            "ms\\uplink.o" =>
-                [
-                    ".",
-                    "include",
                 ],
             "ssl\\bio_ssl.o" =>
                 [
@@ -8270,11 +8207,6 @@ our %unified_info = (
         },
     "install" =>
         {
-            "engines" =>
-                [
-                    "engines\\capi",
-                    "engines\\padlock",
-                ],
             "libraries" =>
                 [
                     "libcrypto",
@@ -8390,22 +8322,6 @@ our %unified_info = (
         ],
     "shared_sources" =>
         {
-            "libcrypto" =>
-                [
-                    "crypto\\dllmain.o",
-                    "libcrypto.def",
-                    "libcrypto.res",
-                ],
-            "libssl" =>
-                [
-                    "libssl.def",
-                    "libssl.res",
-                ],
-        },
-    "sharednames" =>
-        {
-            "libcrypto" => "libcrypto-1_1-x64",
-            "libssl" => "libssl-1_1-x64",
         },
     "sources" =>
         {
@@ -8565,7 +8481,6 @@ our %unified_info = (
                     "apps\\verify.o",
                     "apps\\version.o",
                     "apps\\x509.o",
-                    "ms\\applink.o",
                 ],
             "apps\\openssl.o" =>
                 [
@@ -9626,10 +9541,6 @@ our %unified_info = (
             "crypto\\dh\\dh_rfc7919.o" =>
                 [
                     "crypto\\dh\\dh_rfc7919.c",
-                ],
-            "crypto\\dllmain.o" =>
-                [
-                    "crypto\\dllmain.c",
                 ],
             "crypto\\dsa\\dsa_ameth.o" =>
                 [
@@ -10951,10 +10862,6 @@ our %unified_info = (
                 [
                     "crypto\\uid.c",
                 ],
-            "crypto\\uplink-x86_64.o" =>
-                [
-                    "crypto\\uplink-x86_64.s",
-                ],
             "crypto\\whrlpool\\wp_block.o" =>
                 [
                     "crypto\\whrlpool\\wp_block.c",
@@ -11255,37 +11162,13 @@ our %unified_info = (
                 [
                     "crypto\\x509v3\\v3err.c",
                 ],
-            "engines\\capi" =>
-                [
-                    "engines\\e_capi.o",
-                ],
-            "engines\\dasync" =>
-                [
-                    "engines\\e_dasync.o",
-                ],
             "engines\\e_capi.o" =>
                 [
                     "engines\\e_capi.c",
                 ],
-            "engines\\e_dasync.o" =>
-                [
-                    "engines\\e_dasync.c",
-                ],
-            "engines\\e_ossltest.o" =>
-                [
-                    "engines\\e_ossltest.c",
-                ],
             "engines\\e_padlock.o" =>
                 [
                     "engines\\e_padlock.c",
-                ],
-            "engines\\ossltest" =>
-                [
-                    "engines\\e_ossltest.o",
-                ],
-            "engines\\padlock" =>
-                [
-                    "engines\\e_padlock.o",
                 ],
             "libcrypto" =>
                 [
@@ -11851,7 +11734,6 @@ our %unified_info = (
                     "crypto\\ui\\ui_openssl.o",
                     "crypto\\ui\\ui_util.o",
                     "crypto\\uid.o",
-                    "crypto\\uplink-x86_64.o",
                     "crypto\\whrlpool\\wp_block.o",
                     "crypto\\whrlpool\\wp_dgst.o",
                     "crypto\\x509\\by_dir.o",
@@ -11927,11 +11809,8 @@ our %unified_info = (
                     "crypto\\x509v3\\v3_tlsf.o",
                     "crypto\\x509v3\\v3_utl.o",
                     "crypto\\x509v3\\v3err.o",
-                    "ms\\uplink.o",
-                ],
-            "libcrypto.res" =>
-                [
-                    "libcrypto.rc",
+                    "engines\\e_capi.o",
+                    "engines\\e_padlock.o",
                 ],
             "libssl" =>
                 [
@@ -11979,18 +11858,6 @@ our %unified_info = (
                     "ssl\\t1_trce.o",
                     "ssl\\tls13_enc.o",
                     "ssl\\tls_srp.o",
-                ],
-            "libssl.res" =>
-                [
-                    "libssl.rc",
-                ],
-            "ms\\applink.o" =>
-                [
-                    "ms\\applink.c",
-                ],
-            "ms\\uplink.o" =>
-                [
-                    "ms\\uplink.c",
                 ],
             "ssl\\bio_ssl.o" =>
                 [
